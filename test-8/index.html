@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <!-- ======================================================================= -->
+    <!--                            META & TITLES                                -->
+    <!-- ======================================================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Earth-Shattering Climax] Super Saiyan 3 Vegeta (DAIMA)</title>
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/7E8KqH3.png" sizes="48x48">
+    <meta name="color-scheme" content="dark">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@HarryTurney">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="abs Info">
+    <meta name="application-name" content="Dokkan Info!">
+
+    <meta itemprop="name" content="[Earth-Shattering Climax] Super Saiyan 3 Vegeta (DAIMA)">
+    <meta property="og:title" content="[Earth-Shattering Climax] Super Saiyan 3 Vegeta (DAIMA)">
+    <meta name="twitter:title" content="[Earth-Shattering Climax] Super Saiyan 3 Vegeta (DAIMA)">
+    <meta name="apple-mobile-web-app-title" content="[Earth-Shattering Climax] Super Saiyan 3 Vegeta (DAIMA)">
+
+    <meta itemprop="image" content="https://i.imgur.com/7E8KqH3.png">
+    <meta property="og:image" content="https://i.imgur.com/7E8KqH3.png">
+    <meta name="twitter:image" content="https://i.imgur.com/7E8KqH3.png">
+
+    <meta name="description" id="meta-description" content="&quot;DAIMA&quot; Category Ki +4 and HP, ATK &amp; DEF +220%; or &quot;Vegeta's Family&quot; Category Ki +3 and HP, ATK &amp; DEF +220%">
+    <meta itemprop="description" id="meta-itemprop-description" content="&quot;DAIMA&quot; Category Ki +4 and HP, ATK &amp; DEF +220%; or &quot;Vegeta's Family&quot; Category Ki +3 and HP, ATK &amp; DEF +220%">
+    <meta property="og:description" id="meta-og-description" content="&quot;DAIMA&quot; Category Ki +4 and HP, ATK &amp; DEF +220%; or &quot;Vegeta's Family&quot; Category Ki +3 and HP, ATK &amp; DEF +220%">
+    <meta property="twitter:description" id="meta-twitter-description" content="&quot;DAIMA&quot; Category Ki +4 and HP, ATK &amp; DEF +220%; or &quot;Vegeta's Family&quot; Category Ki +3 and HP, ATK &amp; DEF +220%">
+
+    <!-- ======================================================================= -->
+    <!--                         EXTERNAL LIBRARIES                              -->
+    <!-- ======================================================================= -->
+    
+
+    <!-- Google tag (gtag.js) -->
+    
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="style" href="./images/app.5abbaa9e.css">
+    <link rel="stylesheet" href="./images/app.faebf566.css">
+    <link rel="stylesheet" href="./images/app.5abbaa9e.css">
+
+    <!-- ======================================================================= -->
+    <!--                              GLOBAL CSS                                 -->
+    <!-- ======================================================================= -->
+    <style>
+
+/* --- ICON PICKER MODAL --- */
+#icon-picker-modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85); z-index: 20000;
+    display: none; justify-content: center; align-items: center;
+    backdrop-filter: blur(5px);
+}
+.icon-picker-content {
+    background: #18181b; border: 2px solid #3b82f6; border-radius: 12px;
+    padding: 25px; width: 90%; max-width: 800px; text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.icon-grid {
+    display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;
+    margin-top: 20px; max-height: 50vh; overflow-y: auto; padding: 10px;
+}
+.icon-grid img {
+    width: 80px; height: 80px; cursor: pointer; border: 3px solid transparent;
+    border-radius: 8px; transition: 0.2s; background: #27272a;
+}
+.icon-grid img:hover { border-color: #facc15; transform: scale(1.1); }
+.icon-picker-header { color: #fff; margin-bottom: 10px; font-weight: 800; }
+.icon-picker-instruction { color: #facc15; font-size: 18px; font-weight: bold; margin-bottom: 15px;}
+
+/* --- EZA ICON POSITIONING FIX --- */
+.card-icon {
+    position: relative !important;
+}
+
+.card-icon-item-eza-ja {
+    position: absolute !important;
+    top: 50% !important;   
+    left: 50% !important;  
+    transform: translate(0px, 18px) !important; 
+    bottom: auto !important;
+    right: auto !important;
+    margin: 0 !important;
+    z-index: 100 !important;
+}
+
+#awakening-img {
+    width: 64px !important; 
+    height: auto !important;
+    display: block !important;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5)) !important;
+}
+
+/* --- STATS TABLE ALIGNMENT & COLOR FIX --- */
+        table th, 
+        table td {
+            text-align: center !important;
+            vertical-align: middle !important;
+            color: #ffffff !important;
+            font-weight: 700 !important; 
+        }
+
+        table b {
+            color: #ffffff !important;
+            font-weight: 800 !important; 
+            display: inline-block;
+        }
+
+        table th b {
+            color: #ffffff !important;
+        }
+
+        #stat-hp-eza-max, #stat-hp-eza-100,
+        #stat-atk-eza-max, #stat-atk-eza-100,
+        #stat-def-eza-max, #stat-def-eza-100 {
+            color: #facc15 !important;
+        }
+
+.rarity-btn.active-awakening img {
+    filter: brightness(1.3) drop-shadow(0 0 10px #3b82f6) !important;
+    transform: scale(0.6);
+}
+
+.rarity-btn.awakening-active img {
+    filter: brightness(1.3) drop-shadow(0 0 10px #3b82f6) !important;
+    transform: scale(0.4);
+}
+
+.card-icon-item-eza {
+    z-index: 6;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    pointer-events: none;
+}
+
+.awakening-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.awakening-btn img {
+    width: 140px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+}
+.awakening-btn:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+}
+
+.awakening-btn.active-awakening img {
+    filter: brightness(1.3) drop-shadow(0 0 10px #facc15) !important;
+    transform: scale(1.1);
+}
+
+.form-name {
+    text-align: center !important; 
+    padding-left: 10px;  
+    padding-right: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forms-container .dokkan-card .row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms-container .dokkan-card {
+    border: none !important;
+    margin: 0 !important;
+    padding-bottom: 12px !important; 
+    padding-top: 0 !important;
+}
+
+#forms-container .dokkan-card:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-top: 12px !important; 
+}
+
+.list-name-input {
+    background: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 !important;
+    width: 100%;
+    cursor: text;
+    outline: none;
+}
+
+.form-list-item {
+    display: flex !important;
+    align-items: center !important; 
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 12px !important;
+}
+
+.list-name-input {
+    flex: 1; 
+    background: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    font-weight: bold;
+    font-size: 13px;
+    outline: none;
+    height: 30px; 
+    line-height: 30px;
+}
+
+.upload-icon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    width: 32px;
+    height: 32px;
+    background: #27272a;
+    border: 1px solid #444;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 !important; 
+}
+
+#forms-container .dokkan-card {
+    border: none !important;
+    margin: 0 !important;
+}
+
+#forms-container .dokkan-card .col {
+    padding: 15px 0 !important; 
+}
+
+#forms-container .dokkan-card:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+        #side-link-input, #side-category-input {
+            height: 46px; 
+            padding: 12px 14px !important;
+            background: rgba(24, 24, 27, 0.6) !important;
+        }
+
+        #editor input::-webkit-calendar-picker-indicator { filter: invert(1); opacity: 0.3; cursor: pointer; }
+        #editor input::-webkit-calendar-picker-indicator:hover { opacity: 1; }
+
+        .file-upload-container { margin-bottom: 15px; position: relative; }
+        .hidden-file-input { display: none !important; }
+
+        .custom-file-label {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            background: #18181b; border: 1px dashed #3f3f46; border-radius: 8px;
+            padding: 12px; cursor: pointer; transition: all 0.2s ease;
+            color: #a1a1aa; font-size: 11px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .custom-file-label:hover { border-color: #3b82f6; background: #1f1f24; color: #fff; }
+        .custom-file-label .upload-icon-style { font-size: 18px; color: #3b82f6; }
+
+        #sa-icon-picker img { transition: transform 0.2s ease, filter 0.2s ease; }
+        #sa-icon-picker img:hover { transform: scale(1.1); filter: brightness(1.3); }
+
+        #editor-resizer {
+            position: absolute; top: 0; right: 0; width: 6px; height: 100%;
+            cursor: ew-resize; background-color: transparent;
+            z-index: 10000; transition: background-color 0.2s;
+        }
+        #editor-resizer:hover, #editor-resizer.is-resizing {
+            background-color: #3b82f6; box-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
+        }
+
+        .dokkan-menu-btn {
+            position: fixed; right: 25px; top: 6px; z-index: 10001;
+            width: 48px; height: 48px; border-radius: 50%;
+            background: #18181b; border: 1px solid #3f3f46;
+            color: #f4f4f5; font-size: 22px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: all 0.2s ease; outline: none;
+        }
+        .dokkan-menu-btn:hover { background: #27272a; border-color: #3b82f6; transform: scale(1.05); }
+        .dokkan-menu-btn:active { transform: scale(0.95); }
+
+        .special-skill-glow-effect {
+            width: 32px; height: 32px; object-fit: contain;
+            filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 2px #fff);
+            animation: tight-white-pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes tight-white-pulse {
+            0%, 100% { filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 1px rgba(255, 255, 255, 0.8)); }
+            50% { filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 3px #fff) drop-shadow(0 0 3px #fff); }
+        }
+
+        .editing-row-glow {
+            border: 1px solid #3b82f6 !important; background: rgba(59, 130, 246, 0.2) !important;
+            box-shadow: 0 0 12px rgba(59, 130, 246, 0.8); transform: scale(1.02);
+            transition: all 0.3s ease; animation: sidebarPulse 1.5s infinite alternate;
+        }
+        @keyframes sidebarPulse {
+            from { box-shadow: 0 0 5px rgba(59, 130, 246, 0.4); }
+            to { box-shadow: 0 0 15px rgba(59, 130, 246, 0.9); }
+        }
+
+        #special-icon-selector { display: flex; flex-wrap: wrap; gap: 5px; background: #111; padding: 10px; border-radius: 8px; margin-bottom: 10px; }
+        .special-choice { width: 40px; height: 40px; cursor: pointer; border: 2px solid transparent; border-radius: 4px; }
+        .special-choice.selected-icon-highlight { border-color: #3b82f6; background: rgba(59, 130, 246, 0.2); }
+
+        #editor {
+            position: fixed; left: 0; top: 0; width: 460px; height: 100vh;
+            z-index: 9999; padding: 25px; overflow-y: auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: rgba(18, 18, 18, 0.1); backdrop-filter: blur(10px);
+            border-right: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 10px 0 30px rgba(0,0,0,0.3);
+            transform: translateX(-100%); transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+            direction: rtl; 
+        }
+        #editor > * { direction: ltr; }
+        
+        #editor::-webkit-scrollbar { width: 8px; }
+        #editor::-webkit-scrollbar-track { background: transparent; }
+        #editor::-webkit-scrollbar-thumb { background: transparent; border-radius: 10px; }
+        #editor:hover::-webkit-scrollbar-thumb, #editor.is-scrolling::-webkit-scrollbar-thumb { background: rgba(63, 63, 70, 0.8); }
+        #editor::-webkit-scrollbar-thumb:hover { background: rgba(82, 82, 91, 1); }
+
+        .sidebar-main-title {
+            font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 900;
+            text-align: center; text-transform: uppercase; color: #ffffff;
+            letter-spacing: 2px; padding: 15px 0; margin: 0;
+            border-bottom: 2px solid #3b82f6; text-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+        }
+        .sidebar-main-title span { color: #3b82f6; display: block; font-size: 14px; font-weight: 400; letter-spacing: 4px; }
+
+        .collapsible-header {
+            cursor: pointer; padding: 14px 18px;
+            background-color: rgba(31, 31, 34, 0.3) !important; 
+            backdrop-filter: blur(8px);
+            color: #ffffff; font-size: 13px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.8px;
+            margin: 25px 0 10px 0; border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border-left: 4px solid #3b82f6 !important; user-select: none;
+            transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .collapsible-header:hover { background-color: rgba(59, 130, 246, 0.2) !important; border-left-color: #60a5fa !important; transform: translateX(5px); }
+        
+        .collapsible-content { max-height: 4000px; overflow: hidden; transition: max-height 0.4s ease-in-out, opacity 0.3s ease, padding 0.3s ease; opacity: 1; padding: 10px 5px; }
+        .collapsible-content.collapsed { max-height: 0; opacity: 0; padding: 0; pointer-events: none; }
+
+        #editor label, .form-label { display: block; font-size: 11px; font-weight: 600; text-transform: uppercase; color: #a1a1aa; margin-top: 15px; margin-bottom: 6px; letter-spacing: 0.5px; }
+        #editor input[type="text"], #editor input[type="number"], #editor textarea, .form-control {
+            background: rgba(24, 24, 27, 0.6) !important; border: 1px solid rgba(63, 63, 70, 0.5) !important; border-radius: 6px;
+            color: #ffffff !important; opacity: 1 !important; padding: 12px 14px; width: 100%; font-size: 13px; box-sizing: border-box; transition: all 0.2s; outline: none;
+        }
+        #editor input::placeholder, #editor textarea::placeholder { color: rgba(255, 255, 255, 0.4) !important; font-style: italic; }
+        #editor input:focus, #editor textarea:focus, .form-control:focus { border-color: #3b82f6; background: #1f1f24; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); }
+
+        #btn-passive-add, #btn-add-sa, #btn-remove-sa, #btn-add-special-row, #btn-toggle-special, #btn-update-special-row, #btn-cancel-special-edit, 
+        #addFormBtn, #removeFormBtn, #btn-toggle-activation, #addStatBtn, #removeStatBtn, #exportBtn, #saveStateBtn, #loadStateBtn, .sidebar-section button {
+            display: flex; align-items: center; justify-content: center; width: 100%; background: #27272a; color: #f4f4f5;
+            border: 1px solid #3f3f46; border-radius: 6px; padding: 10px; cursor: pointer; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.2s ease; outline: none; margin-top: 8px;
+        }
+        
+        #btn-passive-add, #btn-toggle-special, #btn-add-special-row, #btn-add-sa, #addFormBtn, #addStatBtn, #saveStateBtn, #exportBtn, #btn-update-special-row { background: #2563eb; border-color: #1d4ed8; color: white; }
+        #btn-passive-add:hover,#btn-add-special-row:hover, #btn-toggle-special:hover, #btn-add-sa:hover, #addFormBtn:hover, #addStatBtn:hover, #saveStateBtn:hover, #exportBtn:hover, #btn-update-special-row:hover { background: #3b82f6; border-color: #60a5fa; transform: translateY(-1px); }
+
+        #btn-remove-sa, #removeFormBtn, #removeStatBtn, #btn-toggle-activation, #btn-cancel-special-edit { background: #18181b; color: #ef4444; border-color: #7f1d1d; }
+        #btn-remove-sa:hover, #removeFormBtn:hover, #removeStatBtn:hover, #btn-toggle-activation:hover, #btn-cancel-special-edit:hover { background: #ef4444; color: #fff; border-color: #dc2626; transform: translateY(-1px); }
+
+.btn-reset {
+    background: rgba(239, 68, 68, 0.1) !important;
+    border: 1px solid rgba(239, 68, 68, 0.4) !important;
+    color: #ef4444 !important;
+    width: 80% !important;
+    font-size: 11px !important;
+}
+.btn-reset:hover {
+    background: #ef4444 !important;
+    color: #fff !important;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4) !important;
+}
+
+.header-danger { border-left: 4px solid #ef4444 !important; }
+.header-danger:hover { background-color: rgba(239, 68, 68, 0.2) !important; border-left-color: #f87171 !important; transform: translateX(5px); }
+
+.main-autosave-ui {
+    position: fixed; right: 85px; top: 12px; z-index: 10002; display: flex; align-items: center; gap: 10px; background: rgba(18, 18, 18, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1); padding: 8px 15px; border-radius: 30px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    pointer-events: none; opacity: 0; transform: translateY(-10px); transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.main-autosave-ui.show { opacity: 1; transform: translateY(0); }
+.autosave-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 10px #10b981; }
+.autosave-label { font-size: 10px; color: #ffffff; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+
+        .sidebar-section { margin-top: 20px; }
+        .sidebar-btn { font-family: 'Inter', 'Oswald', sans-serif; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; border: 1px solid rgba(59, 130, 246, 0.5); border-radius: 6px; padding: 12px; cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; gap: 8px; color: #fff; }
+        .btn-export-all { width: 100%; background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); font-size: 16px; box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); }
+        .btn-export-all:hover { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%); box-shadow: 0 0 25px rgba(59, 130, 246, 0.6); transform: translateY(-2px); }
+        .btn-save, .btn-import { flex: 1; background: rgba(30, 41, 59, 0.2); font-size: 13px; }
+        .btn-save:hover, .btn-import:hover { background: rgba(59, 130, 246, 0.2); border-color: #3b82f6; text-shadow: 0 0 8px #3b82f6; }
+        .section-divider { border-top: 2px solid #3f3f46; margin-top: 20px; padding-top: 15px; }
+
+        .rarity-group, .class-group, .type-group, #stat-editor, .sa-icon-picker, .form-list, #statList, #special-icon-selector, .editor-panel {
+            background: rgba(0, 0, 0, 0.3) !important; border: 1px solid rgba(255, 255, 255, 0.05) !important; border-radius: 12px; backdrop-filter: blur(4px);
+        }
+        .rarity-group, .class-group, .type-group, #stat-editor, .sa-icon-picker { display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .type-group { display: grid; grid-template-columns: repeat(3, 1fr); padding: 15px; }
+
+        .rarity-btn, .class-btn, .type-btn { background: none; border: none; padding: 0; cursor: pointer; transition: transform 0.2s ease, filter 0.2s ease; }
+        .class-btn img { width: 220px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.4)); }
+        .type-btn img { width: 45px; }
+        .rarity-btn img { width: 140px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)); }
+        .rarity-btn:hover img, .class-btn:hover img, .type-btn:hover img { transform: scale(1.08); filter: brightness(1.2) drop-shadow(0 4px 8px rgba(0,0,0,0.6)); }
+
+        .sa-icon-option, .sa-radio img { width: 50px; height: 50px; cursor: pointer; background: #27272a; border: 2px solid transparent; border-radius: 12px; padding: 6px; object-fit: contain; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+        .sa-radio { margin: 0; display: flex; justify-content: center; }
+        .sa-radio input { position: absolute; opacity: 0; pointer-events: none; }
+        .sa-icon-option:hover, .sa-radio img:hover { transform: translateY(-3px) scale(1.05); background: #3f3f46; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .sa-icon-option.selected-icon-highlight, .sa-radio input:checked + img { border-color: #3b82f6; background: rgba(59, 130, 246, 0.15); transform: scale(1.1); box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4); }
+
+        .form-list, #statList { padding: 5px; margin-bottom: 12px; max-height: 250px; overflow-y: auto; border: 1px solid #27272a; background-color: #121212;}
+        .form-list-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; margin: 4px; border-radius: 6px; cursor: pointer; font-size: 13px; color: #a1a1aa; transition: background 0.2s; }
+        .form-list-item:hover { background-color: #1f1f22; color: #e4e4e7; }
+        .form-list-item.active { background-color: #3b82f6; color: #fff; font-weight: bold; box-shadow: 0 2px 5px rgba(37,99,235,0.4); }
+
+        @supports (-webkit-touch-callout: none) { .lightning-overlay { display: none !important; } }
+        
+        .card-info-thumb { position: relative; width: 150px; height: 150px; margin: 0 auto; display: block; overflow: visible; }
+        .lr-spin-dial, .lightning-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+        .lr-spin-dial { z-index: 1; width: 110px; height: 110px; animation: lr-dial-spin 6s linear infinite; }
+        .lightning-overlay { z-index: 2; width: 240px; height: auto; mix-blend-mode: screen; display: block; filter: drop-shadow(0 0 10px var(--lightning-color, rgb(0, 200, 255))) brightness(10.5) contrast(1.2); transition: filter 0.3s ease; }
+        #img-lr { position: relative; z-index: 3; display: block; margin: 0 auto; height: 150px; width: auto; }
+        @keyframes lr-dial-spin { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+        .stats-container { margin-top: 5px !important; padding-bottom: 5px !important; }
+        .sa-display-icon { width: 35px !important; height: 35px !important; object-fit: contain; display: inline-block; vertical-align: middle; }
+        .activation-text { display: block; line-height: 1.3; white-space: normal; word-wrap: break-word; }
+        .activation-text strong { display: inline-block; margin-bottom: 2px; color: #fff; }
+        #card-passive-container li img { display: inline-block; max-height: 18px; width: auto; vertical-align: middle; }
+        
+        .safe-centered-frame { padding: 12px !important; }
+        .card-art-canvas { position: relative; width: 426px; height: 568px; border-radius: inherit; overflow: hidden; }
+        #myOverlayVideo, #myOverlayImage { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+        #char-name { font-size: 32px; font-weight: bold; margin: 0 0 10px 0; line-height: 1.3; }
+        #char-description { font-size: 32px; font-weight: bold; margin: 0; line-height: 1.8; }
+        #release-date { font-size: 16px; margin: 0; line-height: 1.5; }
+
+        .btn-icon-tool { background: #27272a; border: 1px solid #3f3f46; color: #a1a1aa; font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; cursor: pointer; transition: 0.2s; }
+        .btn-icon-tool:hover { background: #3b82f6; color: #fff; border-color: #60a5fa; }
+    </style>
+</head>
+
+<!-- ======================================================================= -->
+<!--                                BODY                                     -->
+<!-- ======================================================================= -->
+<body>
+
+<!-- ICON PICKER MODAL -->
+
+
+<!-- MAIN WEBSITE AUTOSAVE NOTIFICATION -->
+<div id="main-autosave-indicator" class="main-autosave-ui show">
+    <span class="autosave-dot"></span>
+    <span class="autosave-label">Saved</span>
+</div>
+
+
+
+    <div class="content" id="app" data-v-app="">
+        
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top HeaderBackground bottomShadow">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a aria-current="page" href="https://dokkaninfo.com/"><img src="./images/yaj-info-logo.png" alt="Dokkan Info Logo"></a>
+                </div>
+                
+            </div>
+        </nav>
+        
+        <div class="vm-placement" data-id="64bf68a43a57036474fca627" style="display: none;"></div>
+        
+        <!-- MAIN CONTENT CONTAINER -->
+        <div id="top-content">
+            <div class="container-1220 container-text-center padding-top-bottom-5 container-text-light">
+                
+                <!-- ROW 1: Small Preview & Setup Area -->
+                <div class="row align-items-start">
+                    
+                    <!-- PREVIEW: Top Left Rarity Container -->
+                    <div class="col-xl-4">
+                        <div class="row padding-left-right-1 margin-top-5">
+                            <div class="col">
+                                <div class="row border border-2 border-teq bg-teq dokkan-card" style="height: 162px;">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col card-icon unselectable">
+                                                <div class="card-icon-item card-icon-item-base card-info-base">
+                                                    <img id="card-874380" class="card-frame" src="./images/frame_teq.png" height="120" alt="Card Frame">
+                                                </div>
+                                                <div class="card-icon-item card-info-thumb" style="z-index: 2; margin-top: 0; position: relative;">
+                                                    <img class="lr-spin-dial" src="./images/lr_spin_dial.png" alt="spin-effect">
+                                                    <video class="lightning-overlay" autoplay="" muted="" loop="" playsinline="" style="--lightning-color: rgb(0, 255, 50);"><source src="./images/lightningfx.webm" type="video/webm"></video>
+                                                    <img id="img-lr" src="images/auto_1776273058608_q62fclqmv.png" height="150" alt="icon">
+                                                </div>
+                                                <div class="card-icon-item card-icon-item-rarity card-info-above-thumb">
+                                                    <img id="main-rarity-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/editorb/CardEditorv2/images/rarity_LR.png" height="72" alt="rarity">
+                                                </div>
+                                                <div class="card-icon-item card-icon-item-type card-info-above-thumb">
+                                                    <img class="typing-icon" src="./images/super_type_teq.png" alt="AGL type icon" height="57">
+                                                </div>
+                                                    <div class="card-icon-item card-icon-item-eza-ja card-info-above-thumb">
+                                                   <div id="awakening-container" class="card-icon-item-eza-container" style="display: none;">
+        <img id="awakening-img" src="" alt="Awakening Icon">
+    
+                                              </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ======================================================= -->
+                    <!--                    SIDEBAR EDITOR MENU                  -->
+                    <!-- ======================================================= -->
+                    
+                    <!-- ======================================================= -->
+                    <!--             PREVIEW: HEADER ROW (Icon & Title)          -->
+                    <!-- ======================================================= -->
+                    <div class="col-xl-8">
+                        <div class="row padding-left-right-1 margin-top-5">
+                            <div class="col">
+                                <div class="row justify-content-center align-items-center padding-top-bottom-10 border border-2 border-teq bg-teq dokkan-card" style="height: 162px;">
+                                    <div class="col">
+                                        <div class="row font-size-2"><p id="char-description">[Earth-Shattering Climax]</p></div>
+                                        <div class="row font-size-2"><h1 id="char-name">Super Saiyan 3 Vegeta (DAIMA)</h1></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 2: Bottom Details Structure -->
+                <div class="row align-items-start">
+                    
+                    <!-- ======================================================= -->
+                    <!--       PREVIEW: LEFT COLUMN (Card Art & Border Icons)      -->
+                    <!-- ======================================================= -->
+                    <div class="col-xl-4">
+                        <div class="row padding-left-right-1">
+                            <div class="col">
+                                <div class="row border border-2 border-dark margin-top-bottom-5 border-teq bg-teq dokkan-card safe-centered-frame">
+                                    <div class="card-art-canvas">
+                                        <video autoplay="" muted="" playsinline="" loop="" preload="auto" id="myOverlayVideo"><source src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/editorb/CardEditorv2/index.html?vscode-livepreview=true" type="video/mp4"></video>
+                                        <img id="myOverlayImage" src="images/auto_1776273058609_6m58rbn8l.png" alt="Card Art">
+                                    </div>
+                                </div>
+                                
+                              <!-- DYNAMIC RELEASE DATES CONTAINER -->
+<div id="release-dates-container" class="margin-top-bottom-5 mb-4">
+    <div class="row border border-2 border-dark margin-top-bottom-5 border-teq bg-teq dokkan-card">
+        <div class="col p-0">
+            <!-- BASE DATE ROWS -->
+            <div class="row padding-top-bottom-5 bg-teq m-0">
+                <div class="col text-center"><b>Release Date</b></div>
+            </div>
+            <div class="row padding-top-bottom-5 bg-teq-2 m-0">
+                <div class="col text-center">1/29/2026 12:00:00 AM EST</div>
+            </div>
+        </div>
+    </div></div>
+
+                                <div class="row border border-2 border-dark border-teq bg-teq dokkan-card">
+                                    <div class="col p-3">
+                                        <div id="forms-container">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="row bg-teq dokkan-card">
+        <div class="col">
+            <div class="row align-items-center" style="min-height: 80px;">
+                <div class="col-5 form-image-container" style="display: flex; justify-content: center; align-items: center;">
+                    <a href="javascript:void(0)" class="form-link" target="_blank">
+                        <img class="img-fluid form-image" src="images/Form_Cutin_1.png" data-export-name="images/Form_Cutin_1.png" style="max-height: 70px; width: auto; display: block;">
+                    </a>
+                </div>
+                <div class="col-7 form-name" style="text-align: center; color: #fff; font-weight: bold; font-size: 14px;">
+                    Super Saiyan 3 Vegeta (DAIMA)
+                </div>
+            </div>
+        </div>
+    </div></div>
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex flex-wrap border border-1 card-icon border-teq dokkan-card mt-1">
+                                    <div class="col border border-1 border-teq bg-teq">
+                                        <div id="ssr-row" class="row">
+                                            <div class="col card-icon unselectable">
+                                                <div class="card-icon-item card-icon-item-base card-info-base"><img class="card-frame" src="./images/frame_teq.png" height="120" alt="Card Frame"></div>
+                                                <div class="card-icon-item card-info-thumb" style="z-index: 2; margin-top: 0px;"><img id="img-ssr" src="images/auto_1776273058609_v6f5slry1.png" height="150" alt="icon"></div>
+                                                <div class="card-icon-item card-icon-item-rarity card-info-above-thumb" style=""><img src="./images/rarity_ssr.png" height="72" alt="rarity"></div>
+                                                <div class="card-icon-item card-icon-item-type card-info-above-thumb" style=""><img id="typing-icon-ssr" src="./images/type_teq.png" alt="AGL type icon" height="57"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tur-row" class="col border border-1 border-teq bg-teq dokkan-card">
+                                        <div class="row">
+                                            <div class="col card-icon unselectable">
+                                                <div class="card-icon-item card-icon-item-base card-info-base"><img class="card-frame" src="./images/frame_teq.png" height="120" alt="Card Frame"></div>
+                                                <div class="card-icon-item card-info-thumb" style="z-index: 2; margin-top: 0px;"><img id="img-tur" src="images/auto_1776273058610_obllhka9k.png" height="150" alt="icon"></div>
+                                                <div class="card-icon-item card-icon-item-rarity card-info-above-thumb" style=""><img src="./images/rarity_TUR.png" height="72" alt="rarity"></div>
+                                                <div class="card-icon-item card-icon-item-type card-info-above-thumb" style=""><img class="typing-icon" src="./images/super_type_teq.png" alt="AGL type icon" height="57"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row border border-2 margin-top-bottom-5 border-teq bg-teq dokkan-card">
+                                    <div class="col">
+                                        <div class="row padding-top-bottom-10">
+                                            <div class="col"><div class="row"><div class="col"><b>Max Lv</b>: </div></div><div class="row"><div class="col text-center" id="max-lv">150</div></div></div>
+                                            <div class="col"><div class="row"><div class="col"><b>SA Lv</b>: </div></div><div class="row"><div class="col text-center" id="sa-lv">20</div></div></div>
+                                            <div class="col"><div class="row"><div class="col"><b>Cost</b>: </div></div><div class="row"><div class="col text-center" id="cost">77</div></div></div>
+                                        </div>
+                                        <div class="row padding-top-bottom-10"><div class="col"><b>Summonable</b></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ======================================================= -->
+                    <!--    PREVIEW: RIGHT COLUMN (Skills, Links, Categories)    -->
+                    <!-- ======================================================= -->
+                    <div class="col-xl-8">
+                        <div class="row padding-left-right-1 margin-top-bottom-5">
+                            <div class="col">
+                                <div class="row font-size-1_2 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                                    <div class="col">
+                                        <div class="row padding-top-bottom-10 bg-teq"><div class="col"><b>Leader Skill</b></div></div>
+                                        <div class="row padding-top-bottom-5 bg-teq-2"><div class="col" id="leader-skill">"DAIMA" Category Ki +4 and HP, ATK &amp; DEF +220%; or "Vegeta's Family" Category Ki +3 and HP, ATK &amp; DEF +220%</div></div>
+                                    </div>
+                                </div>
+
+                                <div id="special-skill-section" class="row font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card d-none">
+                                    <div class="col p-0">
+                                        <div class="row padding-top-bottom-10 bg-teq m-0"><div class="col"><b>Special Skill</b></div></div>
+                                        <div id="special-skill-card-list" class="bg-teq-2 padding-top-bottom-10"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row sa-block font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                        <div class="col">
+                            <div class="row padding-top-bottom-10 bg-teq dokkan-card">
+                                <div class="col-sm-2"><b><span class="sa-type-label">Super Attack</span></b></div>
+                                <div class="col-sm-8" style="display: flex; justify-content: center; align-items: center;">
+                                    <img class="sa-display-icon" src="./images/sp_skill_icon_01.png">
+                                    <b class="sa-display-name">Lightning Burst</b>
+                                </div>
+                            </div>
+                            <div class="row padding-top-bottom-5 bg-teq-2 dokkan-card">
+                                <div class="col padding-top-bottom-5">
+                                    <div class="sa-display-effects-list"><div class="row"><div class="col">Raises DEF for 1 turn and causes colossal damage to enemy</div></div></div>
+                                    <div class="activation-row d-none">
+                                        <hr class="divider py bg-secondary">
+                                        <div class="row"><div class="col text-center italic py-1"><div class="activation-text">Activation Conditions</div></div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <hr class="divider py bg-secondary">
+                                            <div class="stats-container row"><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0002.png"><span class="display-text ms-1">30%</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="sa-lv-container">
+                                        <div class="row sa-20-bonus" style="display: block;">
+                                            <div class="col">
+                                                <hr class="divider py bg-secondary">
+                                                <div class="text-center py-1">SA Lv 20: Super Attack +30%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="row sa-block font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                        <div class="col">
+                            <div class="row padding-top-bottom-10 bg-teq dokkan-card">
+                                <div class="col-sm-2"><b><span class="sa-type-label">Ultra Super Attack</span></b></div>
+                                <div class="col-sm-8" style="display: flex; justify-content: center; align-items: center;">
+                                    <img class="sa-display-icon" src="./images/sp_skill_icon_01.png">
+                                    <b class="sa-display-name">Final Blow</b>
+                                </div>
+                            </div>
+                            <div class="row padding-top-bottom-5 bg-teq-2 dokkan-card">
+                                <div class="col padding-top-bottom-5">
+                                    <div class="sa-display-effects-list"><div class="row"><div class="col">Massively raises ATK and greatly raises DEF for 1 turn and causes mega-colossal damage to enemy</div></div></div>
+                                    <div class="activation-row d-none">
+                                        <hr class="divider py bg-secondary">
+                                        <div class="row"><div class="col text-center italic py-1"><div class="activation-text">Activation Conditions</div></div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <hr class="divider py bg-secondary">
+                                            <div class="stats-container row"><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0001.png"><span class="display-text ms-1">100%</span></div><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0002.png"><span class="display-text ms-1">50%</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="sa-lv-container">
+                                        <div class="row sa-20-bonus" style="display: block;">
+                                            <div class="col">
+                                                <hr class="divider py bg-secondary">
+                                                <div class="text-center py-1">SA Lv 20: Super Attack +30%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="row sa-block font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                        <div class="col">
+                            <div class="row padding-top-bottom-10 bg-teq dokkan-card">
+                                <div class="col-sm-2"><b><span class="sa-type-label">Ex Super Attack</span></b></div>
+                                <div class="col-sm-8" style="display: flex; justify-content: center; align-items: center;">
+                                    <img class="sa-display-icon" src="./images/sp_skill_icon_01.png">
+                                    <b class="sa-display-name">Final Burst Cannon</b>
+                                </div>
+                            </div>
+                            <div class="row padding-top-bottom-5 bg-teq-2 dokkan-card">
+                                <div class="col padding-top-bottom-5">
+                                    <div class="sa-display-effects-list"><div class="row"><div class="col">Greatly raises ATK and raises DEF for 4 turns and causes mega-colossal damage to enemy; raises allies' DEF by 10% for 3 turns</div></div></div>
+                                    <div class="activation-row">
+                                        <hr class="divider py bg-secondary">
+                                        <div class="row"><div class="col text-center italic py-1"><div class="activation-text"><strong>Activation Conditions</strong><br>When a Super Attack is launched as an additional attack, 50% chance for the Super Attack to become an EX Super Attack</div></div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <hr class="divider py bg-secondary">
+                                            <div class="stats-container row"><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0001.png"><span class="display-text ms-1">50%</span></div><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0002.png"><span class="display-text ms-1">30%</span></div><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0002.png"><span class="display-text ms-1">10%</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="sa-lv-container">
+                                        <div class="row sa-20-bonus" style="display: block;">
+                                            <div class="col">
+                                                <hr class="divider py bg-secondary">
+                                                <div class="text-center py-1">SA Lv 20: Super Attack +30%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div id="sa-insert-spot"></div>
+
+                                <div class="row font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                                    <div class="col">
+                                        <div class="row padding-top-bottom-10 bg-teq dokkan-card">
+                                            <div class="col-sm-2"><b>Passive Skill</b></div>
+                                            <div class="col-sm-8"><b class="passive-name-display" style="font-weight: normal;">Earth-Shattering Super Saiyan 3</b></div>
+                                        </div>
+                                        <div class="row padding-top-bottom-5 bg-teq-2 dokkan-card">
+                                            <div class="col text-start padding-top-bottom-5">
+                                                <div class="passive-container-main"><div id="card-passive-container"><div id="card-sec-1"><strong id="card-header-text-1" style="display:block; margin-top:0px;">Activates the Entrance Animation upon the character's entry</strong><ul id="card-ul-1"><li><img src="./images/passive_skill_dialog_icon_01.png" class="dokkan-icon" style="height:18px"><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon" style="height:18px">Ki +3, ATK &amp; DEF 300%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;and great chance of launching an additional Super Attack</li><li><img src="./images/passive_skill_dialog_icon_01.png" class="dokkan-icon" style="height:18px">Guards all attacks for 4 turns</li></ul></div><div id="card-sec-2"><strong id="card-header-text-2" style="display:block; margin-top:0px;">Basic effect(s)</strong><ul id="card-ul-2"><li>ATK &amp; DEF 300%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>Receives an additional Ki +3 per TEQ Ki Sphere obtained</li><li>Receives an additional Ki +2 per non-TEQ Ki Sphere obtained</li><li>Damage reduction rate 30%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>"DAIMA" or "Vegeta's Family" Category allies' ATK &amp; DEF 30%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li></ul></div><div id="card-sec-3"><strong id="card-header-text-3" style="display:block; margin-top:0px;">When activating the Active Skill or when attacking with 23 or more Ki</strong><ul id="card-ul-3"><li>Damage reduction rate 30%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>Launches an additional Super Attack</li></ul></div><div id="card-sec-4"><strong id="card-header-text-4" style="display:block; margin-top:0px;">For every attack performed</strong><ul id="card-ul-4"><li>ATK 100%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;within the turn</li></ul></div><div id="card-sec-5"><strong id="card-header-text-5" style="display:block; margin-top:0px;">Every time the character performs 3 or more attacks in battle</strong><ul id="card-ul-5"><li>Launches an additional Super Attack (up to once within a turn)</li><li>All allies' chance of performing a critical hit 50%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;within the character's next attacking turn (up to 50% within a turn)</li></ul></div><div id="card-sec-6"><strong id="card-header-text-6" style="display:block; margin-top:0px;">Starting from the 4th turn from the start of battle</strong><ul id="card-ul-6"><li>All allies' DEF 20%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;and Super Class "DAIMA" Category allies guard all attacks for 2 turns when the character is the 2nd to obtain Ki Spheres in a turn</li><li>All allies' DEF 30%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;and Super Class "DAIMA" Category allies guard all attacks for 3 turns when the character is the 3rd to obtain Ki Spheres in a turn</li></ul></div></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row active-block font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                        <div class="col p-0">
+                            <div class="row padding-top-bottom-10 bg-teq m-0 position-relative d-flex align-items-center">
+                                <div class="position-absolute start-0 w-auto" style="padding-left: 15px;">
+                                    <b class="active-type-label">Active Skill</b>
+                                </div>
+                                <div class="col text-center px-5">
+                                    <b class="active-display-name">Final Flash</b>
+                                </div>
+                            </div>
+                            <div class="row padding-top-bottom-5 bg-teq-2 m-0">
+                                <div class="col text-center">
+                                    <div class="row padding-top-5">
+                                        <div class="col active-display-effect">Massively raises ATK temporarily and causes ultimate damage to enemy; all allies' Ki +3 for 3 turns</div>
+                                    </div>
+                                    <div class="row active-divider-row">
+                                        <div class="col"><hr class="divider py bg-secondary"></div>
+                                    </div>
+                                    <div class="row padding-bottom-5 active-condition-row">
+                                        <div class="col">
+                                            <div class="row"><div class="col"><b class="active-display-condition-title">Activation Condition(s)</b></div></div>
+                                            <div class="row"><div class="col active-display-condition">Can be activated starting from the 3rd turn from the character's entry turn (once only)</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div id="active-skill-insert-spot"></div>
+                            </div>
+                        </div>
+
+                        <div class="row font-size-1_2 margin-top-bottom-3 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                            <div class="col">
+                                <div class="row padding-top-bottom-10 bg-teq dokkan-card"><div class="col"><b>Link Skills</b></div></div>
+                                <div id="card-link-container" class="row d-flex flex-wrap justify-content-center bg-teq-2 padding-top-bottom-0 dokkan-card"><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Prodigies</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Super Saiyan</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Royal Lineage</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Shocking Speed</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Fierce Battle</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Limit</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Breaking Form</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center" style="cursor: default;">Legendary Power</a></div>
+                            </div>
+                        </div>
+
+                        <div class="row font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                            <div class="col">
+                                <div class="row padding-top-bottom-10 bg-teq"><div class="col"><b>Categories</b></div></div>
+                                <div id="card-category-container" class="row d-flex flex-wrap justify-content-center bg-teq-2 padding-top-bottom-10 dokkan-card"><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0012_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0017_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0020_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0023_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0025_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0026_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0031_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0037_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0068_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0080_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0083_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0084_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0087_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0096_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="images/card_category_label_0098_b_on.png" style="width:210px;"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="row font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                            <div class="col container-text-light container-text-center bg-teq-2">
+                                <div class="row">
+                                    <table class="col">
+                                        <tbody>
+                                           <tr>
+            <th class="padding-top-bottom-10" scope="col"><b>Stats</b></th>
+            <th class="padding-top-bottom-10" scope="col"><b>Base Min</b></th>
+            <th class="padding-top-bottom-10" scope="col"><b>Base Max</b></th>
+            <th class="padding-top-bottom-10" scope="col"><b>55%</b></th>
+            <th class="padding-top-bottom-10" scope="col"><b>100%</b></th>
+            <!-- NEW EZA COLUMNS (Hidden by default) -->
+            <th class="padding-top-bottom-10 eza-stat-col d-none" scope="col"><b>EZA B. Max</b></th>
+            <th class="padding-top-bottom-10 eza-stat-col d-none" scope="col"><b>EZA 100%</b></th>
+        </tr>
+        <tr class="bg-teq">
+            <th class="bg-teq-2 padding-top-bottom-5" scope="row"><b>HP</b></th>
+            <td class="padding-top-bottom-5"><b id="stat-hp-min">6,151</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-hp-max">20,298</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-hp-55">22,298</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-hp-100">24,898</b></td>
+            <!-- NEW EZA CELLS -->
+            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-max" style="color: #facc15;">27,144</b></td>
+            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-100" style="color: #facc15;">31,744</b></td>
+        </tr>
+        <tr class="bg-teq">
+            <th class="bg-teq-2 padding-top-bottom-5" scope="row"><b>ATK</b></th>
+            <td class="padding-top-bottom-5"><b id="stat-atk-min">4,834</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-atk-max">15,952</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-atk-55">17,952</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-atk-100">21,352</b></td>
+            <!-- NEW EZA CELLS -->
+            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-max" style="color: #facc15;">21,332</b></td>
+            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-100" style="color: #facc15;">26,732</b></td>
+        </tr>
+        <tr class="bg-teq">
+            <th class="bg-teq-2 padding-top-bottom-5" scope="row"><b>DEF</b></th>
+            <td class="padding-top-bottom-5"><b id="stat-def-min">2,926</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-def-max">9,656</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-def-55">11,656</b></td>
+            <td class="padding-top-bottom-5"><b id="stat-def-100">14,656</b></td>
+            <!-- NEW EZA CELLS -->
+            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-max" style="color: #facc15;">12,913</b></td>
+            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-100" style="color: #facc15;">17,913</b></td>
+        </tr>
+    </tbody>
+</table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ======================================================= -->
+                <!--           HTML TEMPLATES (Dynamically Cloned)           -->
+                <!-- ======================================================= -->
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================= -->
+    <!--                                JAVASCRIPT                               -->
+    <!-- ======================================================================= -->
+    
+
+
+
+
+
+
+
+
+<!-- ICON PICKER MODAL -->
+
+
+
+
+</body></html>
