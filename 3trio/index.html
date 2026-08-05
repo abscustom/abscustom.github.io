@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/dokkandb-layout.css">
     <link rel="stylesheet" href="css/editor-ui.css">
 <script id="pub-site-marker">window.IS_PUBLISHED = true; window.PUBLISHED_SITE_FOLDER = "3trio";</script></head>
-<body>
+<body class="admin-mode-active">
 
 <!-- OVERLAYS & NOTIFICATIONS -->
 
@@ -66,9 +66,7 @@
             <div class="top-bar-right d-flex align-items-center gap-3">
                 
                 <!-- Quick Save Button for Admin Mode -->
-                <button id="admin-quick-save-btn" class="sidebar-btn btn-export-all" onclick="window.saveQuickEditToGitHub()" style="display: none; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); padding: 6px 14px; font-size: 11px; margin: 0; height: 34px; box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);">
-                    💾 Save Quick Edit
-                </button>
+                <button id="admin-quick-save-btn" class="sidebar-btn btn-export-all" onclick="window.saveQuickEditToGitHub()" style="display: inline-flex; background: linear-gradient(135deg, rgb(245, 158, 11) 0%, rgb(217, 119, 6) 100%); padding: 6px 14px; font-size: 11px; margin: 0px; height: 34px; box-shadow: rgba(245, 158, 11, 0.5) 0px 0px 10px;">⏳ Saving...</button>
 
                 <!-- Autosave Indicator -->
                 
@@ -110,7 +108,7 @@
                                         <div class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base">
-                                                    <img class="card-frame" src="images/frame_int.png" height="120" alt="Card Frame">
+                                                    <img class="card-frame" src="./images/frame_int.png" height="120" alt="Card Frame">
                                                 </div>
                                                 <div class="card-icon-item card-info-thumb" style="z-index: 2; margin-top: 0; position: relative;">
                                                     <img class="lr-spin-dial" src="./images/lr_spin_dial.png" alt="spin-effect" style="display: block;">
@@ -118,10 +116,10 @@
                                                     <img id="img-lr" src="images/LR_Icon.png" height="150" alt="icon" data-export-name="images/LR_Icon.png">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-rarity card-info-above-thumb">
-                                                    <img id="main-rarity-icon" src="images/rarity_LR.png" height="72" alt="rarity">
+                                                    <img id="main-rarity-icon" src="./images/rarity_LR.png" height="72" alt="rarity">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-type card-info-above-thumb">
-                                                    <img class="typing-icon" src="images/super_type_int.png" alt="type icon" height="57">
+                                                    <img class="typing-icon" src="./images/super_type_int.png" alt="type icon" height="57">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-eza-ja card-info-above-thumb">
                                                     <div id="awakening-container" class="card-icon-item-eza-container" style="display: none;">
@@ -140,10 +138,10 @@
                     <div class="col-xl-8">
                         <div class="row padding-left-right-1 margin-top-5">
                             <div class="col">
-                                <div class="row justify-content-center align-items-center padding-top-bottom-10 border border-2 border-int bg-int dokkan-card" style="height: 162px;">
+                                <div class="row justify-content-center align-items-center padding-top-bottom-10 border border-2 border-int bg-int dokkan-card active-selected-glow" style="height: 162px;">
                                     <div class="col" data-edit="identity">
-                                        <div class="row font-size-2"><p id="char-description">Spirited New Generation</p></div>
-                                        <div class="row font-size-2"><h1 id="char-name">Super Saiyan Gohan (Teen) + Super Saiyan Trunks (Kid) &amp; Super Saiyan Goten (Kid)</h1></div>
+                                        <div class="row font-size-2"><p id="char-description">ssssssssssssssssssss</p></div>
+                                        <div class="row font-size-2"><h1 id="char-name">ssssssssssssss</h1></div>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +171,7 @@
                 <div class="col text-center"><b>Release Date</b></div>
             </div>
             <div class="row padding-top-bottom-5 bg-int-2 m-0">
-                <div class="col text-center">8/7/2025 9:00:00 PM EDT</div>
+                <div class="col text-center">ssssssssssssssssssssssss</div>
             </div>
         </div>
     </div></div>
@@ -255,7 +253,7 @@
                                <div class="row font-size-1_2 justify-content-center align-items-center border border-2 border-int dokkan-card" data-edit="leader">
                                     <div class="col">
                                         <div class="row padding-top-bottom-10 bg-int"><div class="col"><b>Leader Skill</b></div></div>
-                                        <div class="row padding-top-bottom-5 bg-int-2"><div class="col" id="leader-skill">"Hybrid Saiyans", "Youth" or "Defenders of Justice" Category Ki +3, HP +200% and ATK &amp; DEF +170%, plus an additional HP, ATK &amp; DEF +50% for characters who also belong to the "Siblings' Bond", "Bond of Parent and Child" or "Bond of Friendship" Category</div></div>
+                                        <div class="row padding-top-bottom-5 bg-int-2"><div class="col" id="leader-skill"></div></div>
                                     </div>
                                 </div>
 
@@ -429,30 +427,30 @@
                                         </tr>
                                         <tr class="bg-int">
                                             <th class="bg-int-2 padding-top-bottom-5" scope="row"><b>HP</b></th>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-min">6,989</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-max">23,063</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-55">25,063</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-100">28,063</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-max" style="color: #facc15;">30,841</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-100" style="color: #facc15;">35,841</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-min">0</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-max">0</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-55">2,000</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-100">5,000</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-max" style="color: #facc15;">0</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-100" style="color: #facc15;">5,000</b></td>
                                         </tr>
                                         <tr class="bg-int">
                                             <th class="bg-int-2 padding-top-bottom-5" scope="row"><b>ATK</b></th>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-min">4,114</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-max">13,575</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-55">15,575</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-100">18,575</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-max" style="color: #facc15;">18,153</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-100" style="color: #facc15;">23,153</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-min">0</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-max">0</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-55">2,000</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-100">5,000</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-max" style="color: #facc15;">0</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-100" style="color: #facc15;">5,000</b></td>
                                         </tr>
                                         <tr class="bg-int">
                                             <th class="bg-int-2 padding-top-bottom-5" scope="row"><b>DEF</b></th>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-min">2,765</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-max">9,125</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-55">11,125</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-100">14,125</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-max" style="color: #facc15;">12,203</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-100" style="color: #facc15;">17,203</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-min">0</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-max">0</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-55">2,000</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-100">5,000</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-max" style="color: #facc15;">0</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-100" style="color: #facc15;">5,000</b></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -471,29 +469,29 @@
                 <div class="db-top-header">
                     <div class="db-header-left">
                         <div id="db-composed-icon">
-                            <img id="db-frame-img" class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_int.png">
-                            <img id="db-spin-dial" class="lr-spin-dial" src="./images/lr_spin_dial.png" style="display: block;">
-                            <video id="db-lightning" class="lightning-overlay" autoplay="" muted="" loop="" playsinline="" style="display: block; --lightning-color: rgb(210, 0, 255);">
+                            <img id="db-frame-img" class="card-frame" src="https://abscustom.github.io/3trio/images/frame_int.png">
+                            <img id="db-spin-dial" class="lr-spin-dial" src="./images/lr_spin_dial.png" style="display: none;">
+                            <video id="db-lightning" class="lightning-overlay" autoplay="" muted="" loop="" playsinline="" style="display: none; --lightning-color: rgb(210, 0, 255);">
                                 <source src="./images/lightningfx.webm" type="video/webm">
                             </video>
                             <div class="thumb-box">
-                                <img id="db-thumb-img" class="thumb-img" src="blob:http://127.0.0.1:3000/9a64e996-3378-45a1-b6f2-d2a01822ce1f">
+                                <img id="db-thumb-img" class="thumb-img" src="https://abscustom.github.io/3trio/images/TUR_Icon.png">
                             </div>
-                            <img id="db-top-rarity-icon" class="rarity-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/rarity_LR.png">
-                            <img id="db-top-type-icon" class="type-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/super_type_int.png">
+                            <img id="db-top-rarity-icon" class="rarity-icon" src="https://abscustom.github.io/3trio/images/rarity_LR.png">
+                            <img id="db-top-type-icon" class="type-icon" src="https://abscustom.github.io/3trio/images/super_type_int.png">
                             <img id="db-awakening-img" class="eza-icon" src="" style="display: none;">
                         </div>
 
                         <div class="db-header-text">
-                            <div id="db-char-title">Spirited New Generation</div>
-                            <div id="db-char-name">Super Saiyan Gohan (Teen) + Super Saiyan Trunks (Kid) &amp; Super Saiyan Goten (Kid)</div>
+                            <div id="db-char-title">ssssssssssssssssssss</div>
+                            <div id="db-char-name">ssssssssssssss</div>
                         </div>
                     </div>
 
                     <!-- Top Right Icons Centered Above Right Column -->
                     <div class="db-header-right">
-                        <img id="db-rarity-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/rarity_LR.png">
-                        <img id="db-type-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/super_type_int.png">
+                        <img id="db-rarity-icon" src="https://abscustom.github.io/3trio/images/rarity_LR.png">
+                        <img id="db-type-icon" src="https://abscustom.github.io/3trio/images/super_type_int.png">
                         <img id="db-top-awakening-img" src="" style="display: none; height: 42px;">
                     </div>
                 </div>
@@ -507,11 +505,11 @@
                             <div class="db-header">
                                 <span>Leader Skill</span>
                             </div>
-                            <div class="db-content text-start" id="db-leader-skill"><span class="db-category-quote">"Hybrid Saiyans"</span>, <span class="db-category-quote">"Youth"</span> or <span class="db-category-quote">"Defenders of Justice"</span> Category Ki +3, HP +200% and ATK &amp; DEF +170%, plus an additional HP, ATK &amp; DEF +50% for characters who also belong to the <span class="db-category-quote">"Siblings' Bond"</span>, <span class="db-category-quote">"Bond of Parent and Child"</span> or <span class="db-category-quote">"Bond of Friendship"</span> Category</div>
+                            <div class="db-content text-start" id="db-leader-skill"></div>
                         </div>
 
                         <div class="db-box">
-                            <div class="db-header" id="db-passive-name"><span>Passive Skill | <i>Peace-Protecting Fighter's Awareness</i></span></div>
+                            <div class="db-header" id="db-passive-name"><span>Passive Skill | <i>Passive Skill</i></span></div>
                             <div class="db-content" id="db-passive-container"><div id="card-sec-1"><strong id="card-header-text-1" style="display:block; margin-top:0px;">Basic effect(s)</strong><ul id="card-ul-1"><li>ATK &amp; DEF 200%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>Launches an additional Super Attack</li><li>Receives an additional Ki +3 per Rainbow Ki Sphere obtained</li></ul></div><div id="card-sec-2"><strong id="card-header-text-2" style="display:block; margin-top:0px;">When receiving an attack</strong><ul id="card-ul-2"><li>DEF 250%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li></ul></div><div id="card-sec-3"><strong id="card-header-text-3" style="display:block; margin-top:0px;">For 1 turn from the character's entry turn</strong><ul id="card-ul-3"><li>Damage reduction rate 40%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>All allies' ATK &amp; DEF 30%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li></ul></div><div id="card-sec-4"><strong id="card-header-text-4" style="display:block; margin-top:0px;">When there is another "Hybrid Saiyans" or "Bond of Parent and Child" Category ally on the team</strong><ul id="card-ul-4"><li>Ki +7 and ATK 250%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;when attacking</li><li>All allies' ATK &amp; DEF 30%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;and chance of performing a critical hit 15%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;(self excluded)</li></ul></div><div id="card-sec-5"><strong id="card-header-text-5" style="display:block; margin-top:0px;">1 or more Rainbow Ki Spheres obtained</strong><ul id="card-ul-5"><li>DEF 200%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>Damage reduction rate 38%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>Launches an additional Super Attack</li><li>ATK 200%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;when attacking</li></ul></div><div id="card-sec-6"><strong id="card-header-text-6" style="display:block; margin-top:0px;">12 or more INT Ki Spheres obtained, or 5 Rainbow Ki Spheres obtained</strong><ul id="card-ul-6"><li><img src="./images/passive_skill_dialog_icon_01.png" class="dokkan-icon" style="height:18px"><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon" style="height:18px">DEF 258%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;and damage reduction rate 20%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px"></li><li>All allies' ATK &amp; DEF 58%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon" style="height:18px">&nbsp;for 2 turns (self excluded)</li></ul></div><div id="card-sec-7"><strong id="card-header-text-7" style="display:block; margin-top:0px;">When another 2 or more "Hybrid Saiyans" Category allies are on the team starting from the 3rd turn from the character's entry turn, or starting from the 5th turn from the start of battle</strong><ul id="card-ul-7"><li>Meets up with Super Saiyan Trunks (Kid) &amp; Super Saiyan Goten (Kid) and can perform Reversible Exchange</li></ul></div></div>
                         </div>
 
@@ -568,28 +566,14 @@
             </div>
             <div class="db-multiplier-pills">
                 <div class="db-multiplier-pill">
-                    <span class="pill-val">425%</span>
+                    <span class="pill-val">345%</span>
                     <span class="pill-at">at</span>
-                    <span class="pill-lv">Lv. 20</span>
+                    <span class="pill-lv">Lv. 10</span>
                 </div>
             </div>
         </div>
     
                         
-                    <div class="db-sa-bonus-box">
-                        <div class="db-bonus-left">
-                            <span class="db-bonus-title">At SA LVL 20: Super Attack +30%</span>
-                          
-                        </div>
-                        <div class="db-multiplier-pills">
-                            <div class="db-multiplier-pill">
-                                <span class="pill-val">+30%</span>
-                                <span class="pill-at">at</span>
-                                <span class="pill-lv">Lv. 20</span>
-                            </div>
-                        </div>
-                    </div>
-                
                     </div>
                 </div>
             
@@ -645,28 +629,14 @@
             </div>
             <div class="db-multiplier-pills">
                 <div class="db-multiplier-pill">
-                    <span class="pill-val">570%</span>
+                    <span class="pill-val">440%</span>
                     <span class="pill-at">at</span>
-                    <span class="pill-lv">Lv. 20</span>
+                    <span class="pill-lv">Lv. 10</span>
                 </div>
             </div>
         </div>
     
                         
-                    <div class="db-sa-bonus-box">
-                        <div class="db-bonus-left">
-                            <span class="db-bonus-title">At SA LVL 20: Super Attack +30%</span>
-                          
-                        </div>
-                        <div class="db-multiplier-pills">
-                            <div class="db-multiplier-pill">
-                                <span class="pill-val">+30%</span>
-                                <span class="pill-at">at</span>
-                                <span class="pill-lv">Lv. 20</span>
-                            </div>
-                        </div>
-                    </div>
-                
                     </div>
                 </div>
             </div>
@@ -712,9 +682,9 @@
             </div>
             <div class="db-multiplier-pills">
                 <div class="db-multiplier-pill">
-                    <span class="pill-val">650%</span>
+                    <span class="pill-val">550%</span>
                     <span class="pill-at">at</span>
-                    <span class="pill-lv">Lv. 20</span>
+                    <span class="pill-lv">Lv. 10</span>
                 </div>
             </div>
         </div>
@@ -779,7 +749,7 @@
 
                         <div class="db-box">
                             <div class="db-header">Categories</div>
-                            <div class="db-content" style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px; padding: 12px 15px !important;" id="db-category-container"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0001_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0005_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0009_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0028_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0030_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0033_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0035_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0036_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0039_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0052_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0068_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0070_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0075_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0079_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0085_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0087_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0093_b_on.png"></div>
+                            <div class="db-content" style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px; padding: 12px 15px !important;" id="db-category-container"><img src="https://abscustom.github.io/3trio/images/card_category_label_0001_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0005_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0009_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0028_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0030_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0033_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0035_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0036_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0039_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0052_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0068_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0070_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0075_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0079_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0085_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0087_b_on.png"><img src="https://abscustom.github.io/3trio/images/card_category_label_0093_b_on.png"></div>
                         </div>
                     </div>
 
@@ -788,7 +758,7 @@
                         <div class="db-box">
                             <div class="db-header text-center" id="db-art-header-text" style="justify-content: center; min-height: 32px; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: flex;">DOKKAN FESTIVAL UNIT</div>
                             <div class="db-art-box">
-                                <img id="db-art-img" src="blob:http://127.0.0.1:3000/4b8c068a-47d4-4d59-a143-5c779da387e5" style="width: 100%; display: block;">
+                                <img id="db-art-img" src="https://abscustom.github.io/3trio/images/1031590.png" style="width: 100%; display: block;">
                             </div>
                         </div>
 
@@ -807,15 +777,15 @@
                                 <div class="db-stat-cards-row">
                                     <div class="db-stat-card hp-card">
                                         <span class="db-stat-card-label hp-label">HP</span>
-                                        <span class="db-stat-card-value" id="db-stat-hp-val">28,063</span>
+                                        <span class="db-stat-card-value" id="db-stat-hp-val">5,000</span>
                                     </div>
                                     <div class="db-stat-card atk-card">
                                         <span class="db-stat-card-label atk-label">ATK</span>
-                                        <span class="db-stat-card-value" id="db-stat-atk-val">18,575</span>
+                                        <span class="db-stat-card-value" id="db-stat-atk-val">5,000</span>
                                     </div>
                                     <div class="db-stat-card def-card">
                                         <span class="db-stat-card-label def-label">DEF</span>
-                                        <span class="db-stat-card-value" id="db-stat-def-val">14,125</span>
+                                        <span class="db-stat-card-value" id="db-stat-def-val">5,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -828,67 +798,20 @@
                 <div class="db-awaken-row">
                     
                 <div class="db-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_int.png">
+                    <img class="card-frame" src="https://abscustom.github.io/3trio/images/frame_int.png">
                     
                     
                     <div class="thumb-box">
-                        <img class="thumb-img" src="blob:http://127.0.0.1:3000/a3c9e0b2-edd6-466a-be85-0f26ac757b34">
+                        <img class="thumb-img" src="https://abscustom.github.io/3trio/images/SSR_Icon.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_ssr.png">
                     <img class="type-icon" src="./images/type_int.png">
                     
                 </div>
             
-                    <div class="db-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">8/7/2025 9:00:00 PM EDT</span></div>
+                    <div class="db-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">ssssssssssssssssssssssss</span></div>
                 </div>
-            
-                    
-                <div class="db-awaken-divider">
-                    <img src="./images/z-awaken.png" onerror="this.outerHTML='&lt;span class=\'db-awaken-divider-text\'&gt;Z-AWAKEN&lt;/span&gt;'">
-                </div>
-            
-                    <div class="db-awaken-row">
-                        
-                <div class="db-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_int.png">
-                    
-                    
-                    <div class="thumb-box">
-                        <img class="thumb-img" src="blob:http://127.0.0.1:3000/b850e46f-999f-4036-848e-1d4449d1cbd1">
-                    </div>
-                    <img class="rarity-icon" src="./images/rarity_TUR.png">
-                    <img class="type-icon" src="./images/super_type_int.png">
-                    
-                </div>
-            
-                        <div class="db-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">8/7/2025 9:00:00 PM EDT</span></div>
-                    </div>
-                
-                    
-                <div class="db-awaken-divider">
-                    <img src="./images/dokkan-awaken.png" onerror="this.outerHTML='&lt;span class=\'db-awaken-divider-text\'&gt;DOKKAN AWAKEN&lt;/span&gt;'">
-                </div>
-            
-                    <div class="db-awaken-row">
-                        
-                <div class="db-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_int.png">
-                    <img src="./images/lr_spin_dial.png" class="lr-spin-dial">
-                    
-                <video class="lightning-overlay" autoplay="" muted="" loop="" playsinline="">
-                    <source src="./images/lightningfx.webm" type="video/webm">
-                </video>
-                    <div class="thumb-box">
-                        <img class="thumb-img" src="blob:http://127.0.0.1:3000/9a64e996-3378-45a1-b6f2-d2a01822ce1f">
-                    </div>
-                    <img class="rarity-icon" src="./images/rarity_LR.png">
-                    <img class="type-icon" src="./images/super_type_int.png">
-                    
-                </div>
-            
-                        <div class="db-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">8/7/2025 9:00:00 PM EDT</span></div>
-                    </div>
-                </div>
+            </div>
                         </div>
 
                         <!-- TRANSFORMATIONS BOX -->
@@ -898,16 +821,13 @@
                         <div class="db-transform-row">
                             
                 <div class="db-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_int.png">
-                    <img src="./images/lr_spin_dial.png" class="lr-spin-dial">
+                    <img class="card-frame" src="https://abscustom.github.io/3trio/images/frame_int.png">
                     
-                <video class="lightning-overlay" autoplay="" muted="" loop="" playsinline="">
-                    <source src="./images/lightningfx.webm" type="video/webm">
-                </video>
+                    
                     <div class="thumb-box">
                         <img class="thumb-img" src="blob:http://127.0.0.1:3000/ed6f2672-c93a-4ca6-a64f-9cd6dd3c455f">
                     </div>
-                    <img class="rarity-icon" src="./images/rarity_LR.png">
+                    <img class="rarity-icon" src="./images/rarity_TUR.png">
                     <img class="type-icon" src="./images/super_type_int.png">
                     
                 </div>
@@ -1271,10 +1191,47 @@ All allies' ATK &amp; DEF 58%:up:&nbsp;for 2 turns (self excluded)</textarea>
 <script src="js/19-click-to-edit.js"></script>
 
 </div>
-        <div id="context-gui">
+        <div id="context-gui" style="display: flex; left: 10px; top: 180px;">
             <div class="gui-header">
-                <span id="gui-title" class="gui-title">⚙️ Editor</span>
+                <span id="gui-title" class="gui-title">⚙️ Character Identity &amp; Options</span>
                 <button type="button" class="gui-close" onclick="closeContextGUI()">×</button>
             </div>
-            <div id="gui-content"></div>
+            <div id="gui-content">
+                <label class="form-label mb-1">Title</label>
+                <textarea id="gui-descInput" class="form-control mb-2" style="height:42px;"></textarea>
+                
+                <label class="form-label mb-1">Name</label>
+                <input type="text" id="gui-nameInput" class="form-control mb-2" value="">
+                
+                <label class="form-label mb-1">Release Date</label>
+                <input type="text" id="gui-dateInput" class="form-control mb-2" value="">
+                
+                <label class="form-label mb-1">Rarity</label>
+                <div class="gui-btn-grid mb-2">
+                    <button type="button" class="gui-preset-btn" onclick="updateRarityStats('LR');">LR</button>
+                    <button type="button" class="gui-preset-btn" onclick="updateRarityStats('TUR');">TUR</button>
+                </div>
+
+                <label class="form-label mb-1">Class</label>
+                <div class="gui-btn-grid mb-2">
+                    <button type="button" class="gui-preset-btn" onclick="currentClass='super'; updateIconImages();">Super</button>
+                    <button type="button" class="gui-preset-btn" onclick="currentClass='extreme'; updateIconImages();">Extreme</button>
+                </div>
+
+                <label class="form-label mb-1">Typing</label>
+                <div class="gui-btn-grid mb-2">
+                    <button type="button" class="gui-preset-btn" onclick="applyCardTheme('agl')">AGL</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyCardTheme('teq')">TEQ</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyCardTheme('int')">INT</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyCardTheme('str')">STR</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyCardTheme('phy')">PHY</button>
+                </div>
+
+                <label class="form-label mb-1">Awakening Status</label>
+                <div class="gui-btn-grid mb-1">
+                    <button type="button" class="gui-preset-btn" onclick="applyAwakening('none')">None</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyAwakening('eza')">EZA</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyAwakening('seza')">SEZA</button>
+                </div>
+            </div>
         </div></body></html>
