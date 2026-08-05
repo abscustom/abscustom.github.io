@@ -1,0 +1,1246 @@
+/* ======================================================================= */
+/*                         DOKKAN DB LAYOUT CSS                            */
+/* ======================================================================= */
+:root {
+    --db-none: #3b82f6; 
+    --db-none-header: #1d4ed8;
+    --db-none-bg: #0f172a; 
+    --db-none-text: #38bdf8;
+    --db-none-glow: rgba(56, 189, 248, 0.6);
+}
+
+/* 1. OVERRIDE WEBSITE CONTAINERS - FORCE NEUTRAL DARK GREY OUTSIDE ALL BOXES */
+#app.theme-dokkandb,
+#app.theme-dokkandb #top-content,
+#app.theme-dokkandb #top-content .container-1220,
+#app.theme-dokkandb #top-content .container-text-center,
+#app.theme-dokkandb #top-content .container-text-light,
+#app.theme-dokkandb #top-content .container,
+#layout-dokkandb {
+    background-color: #111827 !important;
+    background: #111827 !important;
+}
+
+/* REMOVE INHERITED BLUE CARD BACKGROUNDS OUTSIDE DB BOXES */
+#app.theme-dokkandb .dokkan-card {
+    background: transparent !important;
+    border: none !important;
+}
+
+#app.theme-dokkandb #top-content .container-1220 {
+    max-width: 1650px !important;
+    width: 95vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+#layout-dokkandb {
+    --theme-main: var(--db-none);
+    --theme-border: var(--db-none);
+    --theme-header: var(--db-none-header);
+    --theme-box-bg: var(--db-none-bg);
+    --theme-text: var(--db-none-text);
+    --theme-glow: var(--db-none-glow);
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #e2e8f0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* GRID LAYOUT & WIDER BOXES */
+.db-grid-container { 
+    display: flex; 
+    gap: 24px; 
+    align-items: flex-start; 
+    width: 100%; 
+}
+
+.db-main-col { 
+    flex: 1 1 0%; 
+    min-width: 0;
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.db-side-col { 
+    width: 350px; 
+    flex-shrink: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+/* TOP HEADER ALIGNMENT */
+.db-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 100%;
+}
+.db-header-left { display: flex; align-items: center; gap: 20px; text-align: left; }
+
+/* ==========================================================================
+   1. MAIN TOP-LEFT COMPOSED CARD ICON (110px)
+   ========================================================================== */
+#db-composed-icon {
+    position: relative !important;
+    width: 110px !important;
+    height: 110px !important;
+    flex-shrink: 0 !important;
+    margin-right: 15px !important;
+}
+
+#db-composed-icon .card-frame {
+    position: absolute !important; top: 0 !important; left: 0 !important; width: 110px !important; height: 115px !important; z-index: 1 !important; pointer-events: none !important;
+}
+
+#db-composed-icon .lr-spin-dial {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 102px !important;
+    height: 102px !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: contain !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    animation: lr-dial-spin 6s linear infinite !important;
+}
+
+#db-composed-icon .lightning-overlay {
+    position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important;
+    width: 230px !important; height: auto !important; z-index: 3 !important; mix-blend-mode: screen !important; pointer-events: none !important;
+    filter: drop-shadow(0 0 10px var(--lightning-color, rgb(0, 150, 255))) brightness(10.5) contrast(1.2) !important;
+    transition: filter 0.3s ease !important;
+}
+
+#db-composed-icon .thumb-box {
+    position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important;
+    width: 137px !important; height: 137px !important; z-index: 4 !important; overflow: hidden !important; border-radius: 4px !important;
+}
+
+#db-composed-icon .thumb-img {
+    width: 100% !important; height: 100% !important; object-fit: contain !important;
+}
+
+#db-composed-icon .rarity-icon {
+    position: absolute !important; bottom: -15px !important; left: -10px !important; height: 56px !important; width: auto !important; z-index: 5 !important; filter: drop-shadow(0 2px 2px #000) !important;
+}
+
+#db-composed-icon .type-icon {
+    position: absolute !important; top: -10px !important; right: -10px !important; height: 38px !important; width: auto !important; z-index: 5 !important; filter: drop-shadow(0 2px 2px #000) !important;
+}
+
+#db-composed-icon .eza-icon {
+    position: absolute !important; bottom: -3px !important; right: -4px !important; height: 32px !important; width: auto !important; z-index: 6 !important; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.8)) !important;
+}
+
+/* ==========================================================================
+   2. AWAKENINGS & TRANSFORMATIONS COMPACT CARD ICONS (75px)
+   ========================================================================== */
+.db-composed-icon {
+    position: relative !important;
+    width: 75px !important;
+    height: 75px !important;
+    flex-shrink: 0 !important;
+    margin-right: 15px !important;
+    display: block !important;
+}
+
+.db-composed-icon .card-frame {
+    position: absolute !important; top: 0 !important; left: 0 !important; width: 75px !important; height: 78px !important; z-index: 1 !important; pointer-events: none !important;
+}
+
+.db-composed-icon .lr-spin-dial {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 68px !important;
+    height: 68px !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: contain !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    animation: lr-dial-spin 6s linear infinite !important;
+}
+
+.db-composed-icon .lightning-overlay {
+    position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important;
+    width: 150px !important; height: auto !important; z-index: 3 !important; mix-blend-mode: screen !important; pointer-events: none !important;
+    filter: drop-shadow(0 0 8px var(--lightning-color, rgb(0, 150, 255))) brightness(10.5) contrast(1.2) !important;
+    transition: filter 0.3s ease !important;
+}
+
+.db-composed-icon .thumb-box {
+    position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important;
+    width: 93px !important; height: 93px !important; z-index: 4 !important; overflow: hidden !important; border-radius: 3px !important;
+}
+
+.db-composed-icon .thumb-img {
+    width: 100% !important; height: 100% !important; object-fit: contain !important;
+}
+
+.db-composed-icon .rarity-icon {
+    position: absolute !important; bottom: -8px !important; left: -6px !important; height: 38px !important; width: auto !important; z-index: 5 !important; filter: drop-shadow(0 2px 2px #000) !important;
+}
+
+.db-composed-icon .type-icon {
+    position: absolute !important; top: -6px !important; right: -10px !important; height: 25px !important; width: auto !important; z-index: 5 !important; filter: drop-shadow(0 2px 2px #000) !important;
+}
+
+.db-composed-icon .eza-icon {
+    position: absolute !important; bottom: -2px !important; right: -4px !important; height: 20px !important; width: auto !important; z-index: 6 !important; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.8)) !important;
+}
+
+/* ==========================================================================
+   LR SPIN DIAL KEYFRAMES
+   ========================================================================== */
+@keyframes lr-dial-spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ==========================================================================
+   SUPER EZA (SEZA) REVOLVING COLORFUL ENERGY AURA (MAIN CARD ICON)
+   ========================================================================== */
+.seza-glow-card {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Outer Laser Beam */
+.seza-glow-card::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -6px !important;
+    left: -6px !important;
+    right: -6px !important;
+    bottom: -10px !important;
+    padding: 3px !important;
+    background: conic-gradient(
+        from var(--seza-angle, 0deg),
+        #ff0055 0%,
+        #facc15 15%,
+        var(--theme-border, #ef4444) 30%,
+        #ffffff 45%,
+        #ff6600 60%,
+        #d946ef 75%,
+        #ff0055 100%
+    ) !important;
+    clip-path: polygon(
+        14% 0%, 86% 0%, 
+        100% 12%, 100% 88%, 
+        86% 100%, 14% 100%, 
+        0% 88%, 0% 12%
+    ) !important;
+    pointer-events: none !important;
+    z-index: 0 !important; /* Under frame (z-index: 1) */
+    animation: seza-laser-spin 1.8s linear infinite !important;
+    filter: drop-shadow(0 0 6px #ff0055) drop-shadow(0 0 12px var(--theme-border, #ef4444)) drop-shadow(0 0 18px rgba(250, 204, 21, 0.8)) !important;
+}
+
+/* Inner Pulsing Golden Flame Core Line */
+.seza-glow-card::after {
+    content: "" !important;
+    position: absolute !important;
+    top: -6px !important;
+    left: -6px !important;
+    right: -6px !important;
+    bottom: -10px !important;
+    background: transparent !important;
+    border: 0px solid #facc15 !important;
+    clip-path: polygon(
+        14% 0%, 86% 0%, 
+        100% 12%, 100% 88%, 
+        86% 100%, 14% 100%, 
+        0% 88%, 0% 12%
+    ) !important;
+    pointer-events: none !important;
+    z-index: 0 !important; /* Under frame (z-index: 1) */
+    animation: seza-pulse-glow 1.2s ease-in-out infinite alternate !important;
+}
+
+/* ==========================================================================
+   SUPER EZA (SEZA) SKINNIER OVERRIDE FOR AWAKENINGS & TRANSFORMATIONS BOXES
+   ========================================================================== */
+.db-composed-icon.seza-glow-card::before {
+    top: -2px !important;
+    left: -3px !important;
+    right: -3px !important;
+    bottom: -5px !important;
+    padding: 2px !important;
+    filter: drop-shadow(0 0 4px #ff0055) drop-shadow(0 0 8px var(--theme-border, #ef4444)) drop-shadow(0 0 10px rgba(250, 204, 21, 0.7)) !important;
+}
+
+.db-composed-icon.seza-glow-card::after {
+    top: -2px !important;
+    left: -2px !important;
+    right: -2px !important;
+    bottom: -4px !important;
+}
+
+@property --seza-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes seza-laser-spin {
+    0% { --seza-angle: 0deg; }
+    100% { --seza-angle: 360deg; }
+}
+
+@keyframes seza-pulse-glow {
+    0% {
+        border-color: #facc15 !important;
+        box-shadow: 0 0 6px #ff0055, 0 0 12px #facc15, inset 0 0 6px #ff0055 !important;
+        opacity: 0.6;
+    }
+    100% {
+        border-color: #ffffff !important;
+        box-shadow: 0 0 14px #ff0055, 0 0 24px var(--theme-border, #ef4444), 0 0 32px #facc15, inset 0 0 10px #ffffff !important;
+        opacity: 1;
+    }
+}
+
+/* EZA / SEZA BADGES IN AWAKENINGS & TRANSFORMATIONS BOX */
+.db-awaken-row .eza-icon,
+.db-transform-row .eza-icon {
+    position: absolute !important;
+    bottom: -2px !important;
+    right: -4px !important;
+    height: 20px !important;
+    width: auto !important;
+    z-index: 6 !important;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8)) !important;
+}
+
+#db-char-title { color: #94a3b8; font-style: italic; font-size: 14px; margin-bottom: 4px; }
+#db-char-name { color: #fff; font-size: 28px; font-weight: bold; }
+
+/* TOP RIGHT ICONS CENTERED DIRECTLY ABOVE RIGHT COLUMN */
+.db-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 15px;
+    margin-right: 0;
+    flex-shrink: 0;
+}
+.db-header-right img {
+    height: 70px !important;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.6));
+}
+
+/* BOX STYLING WITH SMOOTHER ROUNDED CORNERS */
+.db-box { 
+    border: 1px solid var(--theme-border, #3b82f6) !important; 
+    border-radius: 4px !important;
+    background: var(--theme-box-bg, #0f172a) !important; 
+    width: 100%; 
+    overflow: hidden;
+}
+
+.db-header { 
+    background: var(--theme-header, #1d4ed8) !important; 
+    color: #ffffff !important; 
+    padding: 8px 12px; 
+    font-weight: bold; 
+    font-size: 13.5px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid var(--theme-border, #3b82f6);
+}
+
+.db-header i,
+.db-header em {
+    font-style: italic !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.4) !important;
+    filter: none !important;
+}
+
+.db-content { 
+    padding: 12px 15px; 
+    font-size: 13px; 
+    line-height: 1.7; 
+    text-align: left; 
+    color: #e2e8f0;
+    background: var(--theme-box-bg, #0f172a) !important;
+}
+
+/* BRIGHT TEXT WITH GLOWING DROP SHADOW */
+#db-passive-container strong,
+.db-content strong,
+.db-content .db-skill-label,
+.db-content .db-label-inline { 
+    color: var(--theme-text, #38bdf8) !important; 
+    display: block; 
+    margin-top: 6px; 
+    margin-bottom: 4px; 
+    font-weight: bold; 
+    font-size: 13.5px;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: 0 0 8px var(--theme-glow, rgba(56, 189, 248, 0.6)) !important;
+}
+
+/* LEADER SKILL CATEGORIES IN QUOTES GLOW FIX */
+.db-category-quote {
+    color: var(--theme-text, #38bdf8) !important;
+    font-weight: bold !important;
+    display: inline !important;
+    text-shadow: 0 0 8px var(--theme-glow, rgba(56, 189, 248, 0.6)) !important;
+}
+
+/* INLINE LABELS */
+.db-content span.db-label-inline {
+    display: inline-block !important;
+    margin-top: 4px !important;
+    margin-bottom: 2px !important;
+}
+
+#db-passive-container ul { padding-left: 18px; margin-bottom: 0; }
+#db-passive-container li { margin-bottom: 4px; }
+
+/* CATEGORY BADGES */
+#db-category-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 8px 12px !important;
+    padding: 12px 15px !important;
+}
+
+#db-category-container img {
+    width: 170px !important;
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    object-fit: unset !important;
+    flex-shrink: 0 !important;
+    filter: brightness(1.2) contrast(1.05) drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+#db-category-container img:hover {
+    filter: brightness(1.35) contrast(1.1) drop-shadow(0 4px 8px rgba(0,0,0,0.7));
+    transform: scale(1.02);
+}
+
+/* IN-GAME DOKKAN LINK SKILL BADGES */
+.db-links-container { 
+    display: flex !important; 
+    flex-direction: row !important; 
+    flex-wrap: wrap !important; 
+    gap: 8px !important;
+    padding: 10px 12px !important; 
+}
+
+.db-link-badge {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(180deg, #222225 0%, #111113 100%);
+    border: 1.5px solid #facc15 !important;
+    border-radius: 6px;
+    padding: 4px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: mouse;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.db-link-badge:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 6px 14px rgba(250, 204, 21, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border-color: #fef08a !important;
+    z-index: 5;
+}
+
+.db-link-lv {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #a1a1aa;
+    background: radial-gradient(circle, #27272a 0%, #09090b 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.db-link-lv .lv-text {
+    font-size: 7px;
+    color: #a1a1aa;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: -1px;
+}
+
+.db-link-lv .num-text {
+    font-size: 9.5px;
+    color: #ffffff !important;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: none !important;
+}
+
+.db-link-name {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 12.5px;
+    text-shadow: 0 1px 2px #000000;
+    letter-spacing: 0.2px;
+}
+
+/* PASSIVE ARROWS AND INLINE SYMBOLS ONLY */
+#db-passive-container img,
+#db-sa-container img.dokkan-icon,
+.db-content p img,
+.db-content li img {
+    height: 13px !important;
+    max-height: 13px !important;
+    width: auto !important;
+    filter: none !important;
+    vertical-align: middle !important;
+    margin: 0 1px !important;
+    transform: translateY(-1.5px) !important;
+    display: inline-block !important;
+}
+
+/* SUPER ATTACK TYPE ICON BASE STYLE */
+.db-header img.db-sa-type-icon {
+    height: 26px !important;
+    width: 26px !important;
+    max-height: 26px !important;
+    max-width: 26px !important;
+    object-fit: contain !important;
+    vertical-align: middle !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    filter: none !important;
+}
+
+.db-art-box { padding: 0; background: #000; }
+
+/* Dokkan DB SA Header Formatting */
+.db-sa-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.db-sa-title-text {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.db-sa-type-icon-after {
+    height: 28px;
+    width: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* SPECIAL EFFECTS Section (DB Side) */
+.db-special-effects-section {
+    margin-top: 10px;
+    padding-top: 6px;
+    text-align: left;
+}
+
+.db-special-effects-title {
+    font-size: 11px;
+    font-weight: 900;
+    font-style: italic;
+    color: #f97316;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.db-special-effects-groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.db-effect-group {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    padding: 10px 8px 6px 8px;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.db-group-label {
+    position: absolute;
+    top: -7px;
+    left: 8px;
+    background: #18181b;
+    padding: 0 4px;
+    font-size: 9px;
+    font-weight: 800;
+    font-style: italic;
+    color: #d4d4d8;
+    text-transform: uppercase;
+}
+
+.db-effect-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 4px 6px 2px 6px;
+    min-width: 54px;
+}
+
+.db-badge-top {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.db-badge-top img {
+    height: 22px;
+    width: auto;
+}
+
+.db-badge-top span {
+    font-size: 13px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.db-badge-bottom {
+    font-size: 9px;
+    font-weight: bold;
+    color: #a1a1aa;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+/* MODERN ROUNDED STATS TABLE WITH DYNAMIC ELEMENT BORDERS */
+.db-stats-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    text-align: center;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.db-stats-table th {
+    padding: 8px 4px;
+    font-size: 11.5px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--theme-text, #38bdf8);
+    text-transform: uppercase;
+    text-shadow: 0 0 6px var(--theme-glow, rgba(56, 189, 248, 0.5));
+    border: none;
+    background: transparent;
+    letter-spacing: 0.5px;
+}
+
+.db-stats-table td {
+    padding: 10px 4px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #ffffff;
+    border: none;
+    border-top: 1px solid var(--theme-border, #3b82f6);
+    border-bottom: 1px solid var(--theme-border, #3b82f6);
+    border-right: 1px solid var(--theme-border, #3b82f6);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.35) 100%);
+    box-shadow: inset 0 0 6px var(--theme-glow, rgba(56, 189, 248, 0.2));
+}
+
+.db-stats-table tr td:first-child {
+    border-left: 1px solid var(--theme-border, #3b82f6);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.db-stats-table tr td:last-child {
+    border-right: 1px solid var(--theme-border, #3b82f6);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.db-stats-table td.stat-label {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 13.5px;
+    color: var(--theme-text, #38bdf8);
+    text-shadow: 0 0 8px var(--theme-glow, rgba(56, 189, 248, 0.6));
+}
+
+/* ALIGN SA ICON & TEXT TOGETHER ON THE LEFT SIDE */
+.db-header {
+    justify-content: flex-start !important;
+}
+
+.db-sa-header-title {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.db-sa-icon-left {
+    height: 22px !important;
+    width: auto !important;
+    max-height: 22px !important;
+    vertical-align: middle !important;
+    margin-right: 0 !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+}
+
+/* Golden Glowing EX Text */
+.db-ex-prefix {
+    color: #facc15 !important;
+    font-weight: 900 !important;
+    text-shadow: 0 0 8px rgba(250, 204, 21, 0.9), 0 0 14px rgba(234, 179, 8, 0.7) !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* SELF Box & Title - Green Glow */
+.db-effect-group.self {
+    border: 1px solid rgba(16, 185, 129, 0.4) !important;
+}
+.db-group-label.self {
+    color: #10b981 !important;
+    text-shadow: 0 0 8px rgba(3, 247, 166, 0.8) !important;
+}
+
+/* ALLIES Box & Title - Blue Glow */
+.db-effect-group.allies {
+    border: 1px solid rgba(59, 130, 246, 0.4) !important;
+}
+.db-group-label.allies {
+    color: #3b82f6 !important;
+    text-shadow: 0 0 8px rgba(16, 102, 242, 0.8) !important;
+}
+
+/* ENEMY Box & Title - Red Glow */
+.db-effect-group.enemy {
+    border: 1px solid rgba(239, 68, 68, 0.4) !important;
+}
+.db-group-label.enemy {
+    color: #ef4444 !important;
+    text-shadow: 0 0 8px rgba(235, 12, 12, 0.8) !important;
+}
+
+/* HOVER SELECTION OUTLINE FOR DOKKAN DB BOXES */
+#layout-dokkandb .db-box,
+#db-sa-container .db-box,
+#db-active-container .db-box {
+    transition: outline 0.15s ease, box-shadow 0.15s ease;
+}
+
+#layout-dokkandb .db-box:hover,
+#db-sa-container .db-box:hover,
+#db-active-container .db-box:hover {
+    cursor: pointer !important;
+    outline: 2px solid rgba(250, 204, 21, 0.8) !important;
+    outline-offset: -2px !important;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.3) !important;
+}
+
+/* DB AWAKENINGS & TRANSFORMATIONS ROW STYLING */
+.db-awaken-row, .db-transform-row {
+    display: flex !important;
+    align-items: center !important;
+    padding: 12px 15px !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+
+.db-awaken-row { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+
+/* Glowing Text Dividers */
+.db-awaken-divider {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 12px 0 !important;
+    position: relative !important;
+    background: transparent !important;
+}
+
+.db-awaken-divider::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 10px !important;
+    right: 10px !important;
+    top: 50% !important;
+    height: 1.5px !important;
+    background: var(--theme-border, #3b82f6) !important;
+    box-shadow: 0 0 6px var(--theme-glow, rgba(56, 189, 248, 0.6)) !important;
+    z-index: 1 !important;
+}
+
+/* Step Header Images: 28px height for clean spacing */
+.db-awaken-divider img {
+    height: 28px !important;
+    width: auto !important;
+    max-height: 28px !important;
+    position: relative !important;
+    z-index: 2 !important;
+    filter: drop-shadow(0 2px 4px #000) !important;
+}
+
+.db-awaken-divider-text {
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 0 0 6px var(--theme-glow, #3b82f6), 0 0 10px var(--theme-border, #3b82f6), 0 2px 4px #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    background: var(--theme-box-bg, #0f172a);
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.db-awaken-date {
+    flex: 1;
+    text-align: center;
+    font-size: 14.5px;
+    color: #e2e8f0;
+}
+
+.db-transform-name {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* FORCE CENTER HEADERS FOR AWAKENINGS, TRANSFORMATIONS, & STATS BOXES */
+#db-awakenings-box .db-header,
+#db-transformations-box .db-header,
+.db-side-col .db-box .db-header {
+    justify-content: center !important;
+    text-align: center !important;
+    display: flex !important;
+}
+
+/* INTERACTIVE STATS TABS & CARDS (DB LAYOUT) */
+.db-stat-tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 4px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.db-stat-tab {
+    flex: 1;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.db-stat-tab:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.db-stat-tab.active {
+    background: var(--theme-header, #1d4ed8) !important;
+    color: #ffffff !important;
+    border-color: var(--theme-border, #3b82f6) !important;
+    box-shadow: 0 0 8px var(--theme-glow, rgba(56, 189, 248, 0.5));
+    font-weight: 900;
+}
+
+.db-stat-cards-row {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+}
+
+.db-stat-card {
+    flex: 1;
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 16px 4px 10px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.db-stat-card.hp-card {
+    border: 1.5px solid #10b981;
+    box-shadow: inset 0 0 8px rgba(16, 185, 129, 0.2);
+}
+
+.db-stat-card.atk-card {
+    border: 1.5px solid #ef4444;
+    box-shadow: inset 0 0 8px rgba(239, 68, 68, 0.2);
+}
+
+.db-stat-card.def-card {
+    border: 1.5px solid #3b82f6;
+    box-shadow: inset 0 0 8px rgba(59, 130, 246, 0.2);
+}
+
+.db-stat-card-label {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    font-size: 9.5px;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 1px 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hp-label { background: #10b981; }
+.atk-label { background: #ef4444; }
+.def-label { background: #3b82f6; }
+
+.db-stat-card-value {
+    font-size: 15px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* TRANSFORMATIONS ROW GLOWING ELEMENT SPLITTER BAR */
+.db-transform-divider {
+    height: 1.5px;
+    background: var(--theme-border, #3b82f6) !important;
+    box-shadow: 0 0 6px var(--theme-glow, rgba(56, 189, 248, 0.6)) !important;
+    margin: 0 25px !important;
+    opacity: 0.75;
+}
+
+.db-transform-row {
+    display: flex !important;
+    align-items: center !important;
+    padding: 12px 25px !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    transition: background 0.2s ease;
+}
+
+.db-transform-row:hover, 
+#db-awakenings-box .db-awaken-row:hover {
+    background: rgba(255, 255, 255, 0.06) !important;
+    cursor: pointer !important;
+}
+
+/* ======================================================================= */
+/* DAMAGE MULTIPLIER BOX (DOKKAN DB LAYOUT)                                */
+/* ======================================================================= */
+
+.db-damage-multiplier-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.db-multiplier-title {
+    font-size: 11.5px;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--theme-text, #f97316);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    text-shadow: 0 0 6px var(--theme-glow, rgba(249, 115, 22, 0.5));
+}
+
+.db-multiplier-pills {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.db-multiplier-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 11.5px;
+    font-weight: 800;
+}
+
+.db-multiplier-pill .pill-val {
+    color: #facc15;
+    font-weight: 900;
+    text-shadow: 0 0 4px rgba(250, 204, 21, 0.6);
+}
+
+.db-multiplier-pill .pill-at {
+    color: #38bdf8;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.db-multiplier-pill .pill-lv {
+    color: #facc15;
+    font-weight: 900;
+}
+
+.db-badge-type-label {
+    font-size: 8.5px;
+    font-weight: 900;
+    color: #facc15;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+/* ======================================================================= */
+/* SA LVL 20 BONUS BOX & KI TAG STYLING (LR / DOKKANSTATS FORMAT)          */
+/* ======================================================================= */
+
+.db-sa-bonus-box {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 3px solid #facc15;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.db-sa-bonus-header {
+    font-size: 13px;
+    font-weight: 800;
+    color: #facc15;
+    margin-bottom: 2px;
+}
+
+.db-sa-bonus-header span {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.db-sa-bonus-text {
+    font-size: 11.5px;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.db-sa-bonus-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* Both Damage Multiplier and SA Lv 20 Bonus Boxes Share Identical Outer Border & Background */
+.db-damage-multiplier-box,
+.db-sa-bonus-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.db-multiplier-left,
+.db-bonus-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.db-multiplier-title,
+.db-bonus-title {
+    font-size: 11.5px;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--theme-text, #f97316);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    text-shadow: 0 0 6px var(--theme-glow, rgba(249, 115, 22, 0.5));
+}
+
+.db-bonus-sub {
+    font-size: 11px;
+    color: #38bdf8;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Ki Tag matching the Damage Multiplier color scheme */
+.db-multiplier-ki-tag {
+    background: rgba(249, 115, 22, 0.15);
+    border: 1px solid var(--theme-text, #f97316);
+    color: var(--theme-text, #f97316);
+    font-size: 10.5px;
+    font-weight: 900;
+    padding: 1px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 4px var(--theme-glow, rgba(249, 115, 22, 0.4));
+}
+
+/* Multiplier & Bonus Pills */
+.db-multiplier-pills {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.db-multiplier-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 11.5px;
+    font-weight: 800;
+}
+
+.db-multiplier-pill .pill-val {
+    color: #facc15;
+    font-weight: 900;
+    text-shadow: 0 0 4px rgba(250, 204, 21, 0.6);
+}
+
+.db-multiplier-pill .pill-at {
+    color: #38bdf8;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.db-multiplier-pill .pill-lv {
+    color: #facc15;
+    font-weight: 900;
+}
+
+/* Damage Multiplier Box Left Alignment with Ki Tag */
+.db-damage-multiplier-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.db-multiplier-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.db-multiplier-title {
+    font-size: 11.5px;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--theme-text, #f97316);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    text-shadow: 0 0 6px var(--theme-glow, rgba(249, 115, 22, 0.5));
+}
+
+.db-multiplier-ki-tag {
+    background: rgba(56, 189, 248, 0.2);
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    font-size: 10.5px;
+    font-weight: 900;
+    padding: 1px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* Top-Left Main Card Type Icon */
+#db-composed-icon .type-icon {
+    height: 48px !important;
+    top: -12px !important;
+    right: -14px !important;
+}
+
+/* Top-Right Type Icon Above Card Art */
+.db-header-right img {
+    height: 85px !important;
+}
+
+/* Awakenings & Transformations Box Type Icons */
+.db-composed-icon .type-icon {
+    height: 32px !important;
+    top: -8px !important;
+    right: -10px !important;
+}
