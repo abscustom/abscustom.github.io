@@ -52,7 +52,7 @@
             window.currentAwakeningMode = "none";
             window.currentCardThemeStyle = "dokkaninfo";
         </script></head>
-<body class="theme-dokkaninfo is-published">
+<body class="is-published theme-dokkaninfo">
 
 <!-- OVERLAYS & NOTIFICATIONS -->
 
@@ -111,7 +111,7 @@
         <svg class="hud-spinner-svg" viewBox="25 25 50 50">
             <circle class="hud-spinner-circle" r="20" cy="50" cx="50"></circle>
         </svg>
-        <span id="hud-loading-text" class="hud-loading-text">Uploading Card...</span>
+        <span id="hud-loading-text" class="hud-loading-text">Saving Quick Edit...</span>
     </div>
 
     <!-- ADMIN MODE BUTTONS -->
@@ -143,7 +143,7 @@
     <div class="vm-placement" data-id="64bf68a43a57036474fca627" style="display: none;"></div>
     
     <!-- MAIN CONTENT CONTAINER -->
-    <div id="top-content">
+    <div id="top-content" class="">
         <div class="container-1220 container-text-center padding-top-bottom-5 container-text-light">
             
             <!-- DOKKAN INFO LAYOUT (DEFAULT) -->
@@ -158,7 +158,7 @@
                                         <div class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base">
-                                                    <img class="card-frame" src="images/frame_phy.png" height="120" alt="Card Frame">
+                                                    <img class="card-frame" src="./images/frame_phy.png" height="120" alt="Card Frame">
                                                 </div>
                                                 <div class="card-icon-item card-info-thumb" style="z-index: 2; margin-top: 0; position: relative;">
                                                     <img class="lr-spin-dial" src="./images/lr_spin_dial.png" alt="spin-effect" style="display: block;">
@@ -166,10 +166,10 @@
                                                     <img id="img-lr" src="images/img_export_5_msiitw2b.png" height="150" alt="icon">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-rarity card-info-above-thumb">
-                                                    <img id="main-rarity-icon" src="images/rarity_LR.png" height="72" alt="rarity">
+                                                    <img id="main-rarity-icon" src="./images/rarity_LR.png" height="72" alt="rarity">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-type card-info-above-thumb">
-                                                    <img class="typing-icon" src="images/super_type_phy.png" alt="type icon" height="57">
+                                                    <img class="typing-icon" src="./images/super_type_phy.png" alt="type icon" height="57">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-eza-ja card-info-above-thumb">
                                                     <div id="awakening-container" class="card-icon-item-eza-container" style="display: none;">
@@ -206,7 +206,7 @@
                                 <div class="row border border-2 border-dark margin-top-bottom-5 border-phy bg-phy dokkan-card safe-centered-frame">
                                     <div class="card-art-canvas" data-edit="art">
                                         <video autoplay="" muted="" playsinline="" loop="" preload="auto" id="myOverlayVideo"><source src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/index.html" type="video/mp4"></video>
-                                        <img id="myOverlayImage" src="images/img_export_9_msiitw2d.jpg" alt="Card Art">
+                                        <img id="myOverlayImage" src="images/img_export_9_msiitw2d.jpg" alt="Card Art" class="">
                                     </div>
                                 </div>
                                 
@@ -467,21 +467,21 @@
             </div> <!-- END DOKKAN INFO LAYOUT -->
 
             <!-- ABS.STYLE LAYOUT -->
-            <div id="layout-abs-style" style="display: none; --theme-main: #ca8a04; --theme-border: #eab308; --theme-header: #a16207; --theme-box-bg: #342103; --theme-text: #fde047; --theme-glow: rgba(234, 179, 8, 0.65);">
+            <div id="layout-abs-style" style="display: none; --theme-main: #ca8a04; --theme-border: #eab308; --theme-header: #a16207; --theme-box-bg: #342103; --theme-text: #fde047; --theme-glow: rgba(234, 179, 8, 0.65); opacity: 1; transform: none;">
                 
                 <div class="abs-top-header">
                     <div class="abs-header-left">
                         <div id="abs-composed-icon">
-                            <img id="abs-frame-img" class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_phy.png">
+                            <img id="abs-frame-img" class="card-frame" src="https://abscustom.github.io/2gohan/images/frame_phy.png">
                             <img id="abs-spin-dial" class="lr-spin-dial" src="./images/lr_spin_dial.png" style="display: block;">
                             <video id="abs-lightning" class="lightning-overlay" autoplay="" muted="" loop="" playsinline="" style="display: block; --lightning-color: rgb(255, 230, 0);">
                                 <source src="./images/lightningfx.webm" type="video/webm">
                             </video>
                             <div class="thumb-box">
-                                <img id="abs-thumb-img" class="thumb-img" src="images/img_export_64_msiitw2f.png">
+                                <img id="abs-thumb-img" class="thumb-img" src="https://abscustom.github.io/2gohan/images/img_export_5_msiitw2b.png">
                             </div>
                             <img id="abs-top-rarity-icon" class="rarity-icon" src="./images/rarity_lr_abs.png">
-                            <img id="abs-top-type-icon" class="type-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/super_type_phy.png">
+                            <img id="abs-top-type-icon" class="type-icon" src="https://abscustom.github.io/2gohan/images/super_type_phy.png">
                             <img id="abs-awakening-img" class="eza-icon" src="" style="display: none;">
                         </div>
 
@@ -493,7 +493,7 @@
 
                     <div class="abs-header-right">
                         <img id="abs-rarity-icon" src="./images/rarity_lr_abs.png">
-                        <img id="abs-type-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/super_type_phy.png">
+                        <img id="abs-type-icon" src="https://abscustom.github.io/2gohan/images/super_type_phy.png">
                         <img id="abs-top-awakening-img" src="" style="display: none; height: 42px;">
                     </div>
                 </div>
@@ -778,7 +778,7 @@
 
                         <div class="abs-box">
                             <div class="abs-header">Categories</div>
-                            <div class="abs-content" style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px; padding: 12px 15px !important;" id="abs-category-container"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0005_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0020_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0021_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0023_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0030_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0033_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0038_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0039_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0040_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0045_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0047_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0055_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0066_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0081_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0083_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0084_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0087_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0091_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0093_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0095_b_on.png"></div>
+                            <div class="abs-content" style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px; padding: 12px 15px !important;" id="abs-category-container"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0005_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0020_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0021_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0023_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0030_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0033_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0038_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0039_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0040_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0045_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0047_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0055_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0066_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0081_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0083_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0084_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0087_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0091_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0093_b_on.png"><img src="https://abscustom.github.io/2gohan/images/card_category_label_0095_b_on.png"></div>
                         </div>
                     </div>
 
@@ -786,7 +786,7 @@
                         <div class="abs-box">
                             <div class="abs-header text-center" id="abs-art-header-text" style="justify-content: center; min-height: 32px; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: flex;">DOKKAN FESTIVAL UNIT</div>
                             <div class="abs-art-box">
-                                <img id="abs-art-img" src="images/img_export_114_msiitw2g.jpg" style="width: 100%; display: block;">
+                                <img id="abs-art-img" src="https://abscustom.github.io/2gohan/images/img_export_9_msiitw2d.jpg" style="width: 100%; display: block;">
                             </div>
                         </div>
 
@@ -824,11 +824,11 @@
                 <div class="abs-awaken-row">
                     
                 <div class="abs-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_phy.png">
+                    <img class="card-frame" src="https://abscustom.github.io/2gohan/images/frame_phy.png">
                     
                     
                     <div class="thumb-box">
-                        <img class="thumb-img" src="images/img_export_116_msiitw2g.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/2gohan/images/img_export_12_msiitw2e.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_ssr_abs.png">
                     <img class="type-icon" src="./images/type_phy.png">
@@ -846,11 +846,11 @@
                     <div class="abs-awaken-row">
                         
                 <div class="abs-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_phy.png">
+                    <img class="card-frame" src="https://abscustom.github.io/2gohan/images/frame_phy.png">
                     
                     
                     <div class="thumb-box">
-                        <img class="thumb-img" src="images/img_export_121_msiitw2g.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/2gohan/images/img_export_16_msiitw2e.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_TUR_abs.png">
                     <img class="type-icon" src="./images/super_type_phy.png">
@@ -868,14 +868,14 @@
                     <div class="abs-awaken-row">
                         
                 <div class="abs-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_phy.png">
+                    <img class="card-frame" src="https://abscustom.github.io/2gohan/images/frame_phy.png">
                     <img src="./images/lr_spin_dial.png" class="lr-spin-dial">
                     
                 <video class="lightning-overlay" autoplay="" muted="" loop="" playsinline="">
                     <source src="./images/lightningfx.webm" type="video/webm">
                 </video>
                     <div class="thumb-box">
-                        <img class="thumb-img" src="images/img_export_127_msiitw2h.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/2gohan/images/img_export_5_msiitw2b.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_lr_abs.png">
                     <img class="type-icon" src="./images/super_type_phy.png">
@@ -1350,10 +1350,95 @@ Performs a critical hit when activating the Active Skill or when attacking with 
 ---
 
 </div>
-        <div id="context-gui">
+        <div id="context-gui" style="display: none; left: 1229.56px; top: 401.984px;">
             <div class="gui-header" data-draggable-bound="true">
-                <span id="gui-title" class="gui-title">⚙️ Editor</span>
+                <span id="gui-title" class="gui-title">⚙️ Super Attack Editor</span>
                 <button type="button" class="gui-close" onclick="closeContextGUI()">×</button>
             </div>
-            <div id="gui-content"></div>
+            <div id="gui-content">
+                <div class="gui-btn-grid mb-2">
+                    <button type="button" class="gui-preset-btn" style="background:#2563eb;" onclick="guiAddSAWithAutoSelect()">+ Add SA</button>
+                    <button type="button" class="gui-preset-btn gui-preset-btn-danger" onclick="guiDeleteSAWithUndo()">- Delete SA</button>
+                    <button type="button" class="gui-preset-btn" style="background:#15803d;" onclick="guiUndoSA()">↩️ Undo Delete</button>
+                    <button type="button" class="gui-preset-btn " style="background: linear-gradient(180deg, #1f2937 0%, #111827 100%); border-color: rgba(16, 185, 129, 0.5);" onclick="toggleSAActivationGUI()">Condition Row</button>
+                </div>
+
+                <label class="form-label mb-1">SA Type Label</label>
+                <select id="gui-sa-type-dropdown" class="form-control mb-2" onchange="guiHandleSATypeDropdownChange(this.value)">
+                    <option value="Super Attack" selected="">Super Attack</option>
+                    <option value="Ultra Super Attack">Ultra Super Attack</option>
+                    <option value="Ex Super Attack">Ex Super Attack</option>
+                    <option value="Unit Super Attack">Unit Super Attack</option>
+                    <option value="Unit Ultra Super Attack">Unit Ultra Super Attack</option>
+                    <option value="custom">Custom...</option>
+                </select>
+
+                <div id="gui-sa-type-custom-container" style="display: none;">
+                    <input type="text" id="gui-sa-type-custom" class="form-control mb-2" placeholder="Type custom SA label..." value="" oninput="guiUpdateSAType(this.value)">
+                </div>
+
+                <label class="form-label mb-1">SA Name</label>
+                <input type="text" id="gui-sa-name" class="form-control mb-2" value="Soaring Dragon Havoc" oninput="guiUpdateSAName(this.value)">
+
+                <label class="form-label mb-1">SA Attack Icon Type</label>
+                <div class="d-flex gap-2 justify-content-center mb-2">
+                    <img src="./images/sp_skill_icon_01.png" class="sa-type-icon-opt selected" onclick="guiSetSATypeIcon(this, './images/sp_skill_icon_01.png')">
+                    <img src="./images/sp_skill_icon_02.png" class="sa-type-icon-opt " onclick="guiSetSATypeIcon(this, './images/sp_skill_icon_02.png')">
+                    <img src="./images/sp_skill_icon_etc.png" class="sa-type-icon-opt " onclick="guiSetSATypeIcon(this, './images/sp_skill_icon_etc.png')">
+                    <img src="./images/sp_skill_icon_04.png" class="sa-type-icon-opt " onclick="guiSetSATypeIcon(this, './images/sp_skill_icon_04.png')">
+                </div>
+                
+                <label class="form-label mb-1">Ki Requirement (for ABS Damage Multiplier)</label>
+                <input type="text" id="gui-sa-ki" class="form-control mb-2" placeholder="e.g., 12 Ki (Leave blank to auto-detect)" value="" oninput="guiUpdateSAKi(this.value)">
+
+                <label class="form-label mb-1">SA Effects (One per line)</label>
+                <textarea id="gui-sa-effects" class="form-control mb-1" style="height:70px;" oninput="guiUpdateSAEffects(this.value)">Raises ATK &amp; DEF for 1 turn, causes colossal damage to enemy and lowers DEF</textarea>
+                <button type="button" class="gui-preset-btn mb-2 w-100" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); font-size: 11px; padding: 6px;" onclick="guiAutoApplySAIcons()">⚡ Auto Apply Icons</button>
+
+                
+
+                <label class="form-label mb-1">Stat Icons &amp; Values</label>
+                <div class="sa-gui-icon-grid mb-2">
+                    <img src="./images/st_0001.png" class="sa-gui-icon-opt selected" onclick="guiSelectSAIcon(this, './images/st_0001.png')">
+                    <img src="./images/st_0002.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_0002.png')">
+                    <img src="./images/st_0011.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_0011.png')">
+                    <img src="./images/st_0100.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_0100.png')">
+                    <img src="./images/st_0102.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_0102.png')">
+                    <img src="./images/st_1009.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_1009.png')">
+                    <img src="./images/st_atk_super.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_atk_super.png')">
+                    <img src="./images/pot_skill_02_on.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/pot_skill_02_on.png')">
+                    <img src="./images/st_evasion.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_evasion.png')">
+                    <img src="./images/st_recover.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_recover.png')">
+                    <img src="./images/st_recover_minus.png" class="sa-gui-icon-opt" onclick="guiSelectSAIcon(this, './images/st_recover_minus.png')">
+                </div>
+                <div class="d-flex gap-2 mb-2">
+                    <input type="number" id="gui-sa-stat-val" class="form-control" placeholder="Stat % (e.g. 30)" value="30">
+                    <button type="button" class="gui-add-btn" onclick="guiAddStatIconToSA()">+ Add Stat</button>
+                </div>
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between align-items-center py-1 px-2 mb-1 gui-item-row" style="background: rgba(0,0,0,0.3); border-radius: 4px;">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/st_0001.png" height="22">
+                            <input type="number" class="form-control py-0 px-1" style="width: 60px; height: 24px; font-size: 11px;" value="30" oninput="guiUpdateExistingSAStat(0, this.value)">
+                            <span style="color:#38bdf8; font-weight:bold;">%</span>
+                        </div>
+                        <button type="button" class="btn btn-danger btn-sm py-0 px-2" style="font-size:10px; font-weight:bold; height:22px;" onclick="guiDeleteExistingSAStat(0)">Delete</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center py-1 px-2 mb-1 gui-item-row" style="background: rgba(0,0,0,0.3); border-radius: 4px;">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/st_0002.png" height="22">
+                            <input type="number" class="form-control py-0 px-1" style="width: 60px; height: 24px; font-size: 11px;" value="30" oninput="guiUpdateExistingSAStat(1, this.value)">
+                            <span style="color:#38bdf8; font-weight:bold;">%</span>
+                        </div>
+                        <button type="button" class="btn btn-danger btn-sm py-0 px-2" style="font-size:10px; font-weight:bold; height:22px;" onclick="guiDeleteExistingSAStat(1)">Delete</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center py-1 px-2 mb-1 gui-item-row" style="background: rgba(0,0,0,0.3); border-radius: 4px;">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/st_0012.png" height="22">
+                            <input type="number" class="form-control py-0 px-1" style="width: 60px; height: 24px; font-size: 11px;" value="40" oninput="guiUpdateExistingSAStat(2, this.value)">
+                            <span style="color:#38bdf8; font-weight:bold;">%</span>
+                        </div>
+                        <button type="button" class="btn btn-danger btn-sm py-0 px-2" style="font-size:10px; font-weight:bold; height:22px;" onclick="guiDeleteExistingSAStat(2)">Delete</button>
+                    </div></div>
+            </div>
         </div></body></html>
