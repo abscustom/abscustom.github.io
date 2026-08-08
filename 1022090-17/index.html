@@ -47,13 +47,13 @@
             window.IS_PUBLISHED = true; 
             window.PUBLISHED_SITE_FOLDER = "1022090-17";
             window.currentType = "teq";
-            window.currentClass = "none";
+            window.currentClass = "extreme";
             window.currentRarity = "LR";
             window.currentAwakeningMode = "eza";
             window.currentCardThemeStyle = "dokkaninfo";
             window.currentHubFormLetter = "a";
         </script></head>
-<body class="theme-dokkaninfo is-published">
+<body class="is-published theme-dokkaninfo">
 
 <!-- OVERLAYS & NOTIFICATIONS -->
 
@@ -82,7 +82,7 @@
         </svg>
     </div>
     
-    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Uploading Card...</div>
+    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Saving Quick Edit...</div>
 </div>
 
 <!-- 1. NEW UPLOAD MODAL -->
@@ -114,7 +114,7 @@
 
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeQuickSaveModal()">Cancel</button>
-                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()" disabled="">Save Live Edit</button>
+                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()">Save Live Edit</button>
             </div>
         </div>
     </div>
@@ -146,7 +146,7 @@
 
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeAdminUnlockModal()">Cancel</button>
-                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()" disabled="">Unlock</button>
+                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()">Unlock</button>
             </div>
         </div>
     </div>
@@ -260,7 +260,7 @@
                                         <div class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base">
-                                                    <img class="card-frame" src="images/frame_teq.png" height="120" alt="Card Frame">
+                                                    <img class="card-frame" src="./images/frame_teq.png" height="120" alt="Card Frame">
                                                 </div>
                                                 <div class="card-icon-item card-info-thumb" style="z-index: 2; margin-top: 0; position: relative;">
                                                     <img class="lr-spin-dial" src="./images/lr_spin_dial.png" alt="spin-effect" style="display: block;">
@@ -268,10 +268,10 @@
                                                     <img id="img-lr" src="images/LR_Icon.png" height="150" alt="icon" data-export-name="images/LR_Icon.png">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-rarity card-info-above-thumb">
-                                                    <img id="main-rarity-icon" src="images/rarity_LR.png" height="72" alt="rarity">
+                                                    <img id="main-rarity-icon" src="./images/rarity_LR.png" height="72" alt="rarity">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-type card-info-above-thumb">
-                                                    <img class="typing-icon" src="images/none_type_teq.png" alt="type icon" height="57">
+                                                    <img class="typing-icon" src="./images/extreme_type_teq.png" alt="type icon" height="57">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-eza-ja card-info-above-thumb">
                                                     <div id="awakening-container" class="card-icon-item-eza-container" style="display: block;">
@@ -291,8 +291,8 @@
                             <div class="col">
                                 <div class="row justify-content-center align-items-center padding-top-bottom-10 border border-2 border-teq bg-teq dokkan-card" style="height: 162px;">
                                     <div class="col" data-edit="identity">
-                                        <div class="row font-size-2"><p id="char-description">Ceremony of Revenge</p></div>
-                                        <div class="row font-size-2"><h1 id="char-name">Super #17</h1></div>
+                                        <div class="row font-size-2"><p id="char-description">Ceremony of RevengeSuper #17</p></div>
+                                        <div class="row font-size-2"><h1 id="char-name">Super #17Super #17</h1></div>
                                     </div>
                                 </div>
                             </div>
@@ -319,20 +319,20 @@
                 <div class="col text-center"><b>Release Date</b></div>
             </div>
             <div class="row padding-top-bottom-5 bg-teq-2 m-0">
-                <div class="col text-center">5/20/2021 2:30:00 AM EDT</div>
+                <div class="col text-center">5/20/2021 2:30:00 AM EDTSuper #17</div>
             </div>
             <div class="row padding-top-bottom-5 bg-teq m-0">
                 <div class="col text-center"><b>EZA Release Date</b></div>
             </div>
             <div class="row padding-top-bottom-5 bg-teq-2 m-0">
-                <div class="col text-center">10/7/2025 1:00:00 AM EDT</div>
+                <div class="col text-center">10/7/2025 1:00:00 AM EDTSuper #17</div>
             </div>
         </div>
     </div></div>
 
                                 <div class="row border border-2 border-dark border-teq bg-teq dokkan-card">
                                     <div class="col p-3">
-                                        <div id="forms-container">
+                                        <div id="forms-container" class="">
     <div class="row bg-teq dokkan-card" data-hub-letter="a">
 <!-- The inline !important here defeats your global CSS forcing 15px padding -->
 <div class="col" style="padding: 8px 0 !important;">
@@ -342,7 +342,7 @@
                 <img class="img-fluid form-image" src="images/Form_Cutin_1.png" data-export-name="images/Form_Cutin_1.png" style="max-height: 60px; width: auto; display: block;">
             </a>
         </div>
-        <div class="col-7 form-name form-name-display d-flex justify-content-center align-items-center" style="color: #fff; font-weight: normal; font-size: 16px; text-align: center; margin: 0;">Super #17</div>
+        <div class="col-7 form-name form-name-display d-flex justify-content-center align-items-center" style="color: #fff; font-weight: normal; font-size: 16px; text-align: center; margin: 0;">Super #17Super #17</div>
     </div>
 </div>
     </div></div>
@@ -366,7 +366,7 @@
                                                 <div class="card-icon-item card-icon-item-base card-info-base"><img class="card-frame" src="./images/frame_teq.png" height="120" alt="Card Frame"></div>
                                                 <div class="card-icon-item card-info-thumb" style="z-index: 2; margin-top: 0px;"><img id="img-tur" src="images/TUR_Icon.png" height="150" alt="icon" data-export-name="images/TUR_Icon.png"></div>
                                                 <div class="card-icon-item card-icon-item-rarity card-info-above-thumb"><img id="tur-rarity-icon" src="./images/rarity_TUR.png" height="72" alt="rarity"></div>
-                                                <div class="card-icon-item card-icon-item-type card-info-above-thumb"><img class="typing-icon" src="./images/type_teq.png" alt="type icon" height="57"></div>
+                                                <div class="card-icon-item card-icon-item-type card-info-above-thumb"><img class="typing-icon" src="./images/extreme_type_teq.png" alt="type icon" height="57"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -391,7 +391,7 @@
                             <div class="col">
                                <div class="row font-size-1_2 justify-content-center align-items-center border border-2 border-teq dokkan-card" data-edit="leader">
                                     <div class="col">
-                                        <div class="row padding-top-bottom-10 bg-teq"><div class="col"><b>Leader Skill</b></div></div>
+                                        <div class="row padding-top-bottom-10 bg-teq"><div class="col"><b class="">Leader Skill</b></div></div>
                                         <div class="row padding-top-bottom-5 bg-teq-2"><div class="col" id="leader-skill">"GT Bosses" or "Androids" Category Ki +4 and HP, ATK &amp; DEF +170%</div></div>
                                     </div>
                                 </div>
@@ -403,12 +403,12 @@
                             <div class="col-sm-2"><b><span class="sa-type-label">Super Attack</span></b></div>
                             <div class="col-sm-8" style="display: flex; justify-content: center; align-items: center;">
                                 <img class="sa-display-icon" src="./images/sp_skill_icon_01.png">
-                                <b class="sa-display-name">Hell's Storm (Extreme)</b>
+                                <b class="sa-display-name">Hell's Storm (Extreme)Super #17 (Extreme)</b>
                             </div>
                         </div>
                         <div class="row padding-top-bottom-5 bg-teq-2 dokkan-card">
                             <div class="col padding-top-bottom-5">
-                                <div class="sa-display-effects-list"><div class="row"><div class="col">Greatly raises ATK and raises DEF for 1 turn, causes colossal damage to enemy and lowers DEF</div></div></div>
+                                <div class="sa-display-effects-list"><div class="row"><div class="col">Greatly raises ATK and raises DEF for 1 turn, causes colossal damage to enemy and lowers DEFSuper #17</div></div></div>
                                 <div class="activation-row d-none">
                                     <hr class="divider py bg-secondary">
                                     <div class="row"><div class="col text-center italic py-1"><div class="activation-text">Activation Conditions</div></div></div>
@@ -466,6 +466,41 @@
                         </div>
                     </div>
                 </div>
+            
+                <div class="row sa-block font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card" data-ki="Super #17">
+                    <div class="col">
+                        <div class="row padding-top-bottom-10 bg-teq dokkan-card">
+                            <div class="col-sm-2"><b><span class="sa-type-label">Ex Super Attack</span></b></div>
+                            <div class="col-sm-8" style="display: flex; justify-content: center; align-items: center;">
+                                <img class="sa-display-icon" src="./images/sp_skill_icon_01.png">
+                                <b class="sa-display-name">Super Attack (Extreme)Super #17</b>
+                            </div>
+                        </div>
+                        <div class="row padding-top-bottom-5 bg-teq-2 dokkan-card">
+                            <div class="col padding-top-bottom-5">
+                                <div class="sa-display-effects-list"><div class="row"><div class="col">Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</div></div></div>
+                                <div class="activation-row d-none">
+                                    <hr class="divider py bg-secondary">
+                                    <div class="row"><div class="col text-center italic py-1"><div class="activation-text">Activation Conditions</div></div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <hr class="divider py bg-secondary">
+                                        <div class="stats-container row"><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0011.png"><span class="display-text ms-1">30%</span></div><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0002.png"><span class="display-text ms-1">30%</span></div><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_0100.png"><span class="display-text ms-1">30%</span></div><div class="col sa-stat-row"><img class="display-img" width="50" src="./images/st_1009.png"><span class="display-text ms-1">30%</span></div></div>
+                                    </div>
+                                </div>
+                                <div class="sa-lv-container">
+                                    <div class="row sa-20-bonus">
+                                        <div class="col">
+                                            <hr class="divider py bg-secondary">
+                                            <div class="text-center py-1">SA Lv 20: Super Attack +30%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div id="sa-insert-spot"></div>
 
                                <div class="row font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card" data-edit="passive">
@@ -476,7 +511,7 @@
                                         </div>
                                         <div class="row padding-top-bottom-5 bg-teq-2 dokkan-card">
                                             <div class="col text-start padding-top-bottom-5">
-                                                <div class="passive-container-main"><div id="card-passive-container"><div id="card-sec-1"><strong id="card-header-text-1" style="display:block; margin-top:0px;" class="">Basic effect(s)</strong><ul id="card-ul-1"><li>ATK &amp; DEF 200%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Chance of performing a critical hit &amp; damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Receives an additional Ki +2 per Rainbow Ki Sphere obtained</li></ul></div><div id="card-sec-2"><strong id="card-header-text-2" style="display:block; margin-top:0px;">Per "Androids", "Target: Goku" or "GT Bosses" Category ally attacking in the same turn (depending on which Category has more members)</strong><ul id="card-ul-2"><li>ATK &amp; DEF 50%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-3"><strong id="card-header-text-3" style="display:block; margin-top:0px;">When there is another "Androids" or "Target: Goku" Category ally attacking in the same turn</strong><ul id="card-ul-3"><li>Randomly changes Ki Spheres of a certain Type (TEQ excluded) to Rainbow Ki Spheres</li><li>DEF 170%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-4"><strong id="card-header-text-4" style="display:block; margin-top:0px;">For every Rainbow Ki Sphere obtained</strong><ul id="card-ul-4"><li>Launches an additional attack that has a great chance of becoming a Super Attack (up to 2 times)</li></ul></div><div id="card-sec-5"><strong id="card-header-text-5" style="display:block; margin-top:0px;">When activating the Active Skill or when attacking with 17 or more Ki</strong><ul id="card-ul-5"><li>ATK &amp; DEF 70%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Chance of performing a critical hit 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-6"><strong id="card-header-text-6" style="display:block; margin-top:0px;" class="">When receiving an attack</strong><ul id="card-ul-6"><li>DEF 100%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-7"><strong id="card-header-text-7" style="display:block; margin-top:0px;">For every attack received</strong><ul id="card-ul-7"><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">Ki +1 (up to +7)</li><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">ATK, DEF &amp; chance of performing a critical hit 10%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon">&nbsp;(up to 70%)</li></ul></div></div></div>
+                                                <div class="passive-container-main"><div id="card-passive-container" class=""><div id="card-sec-1"><strong id="card-header-text-1" style="display:block; margin-top:0px;" class="">Basic effect(s)Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</strong><ul id="card-ul-1"><li>ATK &amp; DEF 200%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon">Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</li><li>Chance of performing a critical hit &amp; damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Receives an additional Ki +2 per Rainbow Ki Sphere obtained</li></ul></div><div id="card-sec-2"><strong id="card-header-text-2" style="display:block; margin-top:0px;">Per "Androids", "Target: Goku" or "GT Bosses" Category ally attacking in the same turn (depending on which Category has more members)</strong><ul id="card-ul-2"><li class="">ATK &amp; DEF 50%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-3"><strong id="card-header-text-3" style="display:block; margin-top:0px;" class="">When there is another "Androids" or "Target: Goku" Category ally attacking in the same turn</strong><ul id="card-ul-3"><li>Randomly changes Ki Spheres of a certain Type (TEQ excluded) to Rainbow Ki Spheres</li><li class="">DEF 170%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-4"><strong id="card-header-text-4" style="display:block; margin-top:0px;">For every Rainbow Ki Sphere obtained</strong><ul id="card-ul-4"><li class="">Launches an additional attack that has a great chance of becoming a Super Attack (up to 2 times)</li></ul></div><div id="card-sec-5"><strong id="card-header-text-5" style="display:block; margin-top:0px;" class="">When activating the Active Skill or when attacking with 17 or more Ki</strong><ul id="card-ul-5"><li>ATK &amp; DEF 70%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li class="">Chance of performing a critical hit 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-6"><strong id="card-header-text-6" style="display:block; margin-top:0px;" class="">When receiving an attack</strong><ul id="card-ul-6"><li class="">DEF 100%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-7"><strong id="card-header-text-7" style="display:block; margin-top:0px;">For every attack received</strong><ul id="card-ul-7"><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">Ki +1 (up to +7)</li><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">ATK, DEF &amp; chance of performing a critical hit 10%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon">&nbsp;(up to 70%)</li></ul></div></div></div>
                                             </div>
                                         </div>
                                     </div>
@@ -487,16 +522,16 @@
                     <div class="col p-0">
                         <div class="row padding-top-bottom-10 bg-teq m-0 position-relative d-flex align-items-center">
                             <div class="position-absolute start-0 w-auto" style="padding-left: 15px;">
-                                <b class="active-type-label">Active Skill</b>
+                                <b class="active-type-label">Super #17</b>
                             </div>
                             <div class="col text-center px-5">
-                                <b class="active-display-name">Electro Eclipse Bomb</b>
+                                <b class="active-display-name">Super #17Super #17Super #17</b>
                             </div>
                         </div>
                         <div class="row padding-top-bottom-5 bg-teq-2 m-0">
                             <div class="col text-center">
                                 <div class="row padding-top-5">
-                                    <div class="col active-display-effect">Causes ultimate damage to enemy and lowers ATK &amp; DEF by 17% for 1 turn</div>
+                                    <div class="col active-display-effect">Causes ultimate damage to enSuper #17Super #17Super #17Super #17Super #17Super #17Super #17emy and lowers ATK &amp; DEF by 17% for 1 turn</div>
                                 </div>
                                 <div class="row active-divider-row">
                                     <div class="col"><hr class="divider py bg-secondary"></div>
@@ -511,6 +546,35 @@
                         </div>
                     </div>
                 </div>
+            
+                <div class="row active-block font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
+                    <div class="col p-0">
+                        <div class="row padding-top-bottom-10 bg-teq m-0 position-relative d-flex align-items-center">
+                            <div class="position-absolute start-0 w-auto" style="padding-left: 15px;">
+                                <b class="active-type-label">Active Skill</b>
+                            </div>
+                            <div class="col text-center px-5">
+                                <b class="active-display-name">(Enter Skill Name)</b>
+                            </div>
+                        </div>
+                        <div class="row padding-top-bottom-5 bg-teq-2 m-0">
+                            <div class="col text-center">
+                                <div class="row padding-top-5">
+                                    <div class="col active-display-effect">(Enter what the Skill Does)Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</div>
+                                </div>
+                                <div class="row active-divider-row">
+                                    <div class="col"><hr class="divider py bg-secondary"></div>
+                                </div>
+                                <div class="row padding-bottom-5 active-condition-row">
+                                    <div class="col">
+                                        <div class="row"><div class="col"><b class="active-display-condition-title">Activation Condition(s)Super #17Super #17Super #17</b></div></div>
+                                        <div class="row"><div class="col active-display-condition">(ex.) Can be activated starting from the 5th turn...Super #17Super #17Super #17</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div id="active-skill-insert-spot"></div>
                             </div>
                         </div>
@@ -518,14 +582,14 @@
                         <div class="row font-size-1_2 margin-top-bottom-3 justify-content-center align-items-center border border-2 border-teq dokkan-card">
                             <div class="col">
                                 <div class="row padding-top-bottom-10 bg-teq dokkan-card"><div class="col"><b>Link Skills</b></div></div>
-                                <div id="card-link-container" class="row d-flex flex-wrap justify-content-center bg-teq-2 padding-top-bottom-0 dokkan-card" data-edit="links"><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Android Assault</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">GT</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Fierce Battle</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Fused Fighter</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Nightmare</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Fear and Faith</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Legendary Power</a></div>
+                                <div id="card-link-container" class="row d-flex flex-wrap justify-content-center bg-teq-2 padding-top-bottom-0 dokkan-card" data-edit="links"><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Android Assault</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">GT</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Fierce Battle</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Fused Fighter</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Nightmare</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Fear and Faith</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Legendary Power</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Big Bad Bosses</a><a class="col-4 border border-1 border-teq padding-top-bottom-10 text-center">Saiyan Roar</a></div>
                             </div>
                         </div>
 
                         <div class="row font-size-1_2 margin-top-bottom-5 justify-content-center align-items-center border border-2 border-teq dokkan-card">
                             <div class="col">
                                 <div class="row padding-top-bottom-10 bg-teq"><div class="col"><b>Categories</b></div></div>
-                                <div id="card-category-container" class="row d-flex flex-wrap justify-content-center bg-teq-2 padding-top-bottom-10 dokkan-card" data-edit="categories"><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0021_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0032_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0043_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0048_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0050_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0059_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0073_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0083_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0085_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0094_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0097_b_on.png" style="width:210px;"></div></div>
+                                <div id="card-category-container" class="row d-flex flex-wrap justify-content-center bg-teq-2 padding-top-bottom-10 dokkan-card" data-edit="categories"><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0021_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0032_b_on.png" style="width:210px;" class=""></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0043_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0048_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0050_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0059_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0073_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0083_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0085_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0094_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0097_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0007_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5"><img src="images/card_category_label_0017_b_on.png" style="width:210px;"></div></div>
                             </div>
                         </div>
 
@@ -545,30 +609,30 @@
                                         </tr>
                                         <tr class="bg-teq">
                                             <th class="bg-teq-2 padding-top-bottom-5" scope="row"><b>HP</b></th>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-min">5,186</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-max">17,113</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-55">19,113</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-hp-100">21,713</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-max" style="color: #facc15;">22,884</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-100" style="color: #facc15;">27,484</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-min">337</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-max">1,111</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-55">3,111</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-hp-100">5,711</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-max" style="color: #facc15;">1,486</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-hp-eza-100" style="color: #facc15;">6,086</b></td>
                                         </tr>
                                         <tr class="bg-teq">
                                             <th class="bg-teq-2 padding-top-bottom-5" scope="row"><b>ATK</b></th>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-min">4,500</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-max">14,850</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-55">16,850</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-atk-100">20,250</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-max" style="color: #facc15;">19,858</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-100" style="color: #facc15;">25,258</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-min">337</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-max">1,111</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-55">3,111</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-atk-100">6,511</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-max" style="color: #facc15;">1,486</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-atk-eza-100" style="color: #facc15;">6,886</b></td>
                                         </tr>
                                         <tr class="bg-teq">
                                             <th class="bg-teq-2 padding-top-bottom-5" scope="row"><b>DEF</b></th>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-min">3,184</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-max">10,506</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-55">12,506</b></td>
-                                            <td class="padding-top-bottom-5"><b id="stat-def-100">15,506</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-max" style="color: #facc15;">14,049</b></td>
-                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-100" style="color: #facc15;">19,049</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-min">337</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-max">1,111</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-55">3,111</b></td>
+                                            <td class="padding-top-bottom-5"><b id="stat-def-100">6,111</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-max" style="color: #facc15;">1,486</b></td>
+                                            <td class="padding-top-bottom-5 eza-stat-col d-none"><b id="stat-def-eza-100" style="color: #facc15;">6,486</b></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -586,28 +650,28 @@
                 <div class="abs-top-header">
                     <div class="abs-header-left">
                         <div id="abs-composed-icon">
-                            <img id="abs-frame-img" class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_teq.png">
+                            <img id="abs-frame-img" class="card-frame" src="https://abscustom.github.io/1022090-17/images/frame_teq.png">
                             <img id="abs-spin-dial" class="lr-spin-dial" src="./images/lr_spin_dial.png" style="display: block;">
                             <video id="abs-lightning" class="lightning-overlay" autoplay="" muted="" loop="" playsinline="" style="display: block; --lightning-color: rgb(0, 255, 50);">
                                 <source src="./images/lightningfx.webm" type="video/webm">
                             </video>
                             <div class="thumb-box">
-                                <img id="abs-thumb-img" class="thumb-img" src="images/img_export_52_msjsbojp.png">
+                                <img id="abs-thumb-img" class="thumb-img" src="https://abscustom.github.io/1022090-17/images/LR_Icon.png">
                             </div>
                             <img id="abs-top-rarity-icon" class="rarity-icon" src="./images/rarity_lr_abs.png">
-                            <img id="abs-top-type-icon" class="type-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/type_teq.png">
+                            <img id="abs-top-type-icon" class="type-icon" src="https://abscustom.github.io/1022090-17/images/extreme_type_teq.png">
                             <img id="abs-awakening-img" class="eza-icon" src="./images/eza_abs.png" style="display: block;">
                         </div>
 
                         <div class="abs-header-text">
-                            <div id="abs-char-title">Ceremony of Revenge</div>
-                            <div id="abs-char-name">Super #17</div>
+                            <div id="abs-char-title">Ceremony of RevengeSuper #17</div>
+                            <div id="abs-char-name">Super #17Super #17</div>
                         </div>
                     </div>
 
                     <div class="abs-header-right">
                         <img id="abs-rarity-icon" src="./images/rarity_lr_abs.png">
-                        <img id="abs-type-icon" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/type_teq.png">
+                        <img id="abs-type-icon" src="https://abscustom.github.io/1022090-17/images/extreme_type_teq.png">
                         <img id="abs-top-awakening-img" src="./images/eza_abs.png" style="display: block; height: 42px;">
                     </div>
                 </div>
@@ -624,7 +688,7 @@
 
                         <div class="abs-box">
                             <div class="abs-header" id="abs-passive-name"><span>Passive Skill - <i>Ideal Combat Distance</i></span></div>
-                            <div class="abs-content" id="abs-passive-container"><div id="card-sec-1"><strong id="card-header-text-1" style="display:block; margin-top:0px;" class="">Basic effect(s)</strong><ul id="card-ul-1"><li>ATK &amp; DEF 200%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Chance of performing a critical hit &amp; damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Receives an additional Ki +2 per Rainbow Ki Sphere obtained</li></ul></div><div id="card-sec-2"><strong id="card-header-text-2" style="display:block; margin-top:0px;">Per "Androids", "Target: Goku" or "GT Bosses" Category ally attacking in the same turn (depending on which Category has more members)</strong><ul id="card-ul-2"><li>ATK &amp; DEF 50%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-3"><strong id="card-header-text-3" style="display:block; margin-top:0px;">When there is another "Androids" or "Target: Goku" Category ally attacking in the same turn</strong><ul id="card-ul-3"><li>Randomly changes Ki Spheres of a certain Type (TEQ excluded) to Rainbow Ki Spheres</li><li>DEF 170%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-4"><strong id="card-header-text-4" style="display:block; margin-top:0px;">For every Rainbow Ki Sphere obtained</strong><ul id="card-ul-4"><li>Launches an additional attack that has a great chance of becoming a Super Attack (up to 2 times)</li></ul></div><div id="card-sec-5"><strong id="card-header-text-5" style="display:block; margin-top:0px;">When activating the Active Skill or when attacking with 17 or more Ki</strong><ul id="card-ul-5"><li>ATK &amp; DEF 70%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Chance of performing a critical hit 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-6"><strong id="card-header-text-6" style="display:block; margin-top:0px;" class="">When receiving an attack</strong><ul id="card-ul-6"><li>DEF 100%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-7"><strong id="card-header-text-7" style="display:block; margin-top:0px;">For every attack received</strong><ul id="card-ul-7"><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">Ki +1 (up to +7)</li><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">ATK, DEF &amp; chance of performing a critical hit 10%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon">&nbsp;(up to 70%)</li></ul></div></div>
+                            <div class="abs-content" id="abs-passive-container"><div id="card-sec-1"><strong id="card-header-text-1" style="display:block; margin-top:0px;" class="">Basic effect(s)Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</strong><ul id="card-ul-1"><li>ATK &amp; DEF 200%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon">Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</li><li>Chance of performing a critical hit &amp; damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Receives an additional Ki +2 per Rainbow Ki Sphere obtained</li></ul></div><div id="card-sec-2"><strong id="card-header-text-2" style="display:block; margin-top:0px;">Per "Androids", "Target: Goku" or "GT Bosses" Category ally attacking in the same turn (depending on which Category has more members)</strong><ul id="card-ul-2"><li class="">ATK &amp; DEF 50%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-3"><strong id="card-header-text-3" style="display:block; margin-top:0px;" class="">When there is another "Androids" or "Target: Goku" Category ally attacking in the same turn</strong><ul id="card-ul-3"><li>Randomly changes Ki Spheres of a certain Type (TEQ excluded) to Rainbow Ki Spheres</li><li class="">DEF 170%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-4"><strong id="card-header-text-4" style="display:block; margin-top:0px;">For every Rainbow Ki Sphere obtained</strong><ul id="card-ul-4"><li class="">Launches an additional attack that has a great chance of becoming a Super Attack (up to 2 times)</li></ul></div><div id="card-sec-5"><strong id="card-header-text-5" style="display:block; margin-top:0px;" class="">When activating the Active Skill or when attacking with 17 or more Ki</strong><ul id="card-ul-5"><li>ATK &amp; DEF 70%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li class="">Chance of performing a critical hit 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-6"><strong id="card-header-text-6" style="display:block; margin-top:0px;" class="">When receiving an attack</strong><ul id="card-ul-6"><li class="">DEF 100%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li><li>Damage reduction rate 17%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon"></li></ul></div><div id="card-sec-7"><strong id="card-header-text-7" style="display:block; margin-top:0px;">For every attack received</strong><ul id="card-ul-7"><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">Ki +1 (up to +7)</li><li><img src="./images/passive_skill_dialog_icon_02.png" class="dokkan-icon dokkan-dialog-icon">ATK, DEF &amp; chance of performing a critical hit 10%<img src="./images/passive_skill_dialog_arrow01.png" class="dokkan-icon dokkan-dialog-icon">&nbsp;(up to 70%)</li></ul></div></div>
                         </div>
 
                         <div id="abs-sa-container">
@@ -632,13 +696,13 @@
                 <div class="abs-header">
                     <div class="abs-sa-header-title">
                         <img src="./images/sp_skill_icon_01.png" class="abs-sa-icon-left" alt="SA Icon">
-                        <span class="abs-sa-title-text">Super Attack | <em class="abs-sa-name-glow">Hell's Storm (Extreme)</em></span>
+                        <span class="abs-sa-title-text">Super Attack | <em class="abs-sa-name-glow">Hell's Storm (Extreme)Super #17 (Extreme)</em></span>
                     </div>
                 </div>
                 <div class="abs-content text-start">
                     
                     <div class="abs-skill-label text-warning mb-1">Effect:</div>
-                    <div>Greatly raises ATK and raises DEF for 1 turn, causes colossal damage to enemy and lowers DEF</div>
+                    <div>Greatly raises ATK and raises DEF for 1 turn, causes colossal damage to enemy and lowers DEFSuper #17</div>
                     
         <div class="abs-special-effects-section">
             <div class="abs-special-effects-title">SPECIAL EFFECTS</div>
@@ -793,13 +857,94 @@
             
                 </div>
             </div>
+        
+            <div class="abs-box mb-3">
+                <div class="abs-header">
+                    <div class="abs-sa-header-title">
+                        <img src="./images/sp_skill_icon_01.png" class="abs-sa-icon-left" alt="SA Icon">
+                        <span class="abs-sa-title-text"><span class="abs-ex-prefix">EX</span> Super Attack | <em class="abs-sa-name-glow">Super Attack (Extreme)Super #17</em></span>
+                    </div>
+                </div>
+                <div class="abs-content text-start">
+                    
+                    <div class="abs-skill-label text-warning mb-1">Effect:</div>
+                    <div>Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</div>
+                    
+        <div class="abs-special-effects-section">
+            <div class="abs-special-effects-title">SPECIAL EFFECTS</div>
+            <div class="abs-special-effects-groups">
+                
+            <div class="abs-effect-group self">
+                <span class="abs-group-label self">SELF</span>
+                
+                <div class="abs-effect-badge">
+                    <div class="abs-badge-top">
+                        <img src="./images/st_0002.png" alt="stat">
+                        <span>30%</span>
+                    </div>
+                    <div class="abs-badge-bottom">1 turn</div>
+                </div>
+            
+            </div>
+        
+                
+                
+            <div class="abs-effect-group enemy">
+                <span class="abs-group-label enemy">ENEMY</span>
+                
+                <div class="abs-effect-badge">
+                    <div class="abs-badge-top">
+                        <img src="./images/st_0011.png" alt="stat">
+                        <span>30%</span>
+                    </div>
+                    <div class="abs-badge-bottom">3 turns</div>
+                </div>
+            
+                <div class="abs-effect-badge">
+                    <div class="abs-badge-top">
+                        <img src="./images/st_0100.png" alt="stat">
+                        <span>30%</span>
+                    </div>
+                    <div class="abs-badge-bottom">2 turns</div>
+                </div>
+            
+                <div class="abs-effect-badge">
+                    <div class="abs-badge-top">
+                        <img src="./images/st_1009.png" alt="stat">
+                        <span>30%</span>
+                    </div>
+                    <div class="abs-badge-bottom">1 turn</div>
+                </div>
+            
+            </div>
+        
+            </div>
+        </div>
+    
+                    
+                    
+                <div class="abs-sa-bonus-box">
+                    <div class="abs-bonus-left">
+                        <span class="abs-bonus-title">At SA LVL 20: Super Attack +30%</span>
+                    </div>
+                    <div class="abs-multiplier-pills">
+                        <div class="abs-multiplier-pill">
+                            <span class="pill-val">+30%</span>
+                            <span class="pill-at">at</span>
+                            <span class="pill-lv">Lv. 20</span>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            </div>
         </div>
                         <div id="abs-active-container">
             <div class="abs-box mb-3">
                 <div class="abs-header">
                     <div class="abs-sa-header-title">
                         
-                        <span class="abs-sa-title-text">Active Skill | <em class="abs-sa-name-glow">Electro Eclipse Bomb</em></span>
+                        <span class="abs-sa-title-text">Super #17 | <em class="abs-sa-name-glow">Super #17Super #17Super #17</em></span>
                     </div>
                 </div>
                 <div class="abs-content text-start">
@@ -808,7 +953,7 @@
                         <div class="mb-3">Can be activated after the character receives an attack 7 or more times in battle (once only)</div>
                     
                     <div class="abs-skill-label text-warning mb-1">Effect:</div>
-                    <div>Causes ultimate damage to enemy and lowers ATK &amp; DEF by 17% for 1 turn</div>
+                    <div>Causes ultimate damage to enSuper #17Super #17Super #17Super #17Super #17Super #17Super #17emy and lowers ATK &amp; DEF by 17% for 1 turn</div>
                     
         <div class="abs-damage-multiplier-box">
             <div class="abs-multiplier-left">
@@ -824,6 +969,24 @@
             </div>
         </div>
     
+                </div>
+            </div>
+        
+            <div class="abs-box mb-3">
+                <div class="abs-header">
+                    <div class="abs-sa-header-title">
+                        
+                        <span class="abs-sa-title-text">Active Skill | <em class="abs-sa-name-glow">(Enter Skill Name)</em></span>
+                    </div>
+                </div>
+                <div class="abs-content text-start">
+                    
+                        <div class="abs-skill-label text-warning mb-1">Condition:</div>
+                        <div class="mb-3">(ex.) Can be activated starting from the 5th turn...Super #17Super #17Super #17</div>
+                    
+                    <div class="abs-skill-label text-warning mb-1">Effect:</div>
+                    <div>(Enter what the Skill Does)Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17</div>
+                    
                 </div>
             </div>
         </div>
@@ -879,12 +1042,26 @@
                             <span class="num-text">10</span>
                         </div>
                         <div class="abs-link-name">Legendary Power</div>
+                    </div>
+                    <div class="abs-link-badge">
+                        <div class="abs-link-lv">
+                            <span class="lv-text">Lv</span>
+                            <span class="num-text">10</span>
+                        </div>
+                        <div class="abs-link-name">Big Bad Bosses</div>
+                    </div>
+                    <div class="abs-link-badge">
+                        <div class="abs-link-lv">
+                            <span class="lv-text">Lv</span>
+                            <span class="num-text">10</span>
+                        </div>
+                        <div class="abs-link-name">Saiyan Roar</div>
                     </div></div>
                         </div>
 
                         <div class="abs-box">
                             <div class="abs-header">Categories</div>
-                            <div class="abs-content" style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px; padding: 12px 15px !important;" id="abs-category-container"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0021_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0032_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0043_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0048_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0050_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0059_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0073_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0083_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0085_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0094_b_on.png"><img src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/card_category_label_0097_b_on.png"></div>
+                            <div class="abs-content" style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px; padding: 12px 15px !important;" id="abs-category-container"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0021_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0032_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0043_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0048_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0050_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0059_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0073_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0083_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0085_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0094_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0097_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0007_b_on.png"><img src="https://abscustom.github.io/1022090-17/images/card_category_label_0017_b_on.png"></div>
                         </div>
                     </div>
 
@@ -892,7 +1069,7 @@
                         <div class="abs-box">
                             <div class="abs-header text-center" id="abs-art-header-text" style="justify-content: center; min-height: 32px; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: flex;">DOKKAN FESTIVAL UNIT</div>
                             <div class="abs-art-box">
-                                <img id="abs-art-img" src="images/img_export_89_msjsbojq.jpg" style="width: 100%; display: block;">
+                                <img id="abs-art-img" src="https://abscustom.github.io/1022090-17/images/1022090.png" style="width: 100%; display: block;">
                             </div>
                         </div>
 
@@ -910,15 +1087,15 @@
                                 <div class="abs-stat-cards-row">
                                     <div class="abs-stat-card hp-card">
                                         <span class="abs-stat-card-label hp-label">HP</span>
-                                        <span class="abs-stat-card-value" id="abs-stat-hp-val">21,713</span>
+                                        <span class="abs-stat-card-value" id="abs-stat-hp-val">5,711</span>
                                     </div>
                                     <div class="abs-stat-card atk-card">
                                         <span class="abs-stat-card-label atk-label">ATK</span>
-                                        <span class="abs-stat-card-value" id="abs-stat-atk-val">20,250</span>
+                                        <span class="abs-stat-card-value" id="abs-stat-atk-val">6,511</span>
                                     </div>
                                     <div class="abs-stat-card def-card">
                                         <span class="abs-stat-card-label def-label">DEF</span>
-                                        <span class="abs-stat-card-value" id="abs-stat-def-val">15,506</span>
+                                        <span class="abs-stat-card-value" id="abs-stat-def-val">6,111</span>
                                     </div>
                                 </div>
                             </div>
@@ -930,18 +1107,18 @@
                 <div class="abs-awaken-row">
                     
                 <div class="abs-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_teq.png">
+                    <img class="card-frame" src="https://abscustom.github.io/1022090-17/images/frame_teq.png">
                     
                     
                     <div class="thumb-box">
-                        <img class="thumb-img" src="images/img_export_91_msjsbojr.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/1022090-17/images/SSR_Icon.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_ssr_abs.png">
                     <img class="type-icon" src="./images/type_teq.png">
                     
                 </div>
             
-                    <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">5/20/2021 2:30:00 AM EDT</span></div>
+                    <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">5/20/2021 2:30:00 AM EDTSuper #17</span></div>
                 </div>
             
                     
@@ -952,18 +1129,18 @@
                     <div class="abs-awaken-row">
                         
                 <div class="abs-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_teq.png">
+                    <img class="card-frame" src="https://abscustom.github.io/1022090-17/images/frame_teq.png">
                     
                     
                     <div class="thumb-box">
-                        <img class="thumb-img" src="images/img_export_96_msjsbojr.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/1022090-17/images/TUR_Icon.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_TUR_abs.png">
                     <img class="type-icon" src="./images/type_teq.png">
                     
                 </div>
             
-                        <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">5/20/2021 2:30:00 AM EDT</span></div>
+                        <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">5/20/2021 2:30:00 AM EDTSuper #17</span></div>
                     </div>
                 
                     
@@ -974,21 +1151,21 @@
                     <div class="abs-awaken-row">
                         
                 <div class="abs-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_teq.png">
+                    <img class="card-frame" src="https://abscustom.github.io/1022090-17/images/frame_teq.png">
                     <img src="./images/lr_spin_dial.png" class="lr-spin-dial">
                     
                 <video class="lightning-overlay" autoplay="" muted="" loop="" playsinline="">
                     <source src="./images/lightningfx.webm" type="video/webm">
                 </video>
                     <div class="thumb-box">
-                        <img class="thumb-img" src="images/img_export_102_msjsbojs.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/1022090-17/images/LR_Icon.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_lr_abs.png">
                     <img class="type-icon" src="./images/type_teq.png">
                     
                 </div>
             
-                        <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">5/20/2021 2:30:00 AM EDT</span></div>
+                        <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">Release Date:<br><span style="font-weight: normal; font-size: 13.5px;">5/20/2021 2:30:00 AM EDTSuper #17</span></div>
                     </div>
                 
                     
@@ -999,21 +1176,21 @@
                     <div class="abs-awaken-row">
                         
                 <div class="abs-composed-icon ">
-                    <img class="card-frame" src="http://127.0.0.1:3000/c:/Users/Ruffy/Desktop/ceditor/images/frame_teq.png">
+                    <img class="card-frame" src="https://abscustom.github.io/1022090-17/images/frame_teq.png">
                     <img src="./images/lr_spin_dial.png" class="lr-spin-dial">
                     
                 <video class="lightning-overlay" autoplay="" muted="" loop="" playsinline="">
                     <source src="./images/lightningfx.webm" type="video/webm">
                 </video>
                     <div class="thumb-box">
-                        <img class="thumb-img" src="images/img_export_108_msjsbojs.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/1022090-17/images/LR_Icon.png">
                     </div>
                     <img class="rarity-icon" src="./images/rarity_lr_abs.png">
                     <img class="type-icon" src="./images/type_teq.png">
                     <img src="./images/eza_abs.png" class="eza-icon">
                 </div>
             
-                        <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">EZA Release Date:<br><span style="color: #facc15; font-size: 13.5px;">10/7/2025 1:00:00 AM EDT</span></div>
+                        <div class="abs-awaken-date" style="font-size: 15px; font-weight: bold; text-align: center; flex: 1;">EZA Release Date:<br><span style="color: #facc15; font-size: 13.5px;">10/7/2025 1:00:00 AM EDTSuper #17</span></div>
                     </div>
                 </div>
                         </div>
@@ -1103,15 +1280,15 @@
 <!-- HIDDEN DATA CONTAINERS (PRESERVES FULL JS COMPATIBILITY)-->
 <!-- ======================================================= -->
 <div style="display: none;" id="hidden-legacy-inputs">
-    <textarea id="descInput" value="Ceremony of Revenge">Ceremony of Revenge</textarea>
-    <input type="text" id="nameInput" value="Super #17">
-    <textarea id="dateInput" value="5/20/2021 2:30:00 AM EDT">5/20/2021 2:30:00 AM EDT</textarea>
-    <textarea id="ezaDateInput" value="10/7/2025 1:00:00 AM EDT">10/7/2025 1:00:00 AM EDT</textarea>
+    <textarea id="descInput" value="Ceremony of RevengeSuper #17">Ceremony of RevengeSuper #17</textarea>
+    <input type="text" id="nameInput" value="Super #17Super #17">
+    <textarea id="dateInput" value="5/20/2021 2:30:00 AM EDTSuper #17">5/20/2021 2:30:00 AM EDTSuper #17</textarea>
+    <textarea id="ezaDateInput" value="10/7/2025 1:00:00 AM EDTSuper #17">10/7/2025 1:00:00 AM EDTSuper #17</textarea>
     <textarea id="sezaDateInput" value=""></textarea>
     <textarea id="leaderInput" value="&quot;GT Bosses&quot; or &quot;Androids&quot; Category Ki +4 and HP, ATK &amp; DEF +170%">"GT Bosses" or "Androids" Category Ki +4 and HP, ATK &amp; DEF +170%</textarea>
-    <input type="number" id="input-hp-max" value="17113">
-    <input type="number" id="input-atk-max" value="14850">
-    <input type="number" id="input-def-max" value="10506">
+    <input type="number" id="input-hp-max" value="1111">
+    <input type="number" id="input-atk-max" value="1111">
+    <input type="number" id="input-def-max" value="1111">
     <input type="text" id="input-passive-name-sidebar" value="Ideal Combat Distance">
     <div id="sidebar-sections-area">
         <div id="side-sec-1" style="background:#222; border:1px solid #555; padding:10px; margin-top:10px; border-radius:5px;">
@@ -1127,7 +1304,7 @@
             <div id="side-content-1">
                 <!-- Header Input & Header Debuff Shortcuts -->
                 <div style="margin-top:6px; margin-bottom:4px;">
-                    <input type="text" id="input-sec-hdr-1" oninput="updateHeader(1, this.value)" value="Basic effect(s)" class="form-control form-control-sm mb-1">
+                    <input type="text" id="input-sec-hdr-1" oninput="updateHeader(1, this.value)" value="Basic effect(s)Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17" class="form-control form-control-sm mb-1">
                     <div style="display:flex; gap:3px; width:100%; flex-wrap:wrap; margin-bottom:6px;">
                         <span style="font-size:9px; color:#888; align-self:center; font-weight:bold; margin-right:2px;">Header Icons:</span>
                         <button onclick="insertShortcut('input-sec-hdr-1', ':atk_down:')" title="ATK Down" style="font-size:9px; padding:1px 5px; background:#1e293b; color:#f87171; border:1px solid #ef4444; border-radius:3px; cursor:pointer;">ATK↓</button>
@@ -1138,9 +1315,9 @@
                     </div>
                 </div>
 
-                <textarea id="input-sec-1" oninput="updateSection(1, this.value)" class="form-control form-control-sm mb-2" rows="6" placeholder="Type effects here... Press Enter for a new line." value="ATK &amp; DEF 200%:up:
+                <textarea id="input-sec-1" oninput="updateSection(1, this.value)" class="form-control form-control-sm mb-2" rows="6" placeholder="Type effects here... Press Enter for a new line." value="ATK &amp; DEF 200%:up:Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17
 Chance of performing a critical hit &amp; damage reduction rate 17%:up:
-Receives an additional Ki +2 per Rainbow Ki Sphere obtained">ATK &amp; DEF 200%:up:
+Receives an additional Ki +2 per Rainbow Ki Sphere obtained">ATK &amp; DEF 200%:up:Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17
 Chance of performing a critical hit &amp; damage reduction rate 17%:up:
 Receives an additional Ki +2 per Rainbow Ki Sphere obtained</textarea>
                 
@@ -1437,18 +1614,18 @@ Damage reduction rate 17%:up:</textarea>
     <input type="file" id="upload-ssr" accept="image/*">
     <input list="link-options" id="side-link-input">
     <input list="category-options" id="side-category-input">
-    <select id="sa-selector"><option value="0">1: Hell's Storm (Extreme)</option><option value="1">2: Hell's Execution (Extreme)</option></select>
+    <select id="sa-selector"><option value="0">1: Hell's Storm (Extreme)Super #17 (Extreme)</option><option value="1">2: Hell's Execution (Extreme)</option><option value="2">3: Super Attack (Extreme)</option></select>
     <select id="sa-type-dropdown"></select>
     <input type="text" id="input-sa-type-label">
     <input type="text" id="input-sa-name">
     <textarea id="input-sa-effects"></textarea>
     <textarea id="input-activation"></textarea>
-    <select id="active-selector"><option value="0">1: Electro Eclipse Bomb</option></select>
-    <input type="text" id="input-active-type" value="Active Skill">
-    <input type="text" id="input-active-name" value="(Enter Skill Name)">
-    <textarea id="input-active-effect" value="(Enter what the Skill Does)">(Enter what the Skill Does)</textarea>
+    <select id="active-selector"><option value="0">1: Electro Eclipse BombSuper #17Super #17Super #17Super #17Super #17Super #17Super #17</option><option value="1">2: (Enter Skill Name)</option></select>
+    <input type="text" id="input-active-type" value="Active SkillSuper #17Super #17Super #17Super #17Super #17Super #17Super #17Super #17">
+    <input type="text" id="input-active-name" value="Electro Eclipse BombSuper #17Super #17Super #17Super #17Super #17Super #17Super #17">
+    <textarea id="input-active-effect" value="Causes ultimate damage to enSuper #17Super #17Super #17Super #17Super #17Super #17Super #17emy and lowers ATK &amp;amp; DEF by 17% for 1 turn">Causes ultimate damage to enSuper #17Super #17Super #17Super #17Super #17Super #17Super #17emy and lowers ATK &amp;amp; DEF by 17% for 1 turn</textarea>
     <input type="text" id="input-active-condition-title" value="Activation Condition(s)">
-    <textarea id="input-active-conditions" value="(ex.) Can be activated starting from the 5th turn...">(ex.) Can be activated starting from the 5th turn...</textarea>
+    <textarea id="input-active-conditions" value="Can be activated after the character receives an attack 7 or more times in battle (once only)">Can be activated after the character receives an attack 7 or more times in battle (once only)</textarea>
 
     <datalist id="link-options">
         <option value="Fierce Battle"></option><option value="Legendary Power"></option><option value="Prepared for Battle"></option><option value="Shocking Speed">
@@ -1522,10 +1699,19 @@ Damage reduction rate 17%:up:</textarea>
 <script src="js/19-click-to-edit.js"></script>
 
 </div>
-        <div id="context-gui">
+        <div id="context-gui" style="display: none; left: 1152.66px; top: 60px; position: fixed;" data-is-dragged="true">
             <div class="gui-header" style="cursor: move;">
-                <span id="gui-title" class="gui-title">⚙️ Editor</span>
+                <span id="gui-title" class="gui-title">⚙️ Base Max Stats</span>
                 <button type="button" class="gui-close" onclick="closeContextGUI()">×</button>
             </div>
-            <div id="gui-content"></div>
+            <div id="gui-content" class="">
+                <label class="form-label mb-1">HP (Base Max)</label>
+                <input type="number" id="gui-hp-max" class="form-control mb-2" value="17113" oninput="if(document.getElementById('input-hp-max')) document.getElementById('input-hp-max').value=this.value; calcFromMax('hp');">
+                
+                <label class="form-label mb-1">ATK (Base Max)</label>
+                <input type="number" id="gui-atk-max" class="form-control mb-2" value="14850" oninput="if(document.getElementById('input-atk-max')) document.getElementById('input-atk-max').value=this.value; calcFromMax('atk');">
+                
+                <label class="form-label mb-1">DEF (Base Max)</label>
+                <input type="number" id="gui-def-max" class="form-control mb-2" value="10506" oninput="if(document.getElementById('input-def-max')) document.getElementById('input-def-max').value=this.value; calcFromMax('def');">
+            </div>
         </div></body></html>
