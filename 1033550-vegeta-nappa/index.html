@@ -44,7 +44,6 @@
 <script id="pub-site-marker">
             window.IS_PUBLISHED = true; 
             window.PUBLISHED_SITE_FOLDER = "1033550-vegeta-nappa";
-            window.PUBLISHED_CARD_SOURCE = "official";
             window.currentType = "agl";
             window.currentClass = "super";
             window.currentRarity = "TUR";
@@ -3210,7 +3209,7 @@ Super Saiyan God SS Goku</span>
             <polyline class="check" points="24 10.5 13.5 21 9 16.5"></polyline>
         </svg>
     </div>
-    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Uploading Card...</div>
+    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Saving Quick Edit...</div>
 </div>
 
 <!-- UPLOAD MODAL -->
@@ -3236,7 +3235,7 @@ Super Saiyan God SS Goku</span>
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeQuickSaveModal()">Cancel</button>
-                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()" disabled="">Save Live Edit</button>
+                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()">Save Live Edit</button>
             </div>
         </div>
     </div>
@@ -3263,7 +3262,7 @@ Super Saiyan God SS Goku</span>
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeAdminUnlockModal()">Cancel</button>
-                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()" disabled="">Unlock</button>
+                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()">Unlock</button>
             </div>
         </div>
     </div>
@@ -3352,7 +3351,7 @@ Super Saiyan God SS Goku</span>
     </nav>
         
     <!-- MAIN CONTAINER -->
-    <div id="top-content">
+    <div id="top-content" class="">
         <div class="container-1220 container-text-center padding-top-bottom-5 container-text-light">
             
             <!-- 1. DOKKAN INFO LAYOUT (100% UNTOUCHED & AUTHENTIC) -->
@@ -3366,7 +3365,7 @@ Super Saiyan God SS Goku</span>
                                         <div class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base">
-                                                    <img class="card-frame" src="https://abscustom.github.io/DokkanCustom/assets/images/frame_agl.png" height="120" alt="Card Frame">
+                                                    <img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png" height="120" alt="Card Frame" data-failed="true">
                                                 </div>
                                                 <div class="card-info-thumb" style="z-index: 2; margin-top: 0; position: relative;">
                                                     <img class="lr-spin-dial" src="https://abscustom.github.io/assets/images/lr_spin_dial.png" alt="spin-effect" style="display: none;">
@@ -3374,10 +3373,10 @@ Super Saiyan God SS Goku</span>
                                                     <img id="img-lr" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_506.png" height="150" alt="icon" data-official-card-art="true">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-rarity card-info-above-thumb">
-                                                    <img id="main-rarity-icon" src="https://abscustom.github.io/DokkanCustom/assets/images/rarity_TUR.png" height="72" alt="rarity">
+                                                    <img id="main-rarity-icon" src="https://abscustom.github.io/assets/images/rarity_TUR.png" height="72" alt="rarity" data-failed="true">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-type card-info-above-thumb">
-                                                    <img class="typing-icon" src="https://abscustom.github.io/DokkanCustom/assets/images/super_type_agl.png" alt="type icon" height="57">
+                                                    <img class="typing-icon" src="https://abscustom.github.io/assets/images/super_type_agl.png" alt="type icon" height="57" data-failed="true">
                                                 </div>
                                                 <div class="card-icon-item card-icon-item-eza-ja card-info-above-thumb">
                                                     <div id="awakening-container" class="card-icon-item-eza-container" style="display: none;">
@@ -3434,8 +3433,8 @@ Super Saiyan God SS Goku</span>
                                     </div>
                                 </div>
 
-                                <div class="row d-flex flex-wrap border border-1 border-agl dokkan-card mt-1" id="awakening-progression-wrapper" style="display: none;">
-                                    <div class="col border border-1 border-agl bg-agl">
+                                <div class="row d-flex flex-wrap border border-1 border-agl dokkan-card mt-1" id="awakening-progression-wrapper" style="display: flex;">
+                                    <div class="col border border-1 border-agl bg-agl" style="display: block;">
                                         <div id="ssr-row" class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base"><img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png" height="120"></div>
@@ -3445,7 +3444,7 @@ Super Saiyan God SS Goku</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="tur-row" class="col border border-1 border-agl bg-agl dokkan-card">
+                                    <div id="tur-row" class="col border border-1 border-agl bg-agl dokkan-card" style="display: none;">
                                         <div class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base"><img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png" height="120"></div>
@@ -3511,7 +3510,7 @@ Super Saiyan God SS Goku</span>
                                     </div>
                                 </div>
                                 <div class="sa-lv-container">
-                                    <div class="row sa-20-bonus">
+                                    <div class="row sa-20-bonus" style="display: none;">
                                         <div class="col">
                                             <hr class="divider py bg-secondary">
                                             <div class="text-center py-1">SA Lv 20: Super Attack +30%</div>
@@ -3637,7 +3636,7 @@ the character's entry turn</strong><ul id="card-ul-7"><li>Meets up with Nappa an
             </div>
 
             <!-- 2. ABS.STYLE 3D LAYOUT (MATCHING CARD INSPECTOR VIEWER 1:1) -->
-            <div id="layout-abs-style" style="display: none; --theme-main: #1d4ed8; --theme-border: #3b82f6; --theme-header: #1e40af; --theme-bg-high: #132448; --theme-bg-low: #080e1c; --theme-text: #38bdf8; --theme-glow: rgba(56, 189, 248, 0.6); --type-main: #1d4ed8; --type-border: #3b82f6; --type-header: #1e40af; --type-text: #38bdf8; --type-glow: rgba(56, 189, 248, 0.45); --type-bg: #132448; --type-dark-bg: #080e1c; --theme-box-bg: #0f172a;">
+            <div id="layout-abs-style" style="display: none; --theme-main: #1d4ed8; --theme-border: #3b82f6; --theme-header: #1e40af; --theme-bg-high: #132448; --theme-bg-low: #080e1c; --theme-text: #38bdf8; --theme-glow: rgba(56, 189, 248, 0.45); --type-main: #1d4ed8; --type-border: #3b82f6; --type-header: #1e40af; --type-text: #38bdf8; --type-glow: rgba(56, 189, 248, 0.45); --type-bg: #132448; --type-dark-bg: #080e1c; --theme-box-bg: #0f172a;">
                 
                 <!-- HEADER -->
                 <div class="abs-top-header">
@@ -3649,7 +3648,7 @@ the character's entry turn</strong><ul id="card-ul-7"><li>Meets up with Nappa an
                                 <source src="https://abscustom.github.io/assets/images/lightningfx.webm" type="video/webm">
                             </video>
                             <div class="thumb-box">
-                                <img id="abs-thumb-img" class="thumb-img" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_506.png" data-official-card-art="true">
+                                <img id="abs-thumb-img" class="thumb-img" src="https://images.weserv.nl/?url=dokkaninfo.com/assets/japan/character/thumb/card_1033550_thumb/card_1033550_thumb.png" data-official-card-art="true">
                             </div>
                             <img id="abs-top-rarity-icon" class="rarity-icon" src="https://abscustom.github.io/assets/images/rarity_TUR_abs.png">
                             <img id="abs-top-type-icon" class="type-icon" src="https://abscustom.github.io/assets/images/super_type_agl.png">
@@ -4183,21 +4182,21 @@ Super Saiyan God SS Goku">
                                 <span id="abs-art-header-text" style="display: block;">DOKKAN FESTIVAL UNIT</span>
                             </div>
 
-                            <div class="abs-art-box static-mode" id="abs-art-layers-container">
-                                <img id="abs-art-bg" class="abs-art-layer abs-art-bg" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_677.png" alt="" onerror="this.style.display='none';" style="display: none;" data-retries="4" data-official-card-art="true">
-                                <img id="abs-art-char" class="abs-art-layer abs-art-char" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_510.png" alt="" onerror="this.style.display='none';" style="display: none;" data-retries="2" data-official-card-art="true">
-                                <img id="abs-art-effect" class="abs-art-layer abs-art-effect" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_679.png" alt="" onerror="this.style.display='none';" style="display: none;" data-official-card-art="true">
+                            <div class="abs-art-box animated-mode" id="abs-art-layers-container">
+                                <img id="abs-art-bg" class="abs-art-layer abs-art-bg" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_677.png" alt="" onerror="this.style.display='none';" style="display: block;" data-retries="4" data-official-card-art="true">
+                                <img id="abs-art-char" class="abs-art-layer abs-art-char" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_510.png" alt="" onerror="this.style.display='none';" style="display: block;" data-retries="2" data-official-card-art="true">
+                                <img id="abs-art-effect" class="abs-art-layer abs-art-effect" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_679.png" alt="" onerror="this.style.display='none';" style="display: block;" data-official-card-art="true">
                                 
                                 <canvas id="abs-tur-sticker-canvas" class="abs-sticker-canvas" style="display: none;"></canvas>
                                 <canvas id="abs-card-bg-lwf-canvas" class="abs-art-bg-lwf-canvas" style="display: none;"></canvas>
                                 <img id="abs-art-img" class="abs-art-layer" src="https://abscustom.github.io/1033550-vegeta-nappa/images/official_dokkan_art_510.png" style="width: 100%; height: 100%; object-fit: cover; display: none;" data-official-card-art="true">
-                                <video id="abs-art-video" class="abs-art-layer" style="width: 100%; height: 100%; object-fit: cover; display: none;" autoplay="" muted="" loop="" playsinline="" src="http://127.0.0.1:3000/editor.html"></video>
+                                <video id="abs-art-video" class="abs-art-layer" style="width: 100%; height: 100%; object-fit: cover; display: none;" autoplay="" muted="" loop="" playsinline="" src="https://abscustom.github.io/DokkanCustom/"></video>
                             </div>
 
                             <div id="abs-art-toggle-bar" class="abs-docked-tab-bar bottom-dock">
                                 <div class="abs-stat-tabs justify-content-center m-0" id="abs-art-toggle-container">
-                                    <button type="button" id="art-toggle-static" class="abs-stat-tab active" style="min-width: 90px;" onclick="window.switchEditorArtMode('static')">STATIC / SIMPLE</button>
-                                    <button type="button" id="art-toggle-animated" class="abs-stat-tab" style="min-width: 90px;" onclick="window.switchEditorArtMode('animated')">FX / ANIMATED</button>
+                                    <button type="button" id="art-toggle-static" class="abs-stat-tab" style="min-width: 90px;" onclick="window.switchEditorArtMode('static')">STATIC / SIMPLE</button>
+                                    <button type="button" id="art-toggle-animated" class="abs-stat-tab active" style="min-width: 90px;" onclick="window.switchEditorArtMode('animated')">FX / ANIMATED</button>
                                 </div>
                             </div>
                         </div>
@@ -4489,10 +4488,18 @@ Super Saiyan God SS Goku">
 
 
 
-        <div id="context-gui">
+        <div id="context-gui" style="display: none; left: 176px; top: 178px; position: fixed;" data-is-dragged="true">
             <div class="gui-header" style="cursor: move;">
-                <span id="gui-title" class="gui-title">⚙️ Editor</span>
+                <span id="gui-title" class="gui-title"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:inline-block; vertical-align:-2px; margin-right:6px;"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-1h14v1z"></path></svg> Leader Skill</span>
                 <button type="button" class="gui-close" onclick="closeContextGUI()">×</button>
             </div>
-            <div id="gui-content"></div>
+            <div id="gui-content">
+                <label class="form-label mb-1">Leader Skill Text</label>
+                <textarea id="gui-leaderInput" class="form-control mb-2" style="height:90px;">"Saiyan Saga" or "Accelerated Battle" Category  Ki +3, HP +200% and ATK &amp; DEF +170%,  plus an additional HP, ATK &amp; DEF +50%  for characters who also belong to the  "Mission Execution", "Giant Ape Power"  or "Final Trump Card" Category</textarea>
+                <div class="gui-btn-grid mt-2">
+                    <button type="button" class="gui-preset-btn" onclick="applyLeaderPreset('dfe'); syncLeaderGUI();">DFE</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyLeaderPreset('carnival'); syncLeaderGUI();">Carnival</button>
+                    <button type="button" class="gui-preset-btn" onclick="applyLeaderPreset('lr'); syncLeaderGUI();">Legendary Summon</button>
+                </div>
+            </div>
         </div></body></html>
