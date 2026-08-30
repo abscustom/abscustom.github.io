@@ -16,9 +16,9 @@
     <meta property="og:title" content="[The Royal Saiyan] Vegeta">
     <meta name="twitter:title" content="[The Royal Saiyan] Vegeta">
     <meta name="apple-mobile-web-app-title" content="[The Royal Saiyan] Vegeta">
-    <meta itemprop="image" content="https://abscustom.github.io/base-vegeta/card_art.png?v=1788129291235">
-    <meta property="og:image" content="https://abscustom.github.io/base-vegeta/card_art.png?v=1788129291235">
-    <meta name="twitter:image" content="https://abscustom.github.io/base-vegeta/card_art.png?v=1788129291235">
+    <meta itemprop="image" content="https://abscustom.github.io/base-vegeta/card_art.png?v=1788129966911">
+    <meta property="og:image" content="https://abscustom.github.io/base-vegeta/card_art.png?v=1788129966911">
+    <meta name="twitter:image" content="https://abscustom.github.io/base-vegeta/card_art.png?v=1788129966911">
     <meta name="description" id="meta-description" content="&quot;Pure Saiyans&quot; or &quot;Successors&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
     <meta itemprop="description" id="meta-itemprop-description" content="&quot;Pure Saiyans&quot; or &quot;Successors&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
     <meta property="og:description" id="meta-og-description" content="&quot;Pure Saiyans&quot; or &quot;Successors&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
@@ -232,7 +232,7 @@
             <polyline class="check" points="24 10.5 13.5 21 9 16.5"></polyline>
         </svg>
     </div>
-    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Uploading Card...</div>
+    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Saving Quick Edit...</div>
 </div>
 
 <!-- UPLOAD MODAL -->
@@ -258,7 +258,7 @@
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeQuickSaveModal()">Cancel</button>
-                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()" disabled="">Save Live Edit</button>
+                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()">Save Live Edit</button>
             </div>
         </div>
     </div>
@@ -285,7 +285,7 @@
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeAdminUnlockModal()">Cancel</button>
-                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()" disabled="">Unlock</button>
+                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()">Unlock</button>
             </div>
         </div>
     </div>
@@ -709,7 +709,7 @@
             </div>
 
             <!-- 2. ABS.STYLE 3D LAYOUT (MATCHING CARD INSPECTOR VIEWER 1:1) -->
-            <div id="layout-abs-style" style="display: none; --theme-main: #1d4ed8; --theme-border: #3b82f6; --theme-header: #1e40af; --theme-bg-high: #132448; --theme-bg-low: #080e1c; --theme-text: #38bdf8; --theme-glow: rgba(56, 189, 248, 0.6); --type-main: #1d4ed8; --type-border: #3b82f6; --type-header: #1e40af; --type-text: #38bdf8; --type-glow: rgba(56, 189, 248, 0.45); --type-bg: #132448; --type-dark-bg: #080e1c; --theme-box-bg: #0f172a;">
+            <div id="layout-abs-style" style="display: none; --theme-main: #1d4ed8; --theme-border: #3b82f6; --theme-header: #1e40af; --theme-bg-high: #132448; --theme-bg-low: #080e1c; --theme-text: #38bdf8; --theme-glow: rgba(56, 189, 248, 0.45); --type-main: #1d4ed8; --type-border: #3b82f6; --type-header: #1e40af; --type-text: #38bdf8; --type-glow: rgba(56, 189, 248, 0.45); --type-bg: #132448; --type-dark-bg: #080e1c; --theme-box-bg: #0f172a;">
                 
                 <!-- HEADER -->
                 <div class="abs-top-header">
@@ -1332,18 +1332,26 @@
                                 <div class="abs-transform-name" style="flex: 1; text-align: center; font-size: 15px; font-weight: bold;">Super Saiyan God Vegeta</div>
                             </a>
                         </div>
-                    <div class="abs-transform-divider" data-admin-link-divider="true"></div>
-                <div class="abs-transform-row" data-admin-linked-slug="3702423-super-saiyan-god-vegeta">
-                    <a href="https://abscustom.github.io/Custom%20Cards/3702423-super-saiyan-god-vegeta/" class="abs-transform-link" target="_self" style="text-decoration:none; color:inherit; display:flex; align-items:center; width:100%;">
-                        <div class="abs-composed-icon">
-                            <img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png">
-                            <div class="thumb-box"><img class="thumb-img" src="https://abscustom.github.io/god-vegeta/images/auto_1776453355460_zrnx9lhy9.png" alt="Super Saiyan God Vegeta"></div>
-                            <img class="rarity-icon" src="https://abscustom.github.io/assets/images/rarity_TUR.png">
-                            <img class="type-icon" src="https://abscustom.github.io/assets/images/super_type_agl.png">
+                    <div class="abs-transform-divider"></div>
+                        <div class="abs-transform-row">
+                            <a href="https://abscustom.github.io/Custom%20Cards/3702423-super-saiyan-god-vegeta/" class="abs-transform-link" target="_blank" style="text-decoration:none; color:inherit; display:flex; align-items:center; width:100%;">
+                                
+                <div class="abs-composed-icon ">
+                    <img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png">
+                    
+                    
+                    <div class="thumb-box">
+                        <img class="thumb-img" src="https://abscustom.github.io/god-vegeta/images/auto_1776453355460_zrnx9lhy9.png">
+                    </div>
+                    <img class="rarity-icon" src="https://abscustom.github.io/assets/images/rarity_TUR_abs.png">
+                    <img class="type-icon" src="https://abscustom.github.io/assets/images/super_type_agl.png">
+                    
+                </div>
+            
+                                <div class="abs-transform-name" style="flex: 1; text-align: center; font-size: 15px; font-weight: bold;">Super Saiyan God Vegeta</div>
+                            </a>
                         </div>
-                        <div class="abs-transform-name" style="flex:1; text-align:center; font-size:15px; font-weight:bold;">Super Saiyan God Vegeta</div>
-                    </a>
-                </div></div>
+                    </div>
                         </div>
                     </div>
                 </div>
