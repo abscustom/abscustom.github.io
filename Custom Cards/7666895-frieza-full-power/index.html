@@ -48,8 +48,8 @@
             window.currentClass = "super";
             window.currentRarity = "LR";
             window.currentAwakeningMode = "none";
-            window.currentCardThemeStyle = "dokkaninfo";
-            window.PUBLISHED_EDITOR_ART_MODE = "animated";
+            window.currentCardThemeStyle = "abs-style";
+            window.currentHubFormLetter = "a";
         </script><script id="published-partner-frame-guard">
         (() => {
             const restorePartnerFrames = () => {
@@ -72,7 +72,7 @@
             else scheduleRestore();
         })();
     </script></head>
-<body class="theme-dokkaninfo is-published" style="--theme-main: #15803d; --theme-border: #22c55e; --theme-header: #166534; --theme-bg-high: #0e341f; --theme-bg-low: #06160d; --theme-text: #4ade80; --theme-glow: rgba(74, 222, 128, 0.45); --type-main: #15803d; --type-border: #22c55e; --type-header: #166534; --type-text: #4ade80; --type-glow: rgba(74, 222, 128, 0.45); --type-bg: #0e341f; --type-dark-bg: #06160d;">
+<body class="is-published theme-abs-style" style="--theme-main: #15803d; --theme-border: #22c55e; --theme-header: #166534; --theme-bg-high: #0e341f; --theme-bg-low: #06160d; --theme-text: #4ade80; --theme-glow: rgba(74, 222, 128, 0.45); --type-main: #15803d; --type-border: #22c55e; --type-header: #166534; --type-text: #4ade80; --type-glow: rgba(74, 222, 128, 0.45); --type-bg: #0e341f; --type-dark-bg: #06160d;">
     
 
 <!-- OVERLAYS & NOTIFICATIONS -->
@@ -174,7 +174,7 @@
             <polyline class="check" points="24 10.5 13.5 21 9 16.5"></polyline>
         </svg>
     </div>
-    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Uploading Card...</div>
+    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Saving Quick Edit...</div>
 </div>
 
 <!-- UPLOAD MODAL -->
@@ -200,7 +200,7 @@
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeQuickSaveModal()">Cancel</button>
-                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()" disabled="">Save Live Edit</button>
+                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()">Save Live Edit</button>
             </div>
         </div>
     </div>
@@ -227,7 +227,7 @@
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeAdminUnlockModal()">Cancel</button>
-                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()" disabled="">Unlock</button>
+                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()">Unlock</button>
             </div>
         </div>
     </div>
@@ -237,7 +237,7 @@
 
 
 <!-- CARD PREVIEW CONTENT -->
-<div class="content theme-dokkaninfo" id="app">
+<div class="content theme-abs-style" id="app">
     <!-- TOP NAVIGATION BAR -->
     <nav class="modern-top-bar sticky-top scouter-hud-bar">
         <div class="top-bar-container scouter-hud-container">
@@ -294,10 +294,10 @@
                 
 
                 <div class="hud-theme-stack">
-                    <button type="button" id="theme-btn-info" class="abs-hud-theme-btn active" onclick="switchCardTheme('dokkaninfo')" title="Switch to Dokkan Info Theme">
+                    <button type="button" id="theme-btn-info" class="abs-hud-theme-btn" onclick="switchCardTheme('dokkaninfo')" title="Switch to Dokkan Info Theme">
                         <img src="https://abscustom.github.io/assets/images/dokkan-info-logo.png" alt="Dokkan Info" class="hud-btn-logo">
                     </button>
-                    <button type="button" id="theme-btn-abs" class="abs-hud-theme-btn" onclick="switchCardTheme('abs-style')" title="Switch to ABS Theme">
+                    <button type="button" id="theme-btn-abs" class="abs-hud-theme-btn active" onclick="switchCardTheme('abs-style')" title="Switch to ABS Theme">
                         <img src="https://abscustom.github.io/assets/images/abs.style.png" alt="ABS" class="hud-btn-logo" style="margin-left: 1px;">
                         <span class="hud-btn-indicator">abs.style</span>
                     </button>
@@ -311,7 +311,7 @@
         <div class="container-1220 container-text-center padding-top-bottom-5 container-text-light">
             
             <!-- 1. DOKKAN INFO LAYOUT (100% UNTOUCHED & AUTHENTIC) -->
-            <div id="layout-dokkaninfo" style="display: block;">
+            <div id="layout-dokkaninfo" style="display: none;">
                 <div class="row align-items-start">
                     <div class="col-xl-4">
                         <div class="row padding-left-right-1 margin-top-5">
@@ -391,7 +391,7 @@
 <div class="col" style="padding: 8px 0 !important;">
     <div class="row align-items-center m-0 w-100">
         <div class="col-5 d-flex justify-content-center align-items-center">
-            <a href="https://abscustom.github.io/fp-frieza" class="form-link" target="_blank">
+            <a href="https://abscustom.github.io/Custom%20Cards/7666895-frieza-full-power/" class="form-link" target="_blank">
                 <img class="img-fluid form-image" src="https://abscustom.github.io/Custom%20Cards/7666895-frieza-full-power/images/img_export_11_mtfvxhve.png" style="max-height: 60px; width: auto; display: block;">
             </a>
         </div>
@@ -612,7 +612,7 @@
                                     <div class="col">
                                         <div class="row padding-top-bottom-10 bg-teq"><div class="col"><b>Categories</b></div></div>
                                         <div id="card-category-container" class="row d-flex flex-wrap justify-content-center bg-teq-2 padding-top-bottom-10 dokkan-card">
-            <div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0078_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0023_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0020_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0046_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0024_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0041_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0062_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0096_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0068_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0047_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0050_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0083_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0014_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0069_b_on.png" style="width:210px;"></div></div>
+            <div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0078_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0023_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0020_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0046_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0024_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0041_b_on.png" style="width:210px;" class=""></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0062_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0096_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0068_b_on.png" style="width:210px;" class=""></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0047_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0050_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0083_b_on.png" style="width:210px;" class=""></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0014_b_on.png" style="width:210px;"></div><div class="col-4 d-flex justify-content-center padding-top-bottom-5" style="cursor: default;"><img src="https://abscustom.github.io/assets/images/card_category_label_0069_b_on.png" style="width:210px;"></div></div>
                                     </div>
                                 </div>
 
@@ -669,7 +669,7 @@
             </div>
 
             <!-- 2. ABS.STYLE 3D LAYOUT (MATCHING CARD INSPECTOR VIEWER 1:1) -->
-            <div id="layout-abs-style" style="display: none; --theme-main: #15803d; --theme-border: #22c55e; --theme-header: #166534; --theme-bg-high: #0e341f; --theme-bg-low: #06160d; --theme-text: #4ade80; --theme-glow: rgba(74, 222, 128, 0.6); --type-main: #15803d; --type-border: #22c55e; --type-header: #166534; --type-text: #4ade80; --type-glow: rgba(74, 222, 128, 0.45); --type-bg: #0e341f; --type-dark-bg: #06160d; --theme-box-bg: #052e16;">
+            <div id="layout-abs-style" style="display: block; --theme-main: #15803d; --theme-border: #22c55e; --theme-header: #166534; --theme-bg-high: #0e341f; --theme-bg-low: #06160d; --theme-text: #4ade80; --theme-glow: rgba(74, 222, 128, 0.45); --type-main: #15803d; --type-border: #22c55e; --type-header: #166534; --type-text: #4ade80; --type-glow: rgba(74, 222, 128, 0.45); --type-bg: #0e341f; --type-dark-bg: #06160d; --theme-box-bg: #052e16;" class="">
                 
                 <!-- HEADER -->
                 <div class="abs-top-header">
@@ -764,10 +764,6 @@
     
         <div class="abs-passive-ability-badge" data-tooltip="High Evasion / Dodge">
             <img src="https://abscustom.github.io/assets/images/st_evasion.png" alt="High Evasion / Dodge">
-        </div>
-    
-        <div class="abs-passive-ability-badge" data-tooltip="Lowers Enemy ATK">
-            <img src="https://abscustom.github.io/assets/images/st_0011.png" alt="Lowers Enemy ATK">
         </div>
     
         <div class="abs-passive-ability-badge" data-tooltip="Counter Attack">
@@ -990,16 +986,10 @@
                 <div class="abs-content text-start">
                     
                         <div class="abs-skill-label text-warning mb-1">Condition:</div>
-                        <div class="mb-3">Can be activated when there is another <span class="abs-category-quote">"Terrifying Conquerors"</span> Category ally on the team starting from the 5th turn from the character's entry turn
-Or when HP is 50% or less
-Starting from the 5th turn from the start of battle (once only)</div>
+                        <div class="mb-3">Can be activated when there is another <span class="abs-category-quote">"Terrifying Conquerors"</span> Category ally on the team starting from the 5th turn from the character's entry turnOr when HP is 50% or lessStarting from the 5th turn from the start of battle (once only)</div>
                     
                     <div class="abs-skill-label text-warning mb-1">Effect:</div>
-                    <div>Massively raises ATK temporarily
-Causes ultimate damage to enemy
-Ki +24, DEF 200%, directs enemy's attack towards the character
-All attacks become critical hits for 1 turn
-ATK +500% for 1 turn</div>
+                    <div>Massively raises ATK temporarilyCauses ultimate damage to enemyKi +24, DEF 200%, directs enemy's attack towards the characterAll attacks become critical hits for 1 turnATK +500% for 1 turn</div>
                     
         <div class="abs-damage-multiplier-box">
             <div class="abs-multiplier-left">
@@ -1102,7 +1092,7 @@ ATK +500% for 1 turn</div>
                         <!-- CARD ART BOX WITH DOCKED BOTTOM BAR -->
                         <div class="abs-box abs-art-dock-wrapper" id="abs-art-dock-wrapper">
                             <div class="abs-header abs-art-header-bar" id="abs-art-header-bar">
-                                <span id="abs-art-header-text" style="display: block;">CARNIVAL UNIT</span>
+                                <span id="abs-art-header-text" style="display: block;">DOKKAN FESTIVAL UNIT</span>
                             </div>
 
                             <div class="abs-art-box has-flat-static-art animated-mode" id="abs-art-layers-container">
@@ -1248,7 +1238,7 @@ ATK +500% for 1 turn</div>
                             <div class="abs-header text-center" style="justify-content: center;">Transformations</div>
                             <div class="abs-content p-0" id="abs-transformations-container">
                         <div class="abs-transform-row">
-                            <a href="https://abscustom.github.io/fp-frieza" class="abs-transform-link" target="_blank" style="text-decoration:none; color:inherit; display:flex; align-items:center; width:100%;">
+                            <a href="https://abscustom.github.io/Custom%20Cards/7666895-frieza-full-power/" class="abs-transform-link" target="_blank" style="text-decoration:none; color:inherit; display:flex; align-items:center; width:100%;">
                                 
                 <div class="abs-composed-icon ">
                     <img class="card-frame" src="https://abscustom.github.io/assets/images/frame_teq.png">
@@ -1258,7 +1248,7 @@ ATK +500% for 1 turn</div>
                     <source src="https://abscustom.github.io/assets/images/lightningfx.webm" type="video/webm">
                 </video>
                     <div class="thumb-box">
-                        <img class="thumb-img" src="https://abscustom.github.io/Custom%20Cards/7666895-frieza-full-power/images/img_export_158_mtfvxhvg.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/Custom%20Cards/7666895-frieza-full-power/images/Form_Thumb_1_mtfvxhvg.png">
                     </div>
                     <img class="rarity-icon" src="https://abscustom.github.io/assets/images/rarity_lr_abs.png">
                     <img class="type-icon" src="https://abscustom.github.io/assets/images/super_type_teq.png">
@@ -1473,31 +1463,33 @@ Starting from the 5th turn from the start of battle (once only)</textarea>
 
 
 
-        <div id="context-gui" style="display: none; left: 1076px; top: 208px;">
+        <div id="context-gui" style="display: none; left: 1064px; top: 444px;">
             <div class="gui-header" style="cursor: move;">
-                <span id="gui-title" class="gui-title">⚙️ Card Art &amp; Media</span>
+                <span id="gui-title" class="gui-title"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:inline-block; vertical-align:-2px; margin-right:6px;"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"></path></svg> Transformations &amp; Forms</span>
                 <button type="button" class="gui-close" onclick="closeContextGUI()">×</button>
             </div>
             <div id="gui-content">
-                <label class="form-label mb-1">Banner Unit Tag (ABS Mode)</label>
-                <select id="gui-abs-unit-tag" class="form-control mb-3" onchange="window.absUnitTag=this.value; if(window.syncToAbsLayout) window.syncToAbsLayout();">
-                    <option value="DOKKAN FESTIVAL UNIT" selected="">DOKKAN FESTIVAL UNIT</option>
-                    <option value="CARNIVAL UNIT">CARNIVAL UNIT</option>
-                    <option value="LEGENDARY SUMMON UNIT">LEGENDARY SUMMON UNIT</option>
-                    <option value="">Hidden / None</option>
-                </select>
-
-                <div class="d-flex gap-2 mb-2">
-                    <label class="uiverse-upload-btn m-0" style="flex: 1;">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:inline-block; vertical-align:-3px; margin-right:4px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></svg> Static Image
-                        <input type="file" id="gui-imageUpload" hidden="" accept="image/*" onchange="document.getElementById('imageUpload').files=this.files; document.getElementById('imageUpload').dispatchEvent(new Event('change'));">
-                    </label>
-                    <label class="uiverse-upload-btn m-0" style="flex: 1;">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:inline-block; vertical-align:-3px; margin-right:4px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></svg> Video (.mp4)
-                        <input type="file" id="gui-videoUpload" hidden="" accept="video/mp4" onchange="document.getElementById('videoUpload').files=this.files; document.getElementById('videoUpload').dispatchEvent(new Event('change'));">
-                    </label>
+                <datalist id="custom-cards-form-links">
+                    <option value="https://abscustom.github.io/base-vegeta/">Vegeta (base-vegeta)</option><option value="https://abscustom.github.io/ego-vegeta/">Vegeta (Ultra Ego) + Goku (Ultra Instinct) (ego-vegeta)</option><option value="https://abscustom.github.io/evil-buu/">Majin Buu (Pure Evil) + Majin Buu (Good) (evil-buu)</option><option value="https://abscustom.github.io/fp-frieza/">Frieza (Full Power) (fp-frieza)</option><option value="https://abscustom.github.io/giant-mui/">Perfected Ultra Instinct (Giant Form) (giant-mui)</option><option value="https://abscustom.github.io/god-vegeta/">Super Saiyan God Vegeta (god-vegeta)</option><option value="https://abscustom.github.io/good-buu/">Majin Buu (Good) + Majin Buu (Pure Evil) (good-buu)</option><option value="https://abscustom.github.io/mui-goku/">Goku (Ultra Instinct) + Vegeta (Ultra Ego) (mui-goku)</option><option value="https://abscustom.github.io/namek-goku/">Super Saiyan Goku (namek-goku)</option><option value="https://abscustom.github.io/super-buu/">Buu (Super) (super-buu)</option>
+                </datalist>
+                
+                <div class="d-flex align-items-center justify-content-between p-2 mb-2" style="background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.18); border-radius: 6px;">
+                    <span style="font-size:11px; color:#fff; font-weight:800;">Card Hub Letter:</span>
+                    <div class="d-flex gap-1"><button type="button" class="gui-preset-btn py-0 px-2" style="font-size:11px; min-width:30px; height:24px; background:#facc15 !important; color:#000 !important; font-weight:900 !important;" onclick="guiSetCardHubLetter('a')">A</button><button type="button" class="gui-preset-btn py-0 px-2" style="font-size:11px; min-width:30px; height:24px; " onclick="guiSetCardHubLetter('b')">B</button><button type="button" class="gui-preset-btn py-0 px-2" style="font-size:11px; min-width:30px; height:24px; " onclick="guiSetCardHubLetter('c')">C</button><button type="button" class="gui-preset-btn py-0 px-2" style="font-size:11px; min-width:30px; height:24px; " onclick="guiSetCardHubLetter('d')">D</button><button type="button" class="gui-preset-btn py-0 px-2" style="font-size:11px; min-width:30px; height:24px; " onclick="guiSetCardHubLetter('e')">E</button></div></div>
+                <div class="gui-btn-grid mb-3">
+                    <button type="button" class="gui-preset-btn" style="background:#2563eb;" onclick="guiAddForm()"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" style="display:inline-block; vertical-align:-1px; margin-right:3px;"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> Add Form</button>
+                    <button type="button" class="gui-preset-btn" style="background:#15803d;" onclick="guiUndoForm()"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M3 7v6h6"></path><path d="M21 17a9 9 0 00-9-9 9 9 0 00-6 2.3L3 13"></path></svg> Undo</button>
                 </div>
-                <label class="form-label mb-1">Card Art Image URL</label>
-                <input type="text" id="gui-imageInput" class="form-control" value="" placeholder="https://i.imgur.com/...">
+                
+                <div class="gui-section-box mb-2">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <label class="form-label m-0">Form 1</label>
+                        <button type="button" class="btn btn-danger btn-sm py-0 px-2" style="font-size:10px;" onclick="guiDeleteSpecificForm(0)">Delete</button>
+                    </div>
+                    <label class="form-label mb-1" style="font-size:10px;">Form Character Name</label>
+                    <input type="text" class="form-control mb-2" value="Frieza (Full Power)" oninput="guiUpdateFormName(0, this.value)">
+                    <label class="form-label mb-1" style="font-size:10px;">Redirect Link <small style="opacity:0.75;">(Choose card or type slug e.g. evil-buu)</small></label>
+                    <input type="text" list="custom-cards-form-links" class="form-control" value="https://abscustom.github.io/Custom%20Cards/7666895-frieza-full-power/" placeholder="Choose card or enter slug..." oninput="guiUpdateFormLink(0, this.value)">
+                </div>
             </div>
-        </div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 876.969px; opacity: 0;">Revival Skill</div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 876.969px; opacity: 0;">Revival Skill</div></body></html>
+        </div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 876.969px; opacity: 0;">Revival Skill</div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 876.969px; opacity: 0;">Revival Skill</div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 1125px; opacity: 0;">Damage Reduction</div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 1125px; opacity: 0;">Damage Reduction</div></body></html>
