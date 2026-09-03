@@ -16,9 +16,9 @@
     <meta property="og:title" content="[Pinnacle of Perfection] Perfect Cell">
     <meta name="twitter:title" content="[Pinnacle of Perfection] Perfect Cell">
     <meta name="apple-mobile-web-app-title" content="[Pinnacle of Perfection] Perfect Cell">
-    <meta itemprop="image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463552000">
-    <meta property="og:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463552000">
-    <meta name="twitter:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463552000">
+    <meta itemprop="image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463651417">
+    <meta property="og:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463651417">
+    <meta name="twitter:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463651417">
     <meta name="description" id="meta-description" content="&quot;Androids&quot; or &quot;Transformation Boost&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
     <meta itemprop="description" id="meta-itemprop-description" content="&quot;Androids&quot; or &quot;Transformation Boost&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
     <meta property="og:description" id="meta-og-description" content="&quot;Androids&quot; or &quot;Transformation Boost&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
@@ -232,7 +232,7 @@
             <polyline class="check" points="24 10.5 13.5 21 9 16.5"></polyline>
         </svg>
     </div>
-    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Uploading Card...</div>
+    <div id="glass-loading-text" class="mt-4" style="color: #38bdf8; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; text-shadow: 0 0 10px rgba(56,189,248,0.8);">Saving Quick Edit...</div>
 </div>
 
 <!-- UPLOAD MODAL -->
@@ -258,7 +258,7 @@
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeQuickSaveModal()">Cancel</button>
-                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()" disabled="">Save Live Edit</button>
+                <button type="button" id="confirm-quicksave-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #fff;" onclick="executeQuickSave()">Save Live Edit</button>
             </div>
         </div>
     </div>
@@ -285,7 +285,7 @@
             <div class="glass-divider mt-4 mb-3"></div>
             <div class="d-flex justify-content-between gap-3">
                 <button type="button" class="gui-preset-btn btn-danger" onclick="closeAdminUnlockModal()">Cancel</button>
-                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()" disabled="">Unlock</button>
+                <button type="button" id="confirm-admin-unlock-btn" class="gui-preset-btn" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color: #fff;" onclick="executeAdminUnlock()">Unlock</button>
             </div>
         </div>
     </div>
@@ -334,7 +334,12 @@
                     
 
                     
-                </div>
+                <div id="published-calculator-dock-wrap" class="button-wrap glass-btn-wrap">
+                <div class="button-shadow"></div>
+                <button type="button" class="glass-btn" onclick="window.openPublishedCardInCalculator()" title="Open this character in the Calculator" aria-label="Open this character in the Calculator">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" class="nav-svg-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12H20M13 6C13 6.55228 12.5523 7 12 7C11.4477 7 11 6.55228 11 6C11 5.44772 11.4477 5 12 5C12.5523 5 13 5.44772 13 6ZM13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17C12.5523 17 13 17.4477 13 18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                </button>
+            </div></div>
             </div>
 
             <div class="top-bar-center">
@@ -452,7 +457,7 @@
                                         <div id="ssr-row" class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base"><img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png" height="120"></div>
-                                                <div class="card-info-thumb" style="z-index: 2; margin-top: 0px;"><img id="img-ssr" src="https://abscustom.github.io/assets/images/SSR_Icon.png" height="150"></div>
+                                                <div class="card-info-thumb" style="z-index: 2; margin-top: 0px;"><img id="img-ssr" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/images/img_export_12_mtlx2xcm.png" height="150"></div>
                                                 <div class="card-icon-item card-icon-item-rarity card-info-above-thumb"><img id="ssr-rarity-icon" src="https://abscustom.github.io/assets/images/rarity_ssr.png" height="72"></div>
                                                 <div class="card-icon-item card-icon-item-type card-info-above-thumb"><img class="typing-icon" src="https://abscustom.github.io/assets/images/type_agl.png" height="57"></div>
                                             </div>
@@ -462,7 +467,7 @@
                                         <div class="row">
                                             <div class="col card-icon unselectable">
                                                 <div class="card-icon-item card-icon-item-base card-info-base"><img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png" height="120"></div>
-                                                <div class="card-info-thumb" style="z-index: 2; margin-top: 0px;"><img id="img-tur" src="https://abscustom.github.io/assets/images/TUR_Icon.png" height="150"></div>
+                                                <div class="card-info-thumb" style="z-index: 2; margin-top: 0px;"><img id="img-tur" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/images/img_export_16_mtlx2xcn.png" height="150"></div>
                                                 <div class="card-icon-item card-icon-item-rarity card-info-above-thumb"><img id="tur-rarity-icon" src="https://abscustom.github.io/assets/images/rarity_TUR.png" height="72"></div>
                                                 <div class="card-icon-item card-icon-item-type card-info-above-thumb"><img class="typing-icon" src="https://abscustom.github.io/assets/images/extreme_type_agl.png" height="57"></div>
                                             </div>
@@ -553,7 +558,7 @@
                                     </div>
                                 </div>
                                 <div class="sa-lv-container">
-                                    <div class="row sa-20-bonus">
+                                    <div class="row sa-20-bonus" style="display: block;">
                                         <div class="col">
                                             <hr class="divider py bg-secondary">
                                             <div class="text-center py-1">SA Lv 20: Super Attack +30%</div>
@@ -648,7 +653,7 @@
             </div>
 
             <!-- 2. ABS.STYLE 3D LAYOUT (MATCHING CARD INSPECTOR VIEWER 1:1) -->
-            <div id="layout-abs-style" style="display: block; --theme-main: #1d4ed8; --theme-border: #3b82f6; --theme-header: #1e40af; --theme-bg-high: #132448; --theme-bg-low: #080e1c; --theme-text: #38bdf8; --theme-glow: rgba(56, 189, 248, 0.6); --type-main: #1d4ed8; --type-border: #3b82f6; --type-header: #1e40af; --type-text: #38bdf8; --type-glow: rgba(56, 189, 248, 0.45); --type-bg: #132448; --type-dark-bg: #080e1c; --theme-box-bg: #0f172a;" class="">
+            <div id="layout-abs-style" style="display: block; --theme-main: #1d4ed8; --theme-border: #3b82f6; --theme-header: #1e40af; --theme-bg-high: #132448; --theme-bg-low: #080e1c; --theme-text: #38bdf8; --theme-glow: rgba(56, 189, 248, 0.45); --type-main: #1d4ed8; --type-border: #3b82f6; --type-header: #1e40af; --type-text: #38bdf8; --type-glow: rgba(56, 189, 248, 0.45); --type-bg: #132448; --type-dark-bg: #080e1c; --theme-box-bg: #0f172a;" class="">
                 
                 <!-- HEADER -->
                 <div class="abs-top-header">
@@ -660,7 +665,7 @@
                                 <source src="https://abscustom.github.io/assets/images/lightningfx.webm" type="video/webm">
                             </video>
                             <div class="thumb-box">
-                                <img id="abs-thumb-img" class="thumb-img" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/images/img_export_58_mtlx0sn0.png">
+                                <img id="abs-thumb-img" class="thumb-img" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/images/img_export_6_mtlx0smm.png">
                             </div>
                             <img id="abs-top-rarity-icon" class="rarity-icon" src="https://abscustom.github.io/assets/images/rarity_lr_abs.png">
                             <img id="abs-top-type-icon" class="type-icon" src="https://abscustom.github.io/assets/images/extreme_type_agl.png">
@@ -701,8 +706,8 @@
                 
         <div class="abs-passive-icons-strip">
             
-        <div class="abs-passive-ability-badge" data-tooltip="Survives KO">
-            <img src="https://abscustom.github.io/assets/images/st_invalid_ko.png" alt="Survives KO">
+        <div class="abs-passive-ability-badge" data-tooltip="Survives Fatal KO Attack">
+            <img src="https://abscustom.github.io/assets/images/st_invalid_ko.png" alt="Survives Fatal KO Attack">
         </div>
     
         <div class="abs-passive-ability-badge" data-tooltip="ATK Boost">
@@ -717,8 +722,8 @@
             <img src="https://abscustom.github.io/assets/images/st_0003.png" alt="Ki Boost">
         </div>
     
-        <div class="abs-passive-ability-badge" data-tooltip="Ki Per Sphere">
-            <img src="https://abscustom.github.io/assets/images/additional_ki_obtained.png" alt="Ki Per Sphere">
+        <div class="abs-passive-ability-badge" data-tooltip="Additional Ki Per Ki Sphere Obtained">
+            <img src="https://abscustom.github.io/assets/images/additional_ki_obtained.png" alt="Additional Ki Per Ki Sphere Obtained">
         </div>
     
         <div class="abs-passive-ability-badge" data-tooltip="Additional Attack">
@@ -729,8 +734,8 @@
             <img src="https://abscustom.github.io/assets/images/st_critical_up.png" alt="Critical Hit">
         </div>
     
-        <div class="abs-passive-ability-badge" data-tooltip="Guard All Attacks">
-            <img src="https://abscustom.github.io/assets/images/st_sp_guard.png" alt="Guard All Attacks">
+        <div class="abs-passive-ability-badge" data-tooltip="Guard Against All Attacks">
+            <img src="https://abscustom.github.io/assets/images/st_sp_guard.png" alt="Guard Against All Attacks">
         </div>
     
         <div class="abs-passive-ability-badge" data-tooltip="Damage Reduction">
@@ -739,6 +744,10 @@
     
         <div class="abs-passive-ability-badge" data-tooltip="High Evasion / Dodge">
             <img src="https://abscustom.github.io/assets/images/st_evasion.png" alt="High Evasion / Dodge">
+        </div>
+    
+        <div class="abs-passive-ability-badge" data-tooltip="Ki Sphere Changer">
+            <img src="https://abscustom.github.io/assets/images/ki_change_rainbow.png" alt="Ki Sphere Changer">
         </div>
     
         </div>
@@ -1239,7 +1248,7 @@
                                 
                                 <canvas id="abs-tur-sticker-canvas" class="abs-sticker-canvas" style="display: none;"></canvas>
                                 <canvas id="abs-card-bg-lwf-canvas" class="abs-art-bg-lwf-canvas" style="display: none;"></canvas>
-                                <img id="abs-art-img" class="abs-art-layer" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png" onerror="this.dataset.failed='true'; window.refreshEditorArtModeAvailability?.();" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-failed="true">
+                                <img id="abs-art-img" class="abs-art-layer" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png" onerror="this.dataset.failed='true'; window.refreshEditorArtModeAvailability?.();" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                                 <video id="abs-art-video" class="abs-art-layer" style="width: 100%; height: 100%; object-fit: cover; display: none;" autoplay="" muted="" loop="" playsinline="" onerror="this.dataset.failed='true'; window.refreshEditorArtModeAvailability?.();" src="https://abscustom.github.io/DokkanCustom/editor.html" data-failed="true"></video>
                             </div>
 
@@ -1295,8 +1304,18 @@
                         <div class="abs-box" id="abs-awakenings-box" data-edit="icons" style="display: none !important;">
                             <div class="abs-header text-center" style="justify-content: center;">Awakenings</div>
                             <div class="abs-content p-0" id="abs-awakenings-container">
-                    <div class="abs-awaken-row">
+                    
+                
                         
+                
+            
+                        
+                    
+                        
+                
+            
+                        <div class="abs-awaken-row">
+                            
                 <div class="abs-composed-icon ">
                     <img class="card-frame" src="https://abscustom.github.io/assets/images/frame_agl.png">
                     <img src="https://abscustom.github.io/assets/images/lr_spin_dial.png" class="lr-spin-dial">
@@ -1305,19 +1324,19 @@
                     <source src="https://abscustom.github.io/assets/images/lightningfx.webm" type="video/webm">
                 </video>
                     <div class="thumb-box">
-                        <img class="thumb-img" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/images/img_export_191_mtlx0sn2.png">
+                        <img class="thumb-img" src="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/images/img_export_6_mtlx0smm.png">
                     </div>
                     <img class="rarity-icon" src="https://abscustom.github.io/assets/images/rarity_lr_abs.png">
                     <img class="type-icon" src="https://abscustom.github.io/assets/images/extreme_type_agl.png">
                     
                 </div>
             
-                        <div class="abs-awaken-date" style="font-size: 14px; font-weight: bold; text-align: center; flex: 1;">
-                            Release Date:<br>
-                            <span style="color: #a1a1aa; font-weight: normal; font-size: 12px;">9/13/2026</span>
+                            <div class="abs-awaken-date" style="font-size: 14px; font-weight: bold; text-align: center; flex: 1;">
+                                Release Date:<br>
+                                <span style="color: #a1a1aa; font-weight: normal; font-size: 12px;">9/13/2026</span>
+                            </div>
                         </div>
                     </div>
-                </div>
                         </div>
 
                         <!-- TRANSFORMATIONS BOX -->
