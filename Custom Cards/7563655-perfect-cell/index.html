@@ -16,9 +16,9 @@
     <meta property="og:title" content="[Pinnacle of Perfection] Perfect Cell">
     <meta name="twitter:title" content="[Pinnacle of Perfection] Perfect Cell">
     <meta name="apple-mobile-web-app-title" content="[Pinnacle of Perfection] Perfect Cell">
-    <meta itemprop="image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463987522">
-    <meta property="og:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463987522">
-    <meta name="twitter:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788463987522">
+    <meta itemprop="image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788464078340">
+    <meta property="og:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788464078340">
+    <meta name="twitter:image" content="https://abscustom.github.io/Custom%20Cards/7563655-perfect-cell/card_art.png?v=1788464078340">
     <meta name="description" id="meta-description" content="&quot;Androids&quot; or &quot;Transformation Boost&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
     <meta itemprop="description" id="meta-itemprop-description" content="&quot;Androids&quot; or &quot;Transformation Boost&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
     <meta property="og:description" id="meta-og-description" content="&quot;Androids&quot; or &quot;Transformation Boost&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">
@@ -443,7 +443,7 @@
                 <div class="col text-center"><b>Release Date</b></div>
             </div>
             <div class="row padding-top-bottom-5 bg-agl-2 m-0">
-                <div class="col text-center">9/13/2026 5:00:00 AM EST</div>
+                <div class="col text-center">9/13/2026 5:00:00 AM</div>
             </div></div></div></div>
 
                                 <div class="row border border-2 border-dark border-agl bg-agl dokkan-card" id="forms-card-wrapper" data-edit="forms" style="display: none;">
@@ -985,7 +985,7 @@
                         </div>
 
                         <div class="abs-box mt-3" id="abs-partners-box" style="display: block;">
-                            <div class="abs-header text-center justify-content-center"><span class="">Linking Partners</span></div>
+                            <div class="abs-header text-center justify-content-center"><span>Linking Partners</span></div>
                             <div class="abs-content p-3">
                                 <div class="d-flex justify-content-center gap-2 mb-3">
                                     <button type="button" class="abs-stat-tab active partner-limit-btn" onclick="setPartnerLimit(9, this)">9</button>
@@ -1323,7 +1323,7 @@
             
                         <div class="abs-awaken-date" style="font-size: 14px; font-weight: bold; text-align: center; flex: 1;">
                             Release Date:<br>
-                            <span style="color: #a1a1aa; font-weight: normal; font-size: 12px;">9/13/2026 5:00:00 AM EST</span>
+                            <span style="color: #a1a1aa; font-weight: normal; font-size: 12px;">9/13/2026 5:00:00 AM</span>
                         </div>
                     </div>
                 </div>
@@ -1415,7 +1415,7 @@
 <div style="display: none;" id="hidden-legacy-inputs">
     <textarea id="descInput" value="Pinnacle of Perfection">Pinnacle of Perfection</textarea>
     <input type="text" id="nameInput" value="Perfect Cell">
-    <textarea id="dateInput" value="9/13/2026 5:00:00 AM EST">9/13/2026 5:00:00 AM EST</textarea>
+    <textarea id="dateInput" value="9/13/2026 5:00:00 AM">9/13/2026 5:00:00 AM</textarea>
     <textarea id="ezaDateInput" value=""></textarea>
     <textarea id="sezaDateInput" value=""></textarea>
     <textarea id="leaderInput" value="&quot;Androids&quot; or &quot;Transformation Boost&quot; Category Ki +4 and HP, ATK &amp; DEF +220%">"Androids" or "Transformation Boost" Category Ki +4 and HP, ATK &amp; DEF +220%</textarea>
@@ -1527,29 +1527,49 @@
 
         <div id="context-gui" style="display: none; left: 653px; top: 60px; position: fixed;" data-is-dragged="true">
             <div class="gui-header" style="cursor: move;">
-                <span id="gui-title" class="gui-title">⚙️ Card Art &amp; Media</span>
+                <span id="gui-title" class="gui-title"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:inline-block; vertical-align:-2px; margin-right:6px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></svg> Character Identity &amp; Options</span>
                 <button type="button" class="gui-close" onclick="closeContextGUI()">×</button>
             </div>
             <div id="gui-content" class="">
-                <label class="form-label mb-1">Banner Unit Tag (ABS Mode)</label>
-                <select id="gui-abs-unit-tag" class="form-control mb-3" onchange="window.setAbsUnitTag?.(this.value); window.syncToAbsLayout?.(); window.autoSaveToCache?.();">
-                    <option value="DOKKAN FESTIVAL UNIT" selected="">DOKKAN FESTIVAL UNIT</option>
-                    <option value="CARNIVAL UNIT">CARNIVAL UNIT</option>
-                    <option value="LEGENDARY SUMMON UNIT">LEGENDARY SUMMON UNIT</option>
-                    <option value="">Hidden / None</option>
-                </select>
+                <label class="form-label mb-1">Title</label>
+                <textarea id="gui-descInput" class="form-control mb-2" style="height:42px;" oninput="guiUpdateIdentityField('descInput', this.value)">Pinnacle of Perfection</textarea>
+                
+                <label class="form-label mb-1">Name</label>
+                <input type="text" id="gui-nameInput" class="form-control mb-2" value="Perfect Cell" oninput="guiUpdateIdentityField('nameInput', this.value)">
+                
+                <label class="form-label mb-1">Release Date</label>
+                <input type="text" id="gui-dateInput" class="form-control mb-2" value="9/13/2026" placeholder="e.g. 9/14/2026 1:00:00 AM EDT" oninput="guiUpdateIdentityField('dateInput', this.value)">
+                
+                
 
-                <div class="d-flex gap-2 mb-2">
-                    <label class="uiverse-upload-btn m-0" style="flex: 1;">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:inline-block; vertical-align:-3px; margin-right:4px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></svg> Static Image
-                        <input type="file" id="gui-imageUpload" hidden="" accept="image/*" onchange="document.getElementById('imageUpload').files=this.files; document.getElementById('imageUpload').dispatchEvent(new Event('change'));">
-                    </label>
-                    <label class="uiverse-upload-btn m-0" style="flex: 1;">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:inline-block; vertical-align:-3px; margin-right:4px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></svg> Video (.mp4)
-                        <input type="file" id="gui-videoUpload" hidden="" accept="video/mp4" onchange="document.getElementById('videoUpload').files=this.files; document.getElementById('videoUpload').dispatchEvent(new Event('change'));">
-                    </label>
+                
+
+                <label class="form-label mb-1">Rarity</label>
+                <div class="gui-btn-grid mb-2">
+                    <button type="button" class="gui-preset-btn" style="background:#facc15 !important; color:#000 !important; font-weight:900 !important; border-color:#facc15 !important;" onclick="updateRarityStats('LR'); openContextGUI(0,0,'identity');">LR</button>
+                    <button type="button" class="gui-preset-btn" style="" onclick="updateRarityStats('TUR'); openContextGUI(0,0,'identity');">TUR</button>
                 </div>
-                <label class="form-label mb-1">Card Art Image URL</label>
-                <input type="text" id="gui-imageInput" class="form-control" value="https://imgur.com/1ue92I1" placeholder="https://i.imgur.com/...">
+
+                <label class="form-label mb-1">Class</label>
+                <div class="gui-btn-grid mb-2">
+                    <button type="button" class="gui-preset-btn" style="" onclick="currentClass='super'; updateIconImages(); openContextGUI(0,0,'identity');">Super</button>
+                    <button type="button" class="gui-preset-btn" style="background:#facc15 !important; color:#000 !important; font-weight:900 !important; border-color:#facc15 !important;" onclick="currentClass='extreme'; updateIconImages(); openContextGUI(0,0,'identity');">Extreme</button>
+                </div>
+
+                <label class="form-label mb-1">Typing</label>
+                <div class="gui-btn-grid mb-2">
+                    <button type="button" class="gui-preset-btn" style="background:#facc15 !important; color:#000 !important; font-weight:900 !important; border-color:#facc15 !important;" onclick="applyCardTheme('agl'); openContextGUI(0,0,'identity');">AGL</button>
+                    <button type="button" class="gui-preset-btn" style="" onclick="applyCardTheme('teq'); openContextGUI(0,0,'identity');">TEQ</button>
+                    <button type="button" class="gui-preset-btn" style="" onclick="applyCardTheme('int'); openContextGUI(0,0,'identity');">INT</button>
+                    <button type="button" class="gui-preset-btn" style="" onclick="applyCardTheme('str'); openContextGUI(0,0,'identity');">STR</button>
+                    <button type="button" class="gui-preset-btn" style="" onclick="applyCardTheme('phy'); openContextGUI(0,0,'identity');">PHY</button>
+                </div>
+
+                <label class="form-label mb-1">Awakening Status</label>
+                <div class="gui-btn-grid mb-1">
+                    <button type="button" class="gui-preset-btn" style="background:#facc15 !important; color:#000 !important; font-weight:900 !important; border-color:#facc15 !important;" onclick="applyAwakening('none'); openContextGUI(0,0,'identity');">None</button>
+                    <button type="button" class="gui-preset-btn" style="" onclick="applyAwakening('eza'); openContextGUI(0,0,'identity');">EZA</button>
+                    <button type="button" class="gui-preset-btn" style="" onclick="applyAwakening('seza'); openContextGUI(0,0,'identity');">SEZA</button>
+                </div>
             </div>
-        </div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 1156.3px; opacity: 0;">Critical Hit</div></body></html>
+        </div><div id="abs-global-floating-tooltip" style="display: none; top: 278.766px; left: 1028.89px; opacity: 0;">Additional Ki Per Ki Sphere Obtained</div></body></html>
