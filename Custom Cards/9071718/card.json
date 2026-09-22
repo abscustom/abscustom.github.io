@@ -3,7 +3,7 @@
   "officialCardId": "",
   "officialCardAwakeningMode": "",
   "currentType": "int",
-  "currentClass": "none",
+  "currentClass": "super",
   "currentRarity": "LR",
   "currentAwakeningMode": "none",
   "counters": {
@@ -11,8 +11,8 @@
     "lIdx": 0
   },
   "inputs": {
-    "descInput": "",
-    "nameInput": "",
+    "descInput": "Wrath of the Awakened",
+    "nameInput": "Super Saiyan 2 Gohan",
     "dateInput": "",
     "ezaDateInput": "",
     "sezaDateInput": "",
@@ -22,11 +22,11 @@
     "input-atk-max": "16850",
     "input-def-max": "11550",
     "input-passive-name-sidebar": "Unstoppable Son Family Prodigy",
-    "input-active-type": "",
-    "input-active-name": "",
-    "input-active-effect": "",
-    "input-active-condition-title": "",
-    "input-active-conditions": ""
+    "input-active-type": "Active Skill",
+    "input-active-name": "Father-Son Kamehameha",
+    "input-active-effect": "Raises ATK by 1000% temporarily and causes ultimate damage to enemy; all allies' ATK &amp; DEF +200%, plus an additional ATK &amp; DEF +100% for characters who belong to \"Goku Family\" or Golden Fighters\" Category, for 1 turn",
+    "input-active-condition-title": "Activation Condition(s)",
+    "input-active-conditions": "Can be activated starting from the 1st turn from the character's entry turn (once only)"
   },
   "stats": {
     "hpMax": 24950,
