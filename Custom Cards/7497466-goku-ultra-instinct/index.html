@@ -85,15 +85,14 @@
       "imageExportName": "images/default.png",
       "thumbSrc": "https://abscustom.github.io/Custom%20Cards/7497466-goku-ultra-instinct/images/Form_Thumb_1_mthcx47e.png",
       "name": "Goku (Ultra Instinct) + Vegeta (Ultra Ego)",
-      "link": "https://abscustom.github.io/Custom%20Cards/6231448-vegeta-ultra-ego/",
-      "adminLinkedSlug": "6231448-vegeta-ultra-ego"
+      "link": "https://abscustom.github.io/Custom%20Cards/7497466-goku-ultra-instinct/"
     },
     {
       "imageSrc": "https://abscustom.github.io/mui-goku/images/auto_1776462599526_aiwg9fhmz.png",
       "imageExportName": "images/default.png",
       "thumbSrc": "https://abscustom.github.io/Custom%20Cards/7497466-goku-ultra-instinct/images/Form_Thumb_2_mthcx47f.png",
       "name": "Vegeta (Ultra Ego) + Goku (Ultra Instinct)",
-      "link": "https://abscustom.github.io/ego-vegeta"
+      "link": "https://abscustom.github.io/Custom%20Cards/6231448-vegeta-ultra-ego/"
     },
     {
       "imageSrc": "https://abscustom.github.io/mui-goku/images/auto_1776462599528_9hxyyb7pr.png",
@@ -118,23 +117,23 @@
     <script>
         (function() {
             const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-            let src = 'https://abscustom.github.io/DokkanCustom/js/custom-card-bootstrapper.js';
+let src = 'https://abscustom.github.io/DokkanCustom/js/custom-card-bootstrapper.js?v=20260922-custom-runtime-v1';
             if (isLocal) {
                 const p = decodeURIComponent(location.pathname);
                 const idx = p.indexOf('/abscustom/');
                 if (idx !== -1) {
-                    src = p.substring(0, idx) + '/DokkanCustom/js/custom-card-bootstrapper.js';
+src = p.substring(0, idx) + '/DokkanCustom/js/custom-card-bootstrapper.js?v=20260922-custom-runtime-v1';
                 } else {
                     const isGrouped = p.includes('/Custom Cards/') || p.includes('/Custom%20Cards/');
-                    src = isGrouped ? '../../../DokkanCustom/js/custom-card-bootstrapper.js' : '../../DokkanCustom/js/custom-card-bootstrapper.js';
+src = isGrouped ? '../../../DokkanCustom/js/custom-card-bootstrapper.js?v=20260922-custom-runtime-v1' : '../../DokkanCustom/js/custom-card-bootstrapper.js?v=20260922-custom-runtime-v1';
                 }
             }
             const s = document.createElement('script');
             s.src = src;
             s.onerror = function() {
-                if (s.src !== 'https://abscustom.github.io/DokkanCustom/js/custom-card-bootstrapper.js') {
+if (s.src !== 'https://abscustom.github.io/DokkanCustom/js/custom-card-bootstrapper.js?v=20260922-custom-runtime-v1') {
                     const fallback = document.createElement('script');
-                    fallback.src = 'https://abscustom.github.io/DokkanCustom/js/custom-card-bootstrapper.js';
+fallback.src = 'https://abscustom.github.io/DokkanCustom/js/custom-card-bootstrapper.js?v=20260922-custom-runtime-v1';
                     document.head.appendChild(fallback);
                 }
             };
